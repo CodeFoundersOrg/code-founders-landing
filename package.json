@@ -6,8 +6,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:preview": "DEPLOY_PREVIEW=true npm run build",
     "build:start": "npm run build && cd dist && http-server -o -c-1",
-    "deploy:preview": "npm run build && node scripts/add-time-built.mjs",
+    "build:start:preview": "npm run build:preview && cd dist && http-server -o -c-1",
     "preview": "astro preview"
   },
   "devDependencies": {

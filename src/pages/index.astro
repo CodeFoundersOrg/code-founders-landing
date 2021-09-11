@@ -1,6 +1,20 @@
 ---
 let title = 'My Astro Site';
 
+// Create timestamp for deploy previews to show when last built/updated
+const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
+    new Intl.DateTimeFormat(
+        "nl-NL",
+        {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            timeZoneName: "short",
+        }
+    ).format(new Date()) : null;
+
 const content = Astro.fetchContent('../content/home/*.md');
 ---
 <html lang="en">
@@ -15,6 +29,12 @@ const content = Astro.fetchContent('../content/home/*.md');
     <link rel="stylesheet" href="/style/home.css">
 </head>
 <body>
+    {timestamp ?
+        <span style="color: white; position: absolute; inset: 0">
+            Preview last updated: {timestamp}
+        </span>
+        : ''
+    }
     <header>
     </header>
     <main>
@@ -23,11 +43,14 @@ const content = Astro.fetchContent('../content/home/*.md');
         </section>
 
         <section id="opsomming">
-            {content[1].astro.html}
+            <div class="content">
+                <!-- <div class="background-blur"></div> -->
+                {content[1].astro.html}
+            </div>
         </section>
 
         <section id="methodiek">
-            {content[2].astro.html}
+            <div class="content">{content[2].astro.html}</div>
         </section>
     </main>
     <footer>

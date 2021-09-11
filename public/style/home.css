@@ -4,34 +4,22 @@ header {
   height: 40px;
 }
 
-/**
- *
- *
- *    INTRO SECTION
- *
- *
- */
-
-#intro {
-  padding: 0;
-  background-image: url("../assets/images/man_glasses.png");
-  background-size: 1250px;
-  background-position-x: 67%;
-  padding-top: 375px;
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-#intro .content {
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.content {
   padding: 2.5rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#intro h2 {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-#intro button {
+button {
   color: var(--text-color);
   background-color: var(--color-button-green);
   padding: 0.75rem 1.25rem;
@@ -43,7 +31,80 @@ header {
 /**
  *
  *
- *    METHODIEK SECTION
+ *    INTRO SECTION
  *
  *
  */
+
+#intro {
+  padding: 0;
+  background-image: url("../assets/images/man_glasses.png");
+  background-repeat: no-repeat;
+  background-size: 1315px;
+  background-position-x: 67%;
+  padding-top: 375px;
+}
+
+#intro h2 {
+  line-height: 3rem;
+}
+
+/**
+ *
+ *
+ *    OPSOMMING SECTION
+ *
+ *
+ */
+
+#opsomming .content {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-primary-black);
+  z-index: -2;
+}
+
+#opsomming .content::before,
+#opsomming .content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+#opsomming .content::before {
+  height: 300px;
+  top: -140px;
+  left: 70%;
+  background: linear-gradient(
+    40deg,
+    var(--color-primary-blue) 30%,
+    var(--color-primary-green)
+  );
+  filter: blur(150px);
+}
+
+#opsomming .content::after {
+  height: 130px;
+  left: 30%;
+  bottom: 0px;
+  top: auto;
+  background-color: var(--color-primary-purple);
+  filter: blur(100px);
+}
+
+.text-bg-black {
+  background-color: var(--color-primary-black);
+  box-shadow: -12px 0 0 var(--color-primary-black),
+    12px 0 0 var(--color-primary-black);
+}
+
+#opsomming h3 {
+  margin-top: 3rem;
+}
+
+#opsomming button {
+  margin: 3.5rem 0 2.5rem;
+}

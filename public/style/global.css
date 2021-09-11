@@ -10,6 +10,7 @@
   --color-primary-green: #00cc99;
   --color-primary-purple: #4e008e;
   --color-primary-black: #000000;
+  --color-primary-blue: #166db9;
   --color-text: #fff;
   --color-button-green: #099881;
 }
@@ -17,10 +18,5 @@
 main {
   width: 100%;
   min-height: 100vh;
-  background: var(--color-primary-black);
   color: var(--color-text);
-}
-
-main > section {
-  padding: 0 3rem;
 }
