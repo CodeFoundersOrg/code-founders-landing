@@ -50,10 +50,23 @@ const content = Astro.fetchContent('../content/home/*.md');
         </section>
 
         <section id="methodiek">
+            <div class="img-laptop"></div>
             <div class="content">{content[2].astro.html}</div>
+        </section>
+
+        <section id="founders">
+            {content[3].astro.html}
+        </section>
+
+        <section id="alles_is_code">
+            <h2>
+            <span class="green">Alles is </span><span class="strike">liefde</span><br>
+            <span>Code</span><span class="green">.</span>
+            </h2>
         </section>
     </main>
     <footer>
+
     </footer>
 </body>
 </html>

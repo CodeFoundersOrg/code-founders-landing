@@ -7,6 +7,7 @@ header {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
+  overflow-wrap: anywhere;
 }
 
 h3 {
@@ -15,13 +16,16 @@ h3 {
 }
 
 .content {
-  padding: 2.5rem;
+  padding: 3.5rem;
+}
+
+.content {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 button {
   color: var(--text-color);
-  background-color: var(--color-button-green);
+  background-color: var(--color-primary-green);
   padding: 0.75rem 1.25rem;
   margin-top: 2rem;
   outline: none;
@@ -38,11 +42,12 @@ button {
 
 #intro {
   padding: 0;
-  background-image: url("../assets/images/man_glasses.png");
+  background-image: url(../assets/images/man_glasses.png);
   background-repeat: no-repeat;
-  background-size: 1315px;
+  background-size: 1350px;
   background-position-x: 67%;
-  padding-top: 375px;
+  padding-top: 275px;
+  background-color: #00ffb1;
 }
 
 #intro h2 {
@@ -87,12 +92,12 @@ button {
 }
 
 #opsomming .content::after {
-  height: 130px;
-  left: 30%;
+  height: 100px;
+  left: 20%;
   bottom: 0px;
   top: auto;
   background-color: var(--color-primary-purple);
-  filter: blur(100px);
+  filter: blur(85px);
 }
 
 .text-bg-black {
@@ -107,4 +112,170 @@ button {
 
 #opsomming button {
   margin: 3.5rem 0 2.5rem;
+}
+
+/**
+ *
+ *
+ *    METHODIEK SECTION
+ *
+ *
+ */
+#methodiek .content {
+  position: relative;
+  padding-top: 0;
+  margin-top: -5rem;
+  background-color: transparent;
+}
+
+.img-laptop {
+  height: 250px;
+  background-image: url(/assets/images/man_laptop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#methodiek h2 {
+  position: relative;
+  background-color: var(--color-primary-black);
+  padding: 0.5rem 1rem;
+  margin-top: -3rem;
+  margin-bottom: 3.5rem;
+}
+
+#methodiek h2::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  left: 0;
+  bottom: -25px;
+  background-color: var(--color-primary-green);
+}
+
+#methodiek p {
+  color: var(--color-primary-black);
+}
+
+#methodiek button,
+#founders button {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 1;
+}
+
+/**
+ *
+ *
+ *    FOUNDERS SECTION
+ *
+ *
+ */
+#founders {
+  position: relative;
+  background-color: #151a17;
+  padding-bottom: 3.5rem;
+}
+
+#founders > *:not(img) {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+}
+
+#founders img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+#founders h2 {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+#founders p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+#founders button {
+}
+
+/**
+ *
+ *
+ *    ALLES IS CODE
+ *
+ *
+ */
+#alles_is_code {
+  background-color: var(--color-primary-black);
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+#alles_is_code h2 {
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  margin: auto;
+  text-align: right;
+}
+
+#alles_is_code .green {
+  color: var(--color-primary-green);
+}
+
+#alles_is_code .strike {
+  text-decoration: line-through;
+  text-decoration-color: var(--color-primary-purple);
+  text-decoration-thickness: 6px;
+}
+
+#alles_is_code::before,
+#alles_is_code::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+#alles_is_code::before {
+  height: 90px;
+  top: 70px;
+  left: 70%;
+  background: var(--color-primary-green);
+  filter: blur(100px);
+}
+
+#alles_is_code::after {
+  height: 60px;
+  left: 33%;
+  bottom: 70px;
+  top: auto;
+  background-color: var(--color-primary-blue);
+  filter: blur(85px);
+}
+
+/**
+ *
+ *
+ *    FOOTER
+ *
+ *
+ */
+footer {
+  min-height: 500px;
+  background-color: var(--color-primary-black);
 }
