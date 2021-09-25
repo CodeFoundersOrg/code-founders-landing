@@ -40,24 +40,51 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
         : ''
     }
     <header>
-        <div class="hamburger">
-            <div class="hamburger-icon"></div>
+        <div class="header-container">
+            <div class="hamburger">
+                <div class="hamburger-icon"></div>
+            </div>
+            <a class="header-logo" aria-label="home"><img src="/assets/images/logo/logo.png" /></a>
+            <div class="search-placeholder"></div>
         </div>
-        <a class="header-logo" aria-label="home"><img src="/assets/images/logo/logo.png" /></a>
-        <div class="search-placeholder"></div>
     </header>
     <main>
-        <section id="intro">
-            <div class="content">{content[0].astro.html}</div>
-        </section>
+        <div class="purple-bg">
+            <section id="intro">
+                <div class="content-container">
+                    <div class="content">{content[0].astro.html}</div>
+                </div>
+            </section>
 
-        <section id="opsomming">
-            <div class="content">
-                <!-- <div class="background-blur"></div> -->
-                {content[1].astro.html}
-            </div>
-        </section>
-
+            <section id="opsomming">
+                <div class="content-container">
+                    <div class="content">
+                        <div class="flex-content">
+                            <h2 id="we-love-the-glamour-in-error">
+                                <span class="text-bg-black">
+                                    We love the glamour in <span style="color: var(--color-primary-green);">error<span>
+                                </span>
+                            </h2>
+                            <div class="flex-paragraphs">
+                                <div>
+                                    <h3 id="fouten-maken-moet">Fouten maken moet</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div>
+                                <h3 id="bewezen-methodiek">Bewezen methodiek</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div>
+                                <h3 id="code-in-6-weken">Code in 6 weken</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button>Meer over de methodiek</button>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section id="methodiek">
             <div class="img-laptop"></div>
             <div class="content">{content[2].astro.html}</div>

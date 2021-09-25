@@ -1,10 +1,16 @@
 header {
   background-color: #151a17;
   width: 100%;
+}
+
+.header-container {
+  max-width: 1280px;
   display: flex;
   padding: 1.5rem 1.5rem 1rem;
   align-items: center;
   justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .hamburger {
@@ -38,10 +44,6 @@ h3 {
   padding: 3.5rem;
 }
 
-.content {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 button {
   color: var(--color-text);
   background-color: var(--color-secondary-green);
@@ -49,6 +51,11 @@ button {
   margin-top: 2rem;
   outline: none;
   border: none;
+}
+
+.purple-bg {
+  position: relative;
+  background-color: var(--color-primary-black);
 }
 
 /**
@@ -59,7 +66,7 @@ button {
  *
  */
 
-#intro {
+#intro .content-container {
   padding: 0;
   background-image: url(../assets/images/man_glasses.png);
   background-repeat: no-repeat;
@@ -69,8 +76,65 @@ button {
   background-color: #00ffb1;
 }
 
+#intro .content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 #intro h2 {
   line-height: 2.5rem;
+}
+
+@media (min-width: 769px) {
+  #intro .content-container {
+    background-position-x: 100%;
+  }
+}
+
+@media (min-width: 1201px) {
+  #intro {
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/man_glasses_feathered3.jpg);
+    background-position-x: calc(-300px + 40%);
+    background-size: 800px;
+  }
+
+  #intro .content-container {
+    background: none;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  #intro .content {
+    background-color: transparent;
+    max-width: 600px;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+
+  #intro h2 {
+    margin-bottom: 2rem;
+  }
+
+  .purple-bg::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 900px;
+    left: 40%;
+    bottom: 100px;
+    top: auto;
+    background-color: var(--color-primary-purple);
+    filter: blur(250px);
+  }
+}
+
+@media (min-width: 1921px) {
+  #intro {
+    background-position-x: calc(-200px + 40%);
+  }
 }
 
 /**
@@ -84,8 +148,7 @@ button {
 #opsomming .content {
   overflow: hidden;
   position: relative;
-  background-color: var(--color-primary-black);
-  z-index: -2;
+  z-index: 0;
 }
 
 #opsomming .content::before,
@@ -132,6 +195,53 @@ button {
 
 #opsomming button {
   margin: 3.5rem 0 2.5rem;
+}
+
+@media (min-width: 1201px) {
+  #opsomming .content {
+    padding: 8rem;
+  }
+
+  #opsomming .content-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  #opsomming .flex-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  #opsomming .flex-paragraphs {
+    display: flex;
+    gap: 4rem;
+  }
+
+  #opsomming button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #opsomming h2 {
+    margin: 0;
+    flex-shrink: 0.8;
+  }
+
+  #opsomming h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  #opsomming .content::before,
+  #opsomming .content::after {
+    content: none;
+  }
+}
+
+@media (min-width: 1921px) {
 }
 
 /**

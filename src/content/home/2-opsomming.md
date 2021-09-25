@@ -1,5 +1,6 @@
 ## <span class="text-bg-black">We love the glamour in <span style="color: var(--color-primary-green);">error<span></span>
 
+
 ### Fouten maken moet
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
