@@ -13,10 +13,20 @@
   },
   "devDependencies": {
     "@astrojs/renderer-lit": "^0.1.0",
-    "astro": "^0.20.3",
-    "http-server": "^13.0.1"
+    "astro": "^0.20.7",
+    "http-server": "^13.0.1",
+    "prettier": "^2.4.1"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.3"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "all"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

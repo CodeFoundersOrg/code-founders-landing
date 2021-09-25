@@ -1,4 +1,5 @@
 ---
+import * as path from 'node:path';
 let title = 'My Astro Site';
 
 // Create timestamp for deploy previews to show when last built/updated
@@ -15,12 +16,15 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
         }
     ).format(new Date()) : null;
 
-const content = Astro.fetchContent('../content/home/*.md');
+const mds = Astro.fetchContent('../content/*/*.md');
+const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
+const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
 ---
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Code.Founders. If you can code, you can do anything.">
     <title>{title}</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -30,12 +34,17 @@ const content = Astro.fetchContent('../content/home/*.md');
 </head>
 <body>
     {timestamp ?
-        <span style="color: white; position: absolute; inset: 0">
+        <span style="color: white; position: absolute; top: 65px; left: 8px;">
             Preview last updated: {timestamp}
         </span>
         : ''
     }
     <header>
+        <div class="hamburger">
+            <div class="hamburger-icon"></div>
+        </div>
+        <a class="header-logo" aria-label="home"><img src="/assets/images/logo/logo.png" /></a>
+        <div class="search-placeholder"></div>
     </header>
     <main>
         <section id="intro">
@@ -55,7 +64,7 @@ const content = Astro.fetchContent('../content/home/*.md');
         </section>
 
         <section id="founders">
-            {content[3].astro.html}
+            {founders[1].astro.html}
         </section>
 
         <section id="alles_is_code">
@@ -66,7 +75,20 @@ const content = Astro.fetchContent('../content/home/*.md');
         </section>
     </main>
     <footer>
-
+        <div class="socials-container">
+            <img alt="linkedin" rel="noopener" target="_blank" src="/assets/images/socials/li.png" />
+            <img alt="twitter" rel="noopener" target="_blank" src="/assets/images/socials/tw.png" />
+            <img alt="facebook" rel="noopener" target="_blank" src="/assets/images/socials/fb.png" />
+        </div>
+        <div class="reference-links">
+            <a>Wordt een Code.Founder_</a>
+            <a>Bekijk je docenten</a>
+            <a>Stel je vraag</a>
+            <a>Samenwerken</a>
+        </div>
+        <a class="footer-logo" aria-label="Home">
+            <img src="/assets/images/logo/mark-green.jpg" />
+        </a>
     </footer>
 </body>
 </html>

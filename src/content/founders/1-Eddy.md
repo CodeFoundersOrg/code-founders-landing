@@ -1,4 +1,4 @@
-<img src="/assets/images/portraits/eddy.jpeg">
+<img alt="Eddy" src="/assets/images/portraits/eddy.jpeg">
 
 ## <span class="text-bg-black">Code.<span style="color: var(--color-primary-green);">Founder</span>_Eddy</span>
 

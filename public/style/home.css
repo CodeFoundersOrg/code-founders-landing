@@ -1,13 +1,32 @@
 header {
-  background-color: #212123;
+  background-color: #151a17;
   width: 100%;
-  height: 40px;
+  display: flex;
+  padding: 1.5rem 1.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  height: 15px;
+}
+
+.hamburger-icon {
+  height: 0;
+  width: 22px;
+  box-shadow: 0 0 0 1.5px white, 0 7px 0 1.5px white, 0 14px 0 1.5px white;
+}
+
+.header-logo img {
+  display: block;
+  width: 200px;
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   overflow-wrap: anywhere;
+  line-height: 2.75rem;
 }
 
 h3 {
@@ -24,8 +43,8 @@ h3 {
 }
 
 button {
-  color: var(--text-color);
-  background-color: var(--color-primary-green);
+  color: var(--color-text);
+  background-color: var(--color-secondary-green);
   padding: 0.75rem 1.25rem;
   margin-top: 2rem;
   outline: none;
@@ -51,7 +70,7 @@ button {
 }
 
 #intro h2 {
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 /**
@@ -71,7 +90,7 @@ button {
 
 #opsomming .content::before,
 #opsomming .content::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   inset: 0;
@@ -108,6 +127,7 @@ button {
 
 #opsomming h3 {
   margin-top: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 #opsomming button {
@@ -140,10 +160,12 @@ button {
   padding: 0.5rem 1rem;
   margin-top: -3rem;
   margin-bottom: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 #methodiek h2::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 8px;
   width: 100%;
@@ -176,10 +198,11 @@ button {
 #founders {
   position: relative;
   background-color: #151a17;
-  padding-bottom: 3.5rem;
+  padding-bottom: 5rem;
+  border-top: 4rem solid black;
 }
 
-#founders > *:not(img) {
+#founders > *:not(img, h2) {
   padding-right: 3.5rem;
   padding-left: 3.5rem;
 }
@@ -196,11 +219,7 @@ button {
   padding-bottom: 0;
   text-align: center;
   margin-top: -2rem;
-}
-
-#founders p {
-  font-size: 1.25rem;
-  line-height: 2.25rem;
+  font-size: 2rem;
 }
 
 #founders button {
@@ -242,7 +261,7 @@ button {
 
 #alles_is_code::before,
 #alles_is_code::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   inset: 0;
@@ -275,6 +294,52 @@ button {
  *
  */
 footer {
-  min-height: 500px;
   background-color: var(--color-primary-black);
+  position: relative;
+  padding: 5rem 0;
+}
+
+.socials-container {
+  display: flex;
+  position: absolute;
+  gap: 1.5rem;
+  margin-top: -1.5rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socials-container img {
+  width: 50px;
+}
+
+.reference-links {
+  font-family: Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  gap: 1.5rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.footer-logo {
+  display: block;
+  position: relative;
+  margin: 5rem auto;
+  width: max-content;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-logo::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 50%;
+  bottom: -8px;
+  right: 0;
+  background-color: white;
 }
