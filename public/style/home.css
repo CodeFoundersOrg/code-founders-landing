@@ -433,6 +433,11 @@ footer {
   text-align: center;
 }
 
+.reference-links a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .footer-logo {
   display: block;
   position: relative;
