@@ -35,7 +35,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
 </head>
 <body>
     {timestamp ?
-        <span style="color: white; position: absolute; top: 65px; left: 8px;">
+        <span style="color: white; position: absolute; top: 65px; left: 8px; z-index: 1;">
             Preview last updated: {timestamp}
         </span>
         : ''
