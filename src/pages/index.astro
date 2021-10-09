@@ -16,9 +16,10 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
         }
     ).format(new Date()) : null;
 
-const mds = Astro.fetchContent('../content/*/*.md');
+const mds = Astro.fetchContent('../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
 const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
+const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
 ---
 <html lang="en">
 <head>
@@ -67,36 +68,19 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
                 <div class="content-container">
                     <div class="content">
                         <div class="flex-content">
-                            <h2 id="we-love-the-glamour-in-error">
-                                <span class="text-bg-black">
-                                    We love the glamour in <span style="color: var(--color-primary-green);">error<span>
-                                </span>
-                            </h2>
+                            {pitch[0].astro.html}
                             <div class="flex-paragraphs">
-                                <div>
-                                    <h3 id="fouten-maken-moet">Fouten maken moet</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                                <div>
-                                <h3 id="bewezen-methodiek">Bewezen methodiek</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                </div>
-                                <div>
-                                <h3 id="code-in-6-weken">Code in 6 weken</h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                {pitch.slice(1, pitch.length - 1).map(part => <div>{part.astro.html}</div>)}
                             </div>
                         </div>
-                        <a href="./contact">Meer over de methodiek</a>
+                        {pitch[pitch.length - 1].astro.html}
                     </div>
                 </div>
             </section>
         </div>
         <section id="methodiek">
             <div class="img-laptop"></div>
-                <div class="content">
-                    {content[1].astro.html}
-                </div>
+            <div class="content">{content[1].astro.html}</div>
         </section>
 
         <section id="alles_is_code">
