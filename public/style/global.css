@@ -15,6 +15,12 @@
   --color-text: #fff;
 }
 
+html,
+body {
+  color: var(--color-text);
+  background-color: var(--color-primary-black);
+}
+
 h1,
 h2,
 h3,
@@ -28,7 +34,10 @@ h6 {
 main {
   width: 100%;
   min-height: 100vh;
-  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
 }
 
 @font-face {

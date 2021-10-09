@@ -1,15 +1,18 @@
+:root {
+  --content-width: 1200px;
+}
+
 header {
   background-color: #151a17;
   width: 100%;
 }
 
 .header-container {
-  max-width: 1280px;
+  max-width: var(--content-width);
   display: flex;
   padding: 1.5rem 1.5rem 1rem;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -28,6 +31,34 @@ header {
   width: 200px;
 }
 
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .nav-desktop ul {
+    font-family: Helvetica Neue, sans-serif;
+    display: flex;
+    padding: 0;
+    gap: 10rem;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .nav-desktop a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 h2 {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
@@ -44,8 +75,18 @@ h3 {
   padding: 3.5rem;
 }
 
-button {
+@media (min-width: 601px) {
+  .content {
+    padding: 7rem;
+  }
+}
+
+.content a,
+.founder a {
+  font-family: Helvetica Neue, sans-serif;
+  display: inline-block;
   color: var(--color-text);
+  text-decoration: none;
   background-color: var(--color-secondary-green);
   padding: 0.75rem 1.25rem;
   margin-top: 2rem;
@@ -68,7 +109,7 @@ button {
 
 #intro .content-container {
   padding: 0;
-  background-image: url(../assets/images/man_glasses.png);
+  background-image: url(../assets/images/man_glasses.jpg);
   background-repeat: no-repeat;
   background-size: 1350px;
   background-position-x: 67%;
@@ -93,7 +134,7 @@ button {
 @media (min-width: 1201px) {
   #intro {
     background-repeat: no-repeat;
-    background-image: url(../assets/images/man_glasses_feathered3.jpg);
+    background-image: url(../assets/images/man_glasses_feathered.jpg);
     background-position-x: calc(-300px + 40%);
     background-size: 800px;
   }
@@ -123,7 +164,7 @@ button {
     transform: translateX(-50%);
     height: 300px;
     width: 900px;
-    left: 40%;
+    left: 30%;
     bottom: 100px;
     top: auto;
     background-color: var(--color-primary-purple);
@@ -193,8 +234,10 @@ button {
   margin-bottom: 0.5rem;
 }
 
-#opsomming button {
-  margin: 3.5rem 0 2.5rem;
+#opsomming a {
+  margin: 3.5rem auto 2.5rem;
+  width: max-content;
+  display: block;
 }
 
 @media (min-width: 1201px) {
@@ -241,9 +284,6 @@ button {
   }
 }
 
-@media (min-width: 1921px) {
-}
-
 /**
  *
  *
@@ -251,16 +291,20 @@ button {
  *
  *
  */
+#methodiek {
+  display: flex;
+  flex-direction: column;
+}
+
 #methodiek .content {
   position: relative;
   padding-top: 0;
-  margin-top: -5rem;
-  background-color: transparent;
+  background-color: white;
 }
 
 .img-laptop {
   height: 250px;
-  background-image: url(/assets/images/man_laptop.png);
+  background-image: url(/assets/images/man_laptop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -288,14 +332,43 @@ button {
   color: var(--color-primary-black);
 }
 
-#methodiek button,
-#founders button {
+#methodiek a,
+#founders a {
+  text-decoration: none;
   position: absolute;
-  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   z-index: 1;
+}
+
+#methodiek button {
+  bottom: -20px;
+}
+
+@media (min-width: 1201px) {
+  #methodiek {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url(/assets/images/man_laptop-feathered.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-laptop {
+    display: none;
+  }
+
+  #methodiek .content {
+    margin-top: 120px;
+    max-width: 60ch;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding: 0 3.5rem 3.5rem;
+  }
 }
 
 /**
@@ -308,11 +381,10 @@ button {
 #founders {
   position: relative;
   background-color: #151a17;
-  padding-bottom: 5rem;
-  border-top: 4rem solid black;
+  padding-bottom: 10rem;
 }
 
-#founders > *:not(img, h2) {
+#founders .founder > *:not(h2, img) {
   padding-right: 3.5rem;
   padding-left: 3.5rem;
 }
@@ -321,24 +393,96 @@ button {
   display: block;
   width: 100%;
   height: 350px;
+  max-width: 500px;
+  margin: 0 auto;
   object-fit: cover;
 }
 
 #founders h2 {
-  padding-top: 0;
-  padding-bottom: 0;
   text-align: center;
   margin-top: -2rem;
   font-size: 2rem;
+  padding: 0 1rem;
 }
 
-#founders button {
+@media (max-width: var(--content-width)) {
+  .founder:not(:nth-child(1)) {
+    display: none;
+  }
+  .alles_is_code {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  #founders {
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .founders {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 15rem;
+    padding: 0 5rem;
+  }
+
+  .founder {
+    background-color: #151a17;
+    width: 400px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  #founders .founder img {
+    height: 250px;
+  }
+
+  .founder p:last-child {
+    text-align: center;
+  }
+
+  #founders .founder button {
+    bottom: -20px;
+  }
+
+  #founders .alles_is_code {
+    position: relative;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #founders .alles_is_code h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: right;
+    display: inline-block;
+  }
+
+  #founders::before {
+    content: '';
+    position: absolute;
+    width: min(100%, 1600px);
+    height: 700px;
+    border-radius: 50%;
+    bottom: 0;
+    opacity: 0.6;
+    background: linear-gradient(
+      var(--color-primary-green) 50%,
+      var(--color-primary-blue) 50%
+    );
+    filter: blur(300px);
+    left: 40%;
+  }
 }
 
 /**
  *
  *
- *    ALLES IS CODE
+ *    ALLES IS CODE (MOBILE ONLY)
  *
  *
  */
@@ -359,11 +503,13 @@ button {
   text-align: right;
 }
 
-#alles_is_code .green {
+#alles_is_code .green,
+.alles_is_code .green {
   color: var(--color-primary-green);
 }
 
-#alles_is_code .strike {
+#alles_is_code .strike,
+.alles_is_code .strike {
   text-decoration: line-through;
   text-decoration-color: var(--color-primary-purple);
   text-decoration-thickness: 6px;
@@ -396,6 +542,12 @@ button {
   filter: blur(85px);
 }
 
+@media (min-width: 1201px) {
+  #alles_is_code {
+    display: none;
+  }
+}
+
 /**
  *
  *
@@ -409,7 +561,11 @@ footer {
   padding: 5rem 0;
 }
 
-.socials-container {
+.socials-container-desktop {
+  display: none;
+}
+
+.socials-container-mobile {
   display: flex;
   position: absolute;
   gap: 1.5rem;
@@ -419,7 +575,7 @@ footer {
   transform: translateX(-50%);
 }
 
-.socials-container img {
+.socials-container-mobile img {
   width: 50px;
 }
 
@@ -433,18 +589,22 @@ footer {
   text-align: center;
 }
 
-.footer-logo {
+.reference-links a {
+  color: var(--color-text);
+}
+
+.footer-logo-mobile {
   display: block;
   position: relative;
   margin: 5rem auto;
   width: max-content;
 }
 
-.footer-logo img {
+.footer-logo-mobile img {
   width: 100px;
 }
 
-.footer-logo::after {
+.footer-logo-mobile::after {
   content: '';
   position: absolute;
   height: 8px;
@@ -452,4 +612,65 @@ footer {
   bottom: -8px;
   right: 0;
   background-color: white;
+}
+
+.copyright {
+  padding: 1.5rem 0;
+  background-color: #151a17;
+}
+
+.copyright p {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 0.75rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (min-width: 1201px) {
+  footer {
+    display: flex;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .socials-container-mobile {
+    display: none;
+  }
+  .footer-logo-mobile {
+    display: none;
+  }
+  .socials-container-desktop {
+    display: block;
+    color: white;
+    text-align: right;
+  }
+  .reference-links {
+    text-align: left;
+  }
+  .reference-links a {
+    margin-bottom: 1.5rem;
+  }
+
+  .socials-container-desktop .logo img {
+    width: 400px;
+    margin-bottom: 3rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .socials a img {
+    width: 40px;
+  }
+
+  .socials-container-desktop p {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }

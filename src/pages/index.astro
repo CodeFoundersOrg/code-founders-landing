@@ -45,6 +45,13 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
                 <div class="hamburger-icon"></div>
             </div>
             <a href="#" class="header-logo" aria-label="home"><img src="/assets/images/logo/logo.png" /></a>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="./diensten">Diensten</a></li>
+                    <li><a href="./team">Team</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
             <div class="search-placeholder"></div>
         </div>
     </header>
@@ -80,18 +87,16 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
                                 </div>
                             </div>
                         </div>
-                        <button>Meer over de methodiek</button>
+                        <a href="./contact">Meer over de methodiek</a>
                     </div>
                 </div>
             </section>
         </div>
         <section id="methodiek">
             <div class="img-laptop"></div>
-            <div class="content">{content[2].astro.html}</div>
-        </section>
-
-        <section id="founders">
-            {founders[1].astro.html}
+                <div class="content">
+                    {content[1].astro.html}
+                </div>
         </section>
 
         <section id="alles_is_code">
@@ -100,9 +105,25 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
             <span>Code</span><span class="green">.</span>
             </h2>
         </section>
+
+        <section id="founders">
+            <div class="alles_is_code">
+                <h2>
+                <span class="green">Alles is </span><span class="strike">liefde</span><br>
+                <span>Code</span><span class="green">.</span>
+                </h2>
+            </div>
+            <div class="founders">
+                {founders.slice(0, 4).map(founder => (
+                    <div class="founder">{founder.astro.html}</div>
+                ))}
+            </div>
+        </section>
+
+
     </main>
     <footer>
-        <div class="socials-container">
+        <div class="socials-container-mobile">
             <img alt="linkedin" rel="noopener" target="_blank" src="/assets/images/socials/li.png" />
             <img alt="twitter" rel="noopener" target="_blank" src="/assets/images/socials/tw.png" />
             <img alt="facebook" rel="noopener" target="_blank" src="/assets/images/socials/fb.png" />
@@ -113,9 +134,23 @@ const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home')
             <a href="/contact">Stel je vraag</a>
             <a href="/contact">Samenwerken</a>
         </div>
-        <a href="#" class="footer-logo">
+        <a href="#" class="footer-logo-mobile">
             <img alt="codefounders logo" src="/assets/images/logo/mark-green.jpg" />
         </a>
+        <div class="socials-container-desktop">
+            <a class="logo" rel="noopener" target="_blank" href="#"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
+
+            <div class="socials">
+                <a rel="noopener" target="_blank" href="#"><img alt="linkedin" src="/assets/images/socials/li.png" /></a>
+                <a rel="noopener" target="_blank" href="#"><img alt="twitter" src="/assets/images/socials/tw.png" /></a>
+                <a rel="noopener" target="_blank" href="#"><img alt="facebook" src="/assets/images/socials/fb.png" /></a>
+            </div>
+            <p>info@codefounders.nl</p>
+            <p>088 - 88 8888 88</p>
+        </div>
     </footer>
+    <div class="copyright">
+        <p>Privacybeleid - Gebruiksvoorwaarden - Disclaimer - © 2021 codefounders.nl | Webdesign: Myrthekoppelaar.nl | All Rights Reserved</p>
+    </div>
 </body>
 </html>
