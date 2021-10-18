@@ -62,7 +62,11 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
         <div class="purple-bg">
             <section id="intro">
                 <div class="content-container">
-                    <div class="content">{content[0].astro.html}</div>
+                    <div class="content">
+                        <h2>{content[0].slogan}</h2>
+                        <p>{content[0].description}</p>
+                        <a href={content[0].button_navigation}>{content[0].button_text}</a>
+                    </div>
                 </div>
             </section>
 
