@@ -25,3 +25,5 @@ fields:
     required: false
   label: Button text
   description: Text of the action button
+pages:
+- src/content/home/1-intro.md
