@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "build:watch": "npm run build && chokidar \"{src,public}/**/*\" -c \"npm run build\"",
+    "build:watch": "npm run build && concurrently \"chokidar '{src,public}/**/*' -c 'rimraf dist && npm run build'\" \"wds --root-dir dist\"",
     "build:preview": "DEPLOY_PREVIEW=true npm run build",
     "build:start": "npm run build && cd dist && http-server -o -c-1",
     "build:start:preview": "npm run build:preview && cd dist && http-server -o -c-1",
@@ -14,12 +14,15 @@
   },
   "devDependencies": {
     "@astrojs/renderer-lit": "^0.1.0",
+    "@web/dev-server": "^0.1.25",
     "astro": "^0.20.7",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^6.3.0",
     "http-server": "^13.0.1",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "chokidar-cli": "^3.0.0",
     "lit": "^2.0.0-rc.3"
   },
   "prettier": {
