@@ -1,6 +1,6 @@
 ---
 label: Pitch - Title
-hide_body: false
+hide_body: true
 fields:
 - name: heading
   type: text
