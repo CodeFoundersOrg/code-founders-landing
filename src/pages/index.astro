@@ -1,162 +1,77 @@
 ---
 import * as path from 'node:path';
-let title = 'Code.Founders_';
-
-// Create timestamp for deploy previews to show when last built/updated
-const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
-    new Intl.DateTimeFormat(
-        "nl-NL",
-        {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            timeZoneName: "short",
-        }
-    ).format(new Date()) : null;
+import BaseLayout from '../layouts/base.astro'
 
 const mds = Astro.fetchContent('../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
 const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
 const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
 ---
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Code.Founders. If you can code, you can do anything.">
-    <title>{title}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
-</head>
-<body>
-    {timestamp ?
-        <span style="color: white; position: absolute; top: 65px; left: 8px; z-index: 1;">
-            Preview last updated: {timestamp}
-        </span>
-        : ''
-    }
-    <header>
-        <div class="header-container">
-            <div class="hamburger">
-                <div class="hamburger-icon"></div>
-            </div>
-            <a href="#" class="header-logo" aria-label="home">
-                <img alt="codefounders logo" src="/assets/images/logo/logo.png" />
-            </a>
-            <nav class="nav-desktop">
-                <ul>
-                    <li><a href="./diensten">Diensten</a></li>
-                    <li><a href="./team">Team</a></li>
-                    <li><a href="./contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="search-placeholder"></div>
-        </div>
-    </header>
-    <main>
-        <div class="purple-bg">
-            <section id="intro">
-                <div class="content-container">
-                    <div class="content">
-                        <h2>{content[0].slogan}</h2>
-                        <p>{content[0].description}</p>
-                        <a href={content[0].button_navigation}>{content[0].button_text}</a>
-                    </div>
+<BaseLayout>
+    <div class="purple-bg">
+        <section id="intro">
+            <div class="content-container">
+                <div class="content">
+                    <h2>{content[0].slogan}</h2>
+                    <p>{content[0].description}</p>
+                    <a href={content[0].button_navigation}>{content[0].button_text}</a>
                 </div>
-            </section>
-
-            <section id="opsomming">
-                <div class="content-container">
-                    <div class="content">
-                        <div class="flex-content">
-                            <h2>{pitch[0].heading}</h2>
-                            <div class="flex-paragraphs">
-                                {pitch.slice(1, pitch.length - 1).map(part => <div>
-                                    <h3>{part.heading}</h3>
-                                    <p>{part.pitch_part_description}</p>
-                                </div>)}
-                            </div>
-                        </div>
-                        <a href={pitch[pitch.length - 1]['pitch-button_navigation']}>{pitch[pitch.length - 1]['pitch-button_text']}</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section id="methodiek">
-            <div class="img-laptop"></div>
-            <div class="content">
-                <h2>{content[1].heading}</h2>
-                <p>{content[1].description}</p>
-                <a href={content[1].button_navigation}>{content[1].button_text}</a>
             </div>
         </section>
 
-        <section id="alles_is_code">
+        <section id="opsomming">
+            <div class="content-container">
+                <div class="content">
+                    <div class="flex-content">
+                        <h2>{pitch[0].heading}</h2>
+                        <div class="flex-paragraphs">
+                            {pitch.slice(1, pitch.length - 1).map(part => <div>
+                                <h3>{part.heading}</h3>
+                                <p>{part.pitch_part_description}</p>
+                            </div>)}
+                        </div>
+                    </div>
+                    <a href={pitch[pitch.length - 1]['pitch-button_navigation']}>{pitch[pitch.length - 1]['pitch-button_text']}</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="methodiek">
+        <div class="img-laptop"></div>
+        <div class="content">
+            <h2>{content[1].heading}</h2>
+            <p>{content[1].description}</p>
+            <a href={content[1].button_navigation}>{content[1].button_text}</a>
+        </div>
+    </section>
+
+    <section id="alles_is_code">
+        <h2>
+        <span class="green">Alles is </span><span class="strike">liefde</span><br>
+        <span>Code</span><span class="green">.</span>
+        </h2>
+    </section>
+
+    <section id="founders">
+        <div class="alles_is_code">
             <h2>
             <span class="green">Alles is </span><span class="strike">liefde</span><br>
             <span>Code</span><span class="green">.</span>
             </h2>
-        </section>
-
-        <section id="founders">
-            <div class="alles_is_code">
-                <h2>
-                <span class="green">Alles is </span><span class="strike">liefde</span><br>
-                <span>Code</span><span class="green">.</span>
-                </h2>
-            </div>
-            <div class="founders">
-                {founders.slice(0, 4).map(founder => (
-                    <div class="founder">
-                        <img alt="founder" src={founder.photo} />
-                        <h2>
-                            <span class="text-bg-black">
-                                Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}
-                            </span>
-                        </h2>
-                        <p>{founder.description}</p>
-                        <a href="./team">Lees meer reviews</a>
-                    </div>
-                ))}
-            </div>
-        </section>
-
-
-    </main>
-    <footer>
-        <div class="socials-container-mobile">
-            <a href="#" rel="noopener" target="_blank"><img alt="linkedin" src="/assets/images/socials/li.png" /></a>
-            <a href="#" rel="noopener" target="_blank"><img alt="twitter" src="/assets/images/socials/tw.png" /></a>
-            <a href="#" rel="noopener" target="_blank"><img alt="facebook" src="/assets/images/socials/fb.png" /></a>
         </div>
-        <div class="reference-links">
-            <a href="/contact">Wordt een Code.Founder_</a>
-            <a href="/team">Bekijk je docenten</a>
-            <a href="/contact">Stel je vraag</a>
-            <a href="/contact">Samenwerken</a>
+        <div class="founders">
+            {founders.slice(0, 4).map(founder => (
+                <div class="founder">
+                    <img alt="founder" src={founder.photo} />
+                    <h2>
+                        <span class="text-bg-black">
+                            Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}
+                        </span>
+                    </h2>
+                    <p>{founder.description}</p>
+                    <a href="./team">Lees meer reviews</a>
+                </div>
+            ))}
         </div>
-        <a href="#" class="footer-logo-mobile">
-            <img alt="codefounders logo" src="/assets/images/logo/mark-green.jpg" />
-        </a>
-        <div class="socials-container-desktop">
-            <a class="logo" rel="noopener" target="_blank" href="#"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
-
-            <div class="socials">
-                <a rel="noopener" target="_blank" href="#"><img alt="linkedin" src="/assets/images/socials/li.png" /></a>
-                <a rel="noopener" target="_blank" href="#"><img alt="twitter" src="/assets/images/socials/tw.png" /></a>
-                <a rel="noopener" target="_blank" href="#"><img alt="facebook" src="/assets/images/socials/fb.png" /></a>
-            </div>
-            <p>info@codefounders.nl</p>
-            <p>088 - 88 8888 88</p>
-        </div>
-    </footer>
-    <div class="copyright">
-        <p>Privacybeleid - Gebruiksvoorwaarden - Disclaimer - © 2021 codefounders.nl | Webdesign: Myrthekoppelaar.nl | All Rights Reserved</p>
-    </div>
-</body>
-</html>
+    </section>
+</BaseLayout>

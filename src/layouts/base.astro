@@ -1,0 +1,86 @@
+---
+import Socials from '../components/socials.astro'
+let title = 'Code.Founders_';
+
+// Create timestamp for deploy previews to show when last built/updated
+const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
+    new Intl.DateTimeFormat(
+        "nl-NL",
+        {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            timeZoneName: "short",
+        }
+    ).format(new Date()) : null;
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Code.Founders. If you can code, you can do anything.">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/style/global.css">
+    <link rel="stylesheet" href="/style/home.css">
+</head>
+<body>
+    {timestamp ?
+        <span style="color: white; position: absolute; top: 65px; left: 8px; z-index: 1;">
+            Preview last updated: {timestamp}
+        </span>
+        : ''
+    }
+    <header>
+        <div class="header-container">
+            <div class="hamburger">
+                <div class="hamburger-icon"></div>
+            </div>
+            <a href="/" class="header-logo" aria-label="home">
+                <img alt="codefounders logo" src="/assets/images/logo/logo.png" />
+            </a>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="./diensten">Diensten</a></li>
+                    <li><a href="./team">Team</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-placeholder"></div>
+        </div>
+    </header>
+    <main>
+    <slot />
+    </main>
+    <footer>
+        <div class="socials-container-mobile">
+            <Socials></Socials>
+        </div>
+        <div class="reference-links">
+            <a href="/contact">Wordt een Code.Founder_</a>
+            <a href="/team">Bekijk je docenten</a>
+            <a href="/contact">Stel je vraag</a>
+            <a href="/contact">Samenwerken</a>
+        </div>
+        <a href="/" class="footer-logo-mobile">
+            <img alt="codefounders logo" src="/assets/images/logo/mark-green.jpg" />
+        </a>
+        <div class="socials-container-desktop">
+            <a class="logo" href="/"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
+
+            <div class="socials">
+                <Socials></Socials>
+            </div>
+            <p>info@codefounders.nl</p>
+            <p>088 - 88 8888 88</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Privacybeleid - Gebruiksvoorwaarden - Disclaimer - © 2021 codefounders.nl | Webdesign: Myrthekoppelaar.nl | All Rights Reserved</p>
+    </div>
+</body>
+</html>
