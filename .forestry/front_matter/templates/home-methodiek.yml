@@ -1,4 +1,32 @@
 ---
 label: Home - Methodiek
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title of methodiek section
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description of methodiek section
+- name: button_text
+  type: text
+  config:
+    required: false
+  label: Button Text
+  description: Text of the navigation button
+- name: button_navigation
+  type: text
+  config:
+    required: false
+  label: Button Navigation
+  description: Where to navigate to by clicking the button, e.g. /diensten or ./contact
