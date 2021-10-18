@@ -104,7 +104,12 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                 {founders.slice(0, 4).map(founder => (
                     <div class="founder">
                         <img alt="founder" src={founder.photo} />
-                        <h2>{founder.name}</h2>
+                        <h2>
+                            <span class="text-bg-black">Code.
+                                <span style="color: var(--color-primary-green);">Founder</span>
+                                _{founder.name}
+                            </span>
+                        </h2>
                         <p>{founder.description}</p>
                         <a href="./team">Lees meer reviews</a>
                     </div>
