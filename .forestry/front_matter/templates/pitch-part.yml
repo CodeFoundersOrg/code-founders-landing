@@ -1,4 +1,20 @@
 ---
 label: Pitch Part
-hide_body: false
-fields: []
+hide_body: true
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Heading of the pitch part
+- name: pitch_part_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Pitch part description
+  description: Pitch part description
