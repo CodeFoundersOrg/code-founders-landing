@@ -1,4 +1,27 @@
 ---
 label: Intro
 hide_body: true
-fields: []
+fields:
+- name: slogan
+  type: text
+  config:
+    required: false
+  label: Slogan
+  description: 'Wrap into &lt;span <em>style</em>="color: var(--color-primary-green);"&gt;&lt;/span&gt;
+    if you want part of the slogan in green.'
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Intro description
+- name: button_text
+  type: text
+  config:
+    required: false
+  label: Button text
+  description: Text of the action button
