@@ -1,0 +1,12 @@
+---
+label: Pitch - Title
+hide_body: true
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Heading of the pitch section
+pages:
+- src/content/home/pitch/0-title.md

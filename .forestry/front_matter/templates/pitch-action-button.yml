@@ -1,0 +1,19 @@
+---
+label: Pitch Action Button
+hide_body: true
+fields:
+- name: pitch-button_text
+  type: text
+  config:
+    required: false
+  label: Pitch - Button text
+  description: Text inside the button in the pitch section
+- name: pitch-button_navigation
+  type: text
+  config:
+    required: false
+  label: Pitch - Button Navigation
+  description: Where to navigate to from the pitch action button, e.g. /diensten or
+    /contact
+pages:
+- src/content/home/pitch/4-button.md
