@@ -18,3 +18,5 @@ fields:
       format: markdown
   label: Pitch part description
   description: Pitch part description
+pages:
+- src/content/home/pitch/1-fouten.md
