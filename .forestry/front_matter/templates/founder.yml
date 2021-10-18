@@ -27,3 +27,4 @@ fields:
   description: Photo of the founder
 pages:
 - src/content/founders/1-Eddy.md
+- src/content/founders/2-Sander.md
