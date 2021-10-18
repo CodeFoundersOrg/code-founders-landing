@@ -12,6 +12,8 @@ description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cil
   officia deserunt mollit anim id est laborum. veritatis et quasi architecto beatae
   vitae dicta ss'
 button_navigation: "/contact"
+heading: '<span class="text-bg-black"><span style="color: var(--color-primary-green);">De   effectiefste
+  didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>'
 
 ---
 ## <span class="text-bg-black"><span style="color: var(--color-primary-green);">De effectiefste didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>
