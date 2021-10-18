@@ -14,8 +14,8 @@ sections:
   label: Home Content
   create: all
   match: "**/*.md"
-upload_dir: assets
-public_path: "/public"
+upload_dir: public/assets
+public_path: "/assets"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

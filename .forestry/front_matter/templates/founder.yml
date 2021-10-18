@@ -19,3 +19,11 @@ fields:
       format: markdown
   label: Description
   description: Description of this founder.
+- name: photo
+  type: file
+  config:
+    maxSize: 64
+  label: Photo
+  description: Photo of the founder
+pages:
+- src/content/founders/1-Eddy.md
