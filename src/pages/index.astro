@@ -18,7 +18,6 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
 
 const mds = Astro.fetchContent('../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
-console.log(founders[0]);
 const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
 const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
 ---

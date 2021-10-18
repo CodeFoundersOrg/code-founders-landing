@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: directory
   path: src/content/founders
@@ -24,7 +24,7 @@ build:
   - DEPLOY_PREVIEW=true
   preview_output_directory: dist
   install_dependencies_command: npm install
-  preview_docker_image: forestryio/node:12
+  preview_docker_image: node:16-alpine
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run build:watch
