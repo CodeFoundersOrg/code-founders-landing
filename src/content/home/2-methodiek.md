@@ -1,6 +1,5 @@
 ---
-title: '<span class="text-bg-black"><span style="color: var(--color-primary-green);">De
-  effectiefste didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>'
+title: 2-methodiek.md
 button_text: Boek een studie
 description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
   dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing
