@@ -74,12 +74,15 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                 <div class="content-container">
                     <div class="content">
                         <div class="flex-content">
-                            {pitch[0].astro.html}
+                            <h2>{pitch[0].heading}</h2>
                             <div class="flex-paragraphs">
-                                {pitch.slice(1, pitch.length - 1).map(part => <div>{part.astro.html}</div>)}
+                                {pitch.slice(1, pitch.length - 1).map(part => <div>
+                                    <h3>{part.heading}</h3>
+                                    <p>{part.pitch_part_description}</p>
+                                </div>)}
                             </div>
                         </div>
-                        {pitch[pitch.length - 1].astro.html}
+                        <a href={pitch[pitch.length - 1]['pitch-button_navigation']}>{pitch[pitch.length - 1]['pitch-button_text']}</a>
                     </div>
                 </div>
             </section>
@@ -87,7 +90,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
         <section id="methodiek">
             <div class="img-laptop"></div>
             <div class="content">
-                <h2>{content[1].title}</h2>
+                <h2>{content[1].heading}</h2>
                 <p>{content[1].description}</p>
                 <a href={content[1].button_navigation}>{content[1].button_text}</a>
             </div>
@@ -112,9 +115,8 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                     <div class="founder">
                         <img alt="founder" src={founder.photo} />
                         <h2>
-                            <span class="text-bg-black">Code.
-                                <span style="color: var(--color-primary-green);">Founder</span>
-                                _{founder.name}
+                            <span class="text-bg-black">
+                                Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}
                             </span>
                         </h2>
                         <p>{founder.description}</p>
@@ -128,9 +130,9 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
     </main>
     <footer>
         <div class="socials-container-mobile">
-            <img alt="linkedin" rel="noopener" target="_blank" src="/assets/images/socials/li.png" />
-            <img alt="twitter" rel="noopener" target="_blank" src="/assets/images/socials/tw.png" />
-            <img alt="facebook" rel="noopener" target="_blank" src="/assets/images/socials/fb.png" />
+            <a href="#" rel="noopener" target="_blank"><img alt="linkedin" src="/assets/images/socials/li.png" /></a>
+            <a href="#" rel="noopener" target="_blank"><img alt="twitter" src="/assets/images/socials/tw.png" /></a>
+            <a href="#" rel="noopener" target="_blank"><img alt="facebook" src="/assets/images/socials/fb.png" /></a>
         </div>
         <div class="reference-links">
             <a href="/contact">Wordt een Code.Founder_</a>

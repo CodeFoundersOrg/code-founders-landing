@@ -94,6 +94,16 @@ h3 {
   border: none;
 }
 
+.content a:hover,
+.founder a:hover {
+  background-color: var(--color-primary-green);
+}
+
+.content a:focus,
+.founder a:focus {
+  box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+}
+
 .purple-bg {
   position: relative;
   background-color: var(--color-primary-black);
@@ -261,13 +271,6 @@ h3 {
     gap: 4rem;
   }
 
-  #opsomming button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
   #opsomming h2 {
     margin: 0;
     flex-shrink: 0.8;
@@ -340,10 +343,6 @@ h3 {
   transform: translateX(-50%);
   color: white;
   z-index: 1;
-}
-
-#methodiek button {
-  bottom: -20px;
 }
 
 @media (min-width: 1201px) {
@@ -648,9 +647,13 @@ footer {
     margin-bottom: 1.5rem;
   }
 
+  .socials-container-desktop .logo {
+    margin-bottom: 3rem;
+    display: block;
+  }
+
   .socials-container-desktop .logo img {
     width: 400px;
-    margin-bottom: 3rem;
   }
 
   .socials {
@@ -668,5 +671,9 @@ footer {
     font-family: Helvetica Neue, sans-serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  .copyright p {
+    padding: 0;
   }
 }
