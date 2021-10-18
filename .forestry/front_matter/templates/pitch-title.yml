@@ -8,3 +8,5 @@ fields:
     required: false
   label: Heading
   description: Heading of the pitch section
+pages:
+- src/content/home/pitch/0-title.md
