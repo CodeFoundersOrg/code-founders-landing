@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:watch": "npm run build && chokidar \"{src,public}/**/*\" -c \"npm run build\"",
     "build:preview": "DEPLOY_PREVIEW=true npm run build",
     "build:start": "npm run build && cd dist && http-server -o -c-1",
     "build:start:preview": "npm run build:preview && cd dist && http-server -o -c-1",
@@ -18,6 +19,7 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
+    "chokidar-cli": "^3.0.0",
     "lit": "^2.0.0-rc.3"
   },
   "prettier": {
