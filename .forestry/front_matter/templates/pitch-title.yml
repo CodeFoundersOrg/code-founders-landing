@@ -1,4 +1,10 @@
 ---
 label: Pitch - Title
 hide_body: false
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Heading of the pitch section
