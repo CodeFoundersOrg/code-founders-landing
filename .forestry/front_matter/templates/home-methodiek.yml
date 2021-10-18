@@ -2,11 +2,11 @@
 label: Home - Methodiek
 hide_body: true
 fields:
-- name: title
+- name: heading
   type: text
   config:
     required: false
-  label: Title
+  label: Heading
   description: Title of methodiek section
 - name: description
   type: textarea
