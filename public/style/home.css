@@ -384,7 +384,7 @@ h3 {
   padding-bottom: 12rem;
 }
 
-#founders .founder > *:not(h2, img) {
+#founders .founder > *:not(h2, img, a) {
   padding-right: 3.5rem;
   padding-left: 3.5rem;
 }

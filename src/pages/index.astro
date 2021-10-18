@@ -18,6 +18,7 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
 
 const mds = Astro.fetchContent('../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
+console.log(founders[0]);
 const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
 const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
 ---
@@ -101,7 +102,10 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
             </div>
             <div class="founders">
                 {founders.slice(0, 4).map(founder => (
-                    <div class="founder">{founder.astro.html}</div>
+                    <div class="founder">
+                        {founder.astro.html}
+                        <a href="./team">Lees meer reviews</a>
+                    </div>
                 ))}
             </div>
         </section>
