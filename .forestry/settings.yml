@@ -22,9 +22,9 @@ file_template: ":filename:"
 build:
   preview_env:
   - DEPLOY_PREVIEW=true
-  preview_output_directory: dist
+  preview_output_directory: "/srv"
   install_dependencies_command: npm install
   preview_docker_image: node:16-alpine
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run build:preview
+  instant_preview_command: npm run dev
