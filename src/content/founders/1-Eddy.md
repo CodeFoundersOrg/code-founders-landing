@@ -12,5 +12,6 @@ technologies:
 socials:
 - social: Twitter
   link: https://twitter.com/jorenbroekema
+order: 1
 
 ---
