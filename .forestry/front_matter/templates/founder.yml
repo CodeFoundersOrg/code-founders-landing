@@ -83,6 +83,17 @@ fields:
   label: Socials
   description: Social medias of the teacher:<br>- LinkedIn<br>- Facebook<br>- Twitter<br>-
     YouTube
+- name: order
+  type: number
+  label: Order
+  description: Founders are ordered. For mobile, only the first one is shown on home
+    page. For desktop only first three are shown. On the Teams page, everyone is shown.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - src/content/founders/1-Eddy.md
 - src/content/founders/2-Sander.md
