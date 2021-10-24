@@ -5,12 +5,10 @@ description: Wow wat een stel toffe peren. Vooral Felix, die is pas écht aardig
   anim id est laborum.
 photo: "/assets/images/portraits/eddy.jpg"
 technologies:
-- technology:
-    logo: javascript
-    name: JavaScript
-- technology:
-    logo: php
-    name: PHP
+- logo: javascript
+  name: JavaScript
+- logo: php
+  name: PHP
 socials:
 - social: Twitter
   link: https://twitter.com/jorenbroekema
