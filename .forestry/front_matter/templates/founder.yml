@@ -37,7 +37,7 @@ fields:
       title="https://github.com/PKief/vscode-material-icon-theme/tree/main/icons"
       target="_blank">https://github.com/PKief/vscode-material-icon-theme/tree/main/icons</a>
       . Make sure to omit ".svg" extension. So if you want Javascript, the right value
-      is "js"
+      is "javascript"
   - name: name
     type: text
     config:
