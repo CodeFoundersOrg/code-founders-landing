@@ -2,7 +2,11 @@
 import BaseLayout from '../layouts/base.astro'
 import Founder from '../components/founder.astro';
 
-const founders = Astro.fetchContent('../content/founders/**/*.md')
+const founders = Astro.fetchContent('../content/founders/**/*.md').sort((a,b) => {
+  const orderA = a.order || 9999;
+  const orderB = b.order || 9999;
+  return orderA - orderB;
+});
 ---
 <style>
   h1 {
