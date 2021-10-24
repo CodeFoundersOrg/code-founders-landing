@@ -56,6 +56,39 @@ fields:
     labelField: 
   label: Technologies
   description: List of technologies this person can give trainings in
+- name: socials
+  type: field_group_list
+  fields:
+  - name: social
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - LinkedIn
+      - Facebook
+      - Twitter
+      - YouTube
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Social
+    description: Social media platform of choice
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: Link to your profile/channel
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Socials
+  description: Social medias of the teacher:<br>- LinkedIn<br>- Facebook<br>- Twitter<br>-
+    YouTube
 pages:
 - src/content/founders/1-Eddy.md
 - src/content/founders/2-Sander.md
