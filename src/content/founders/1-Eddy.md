@@ -11,5 +11,8 @@ technologies:
 - technology:
     logo: php
     name: PHP
+socials:
+- social: Twitter
+  link: https://twitter.com/jorenbroekema
 
 ---
