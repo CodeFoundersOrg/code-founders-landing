@@ -1,5 +1,5 @@
 ---
-name: 4-Joren
+name: Joren
 description: Als frontend expert en DevOps & Backend hobbyist, heeft Joren met zijn
   brede kennis de mogelijkheid om mensen de "big picture" van moderne applicaties
   te leren.
