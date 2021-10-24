@@ -114,7 +114,8 @@ const { founder, simple } = Astro.props;
   {simple ? '' :
     <div class="socials">
       {founder.socials?.map(social =>
-        <a class="social-img" aria-label={`${social.social} link`} href={social.link} target="_blank" rel="noopener"><img src={`/assets/images/socials/${social.social.toLowerCase()}.png`} />
+        <a class="social-img" aria-label={`${social.social} link`} href={social.link} target="_blank" rel="noopener">
+          <img alt={`${social.social} logo`} src={`/assets/images/socials/${social.social.toLowerCase()}.png`} />
         </a>
       )}
     </div>
@@ -128,7 +129,7 @@ const { founder, simple } = Astro.props;
         <div class="technologies">
           {founder.technologies.map(tech =>
             <div class="technology">
-              <img src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} />
+              <img alt={`${tech.name} logo`} src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} />
               <span>{tech.name}</span>
             </div>
           )}
