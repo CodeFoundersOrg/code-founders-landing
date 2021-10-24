@@ -9,5 +9,7 @@ technologies:
   name: JavaScript
 - logo: php
   name: PHP
+socials: []
+order: 3
 
 ---
