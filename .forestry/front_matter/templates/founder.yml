@@ -24,6 +24,38 @@ fields:
     maxSize: 64
   label: Photo
   description: Photo of the founder
+- name: technologies
+  type: field_group_list
+  fields:
+  - name: technology
+    type: field_group
+    config: {}
+    fields:
+    - name: logo
+      type: text
+      config:
+        required: false
+      label: Logo
+      description: For now we use material icon theme, so please pick from this list
+        <a href="https://github.com/PKief/vscode-material-icon-theme/tree/main/icons"
+        title="https://github.com/PKief/vscode-material-icon-theme/tree/main/icons"
+        target="_blank">https://github.com/PKief/vscode-material-icon-theme/tree/main/icons</a>
+        . Make sure to omit ".svg" extension. So if you want Javascript, the right
+        value is "js"
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+      description: Name of the Technology, for example "JavaScript"
+    label: Technology
+    description: Technology teacher can teach in
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Technologies
+  description: List of technologies this person can give trainings in
 pages:
 - src/content/founders/1-Eddy.md
 - src/content/founders/2-Sander.md
