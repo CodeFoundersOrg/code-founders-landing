@@ -13,6 +13,8 @@
   --color-primary-black: #000000;
   --color-primary-blue: #166db9;
   --color-text: #fff;
+  --content-width: 1200px;
+  --page-max-width: 1600px;
 }
 
 html,
@@ -29,6 +31,65 @@ h5,
 h6 {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
+}
+
+header {
+  background-color: #151a17;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.header-container {
+  max-width: var(--content-width);
+  display: flex;
+  padding: 1.5rem 1.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.hamburger {
+  height: 15px;
+}
+
+.hamburger-icon {
+  height: 0;
+  width: 22px;
+  box-shadow: 0 0 0 1.5px white, 0 7px 0 1.5px white, 0 14px 0 1.5px white;
+}
+
+.header-logo img {
+  display: block;
+  width: 200px;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .nav-desktop ul {
+    font-family: Helvetica Neue, sans-serif;
+    display: flex;
+    padding: 0;
+    gap: 10rem;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .nav-desktop a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 main {

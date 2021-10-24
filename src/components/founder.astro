@@ -1,93 +1,137 @@
 ---
-const { founder } = Astro.props;
+import LinkButton from './link-button.astro';
+const { founder, simple } = Astro.props;
 ---
 <style>
-  .founder > *:not(h2, img, a) {
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+.founder > *:not(h2, img, a) {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  position: relative;
+  background-color: #151a17;
+  padding-bottom: 20px;
+}
+
+.founder__photo {
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.name {
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.description {
+  flex-grow: 1;
+  margin-top: 1rem;
+}
+
+.trains {
+  font-family: Helvetica Neue, sans-serif;
+  margin: 1.5rem 0 0 0;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  font-family: Helvetica Neueu, sans-serif;
+}
+
+.technology img {
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+.socials {
+  margin: 1rem auto 0 auto;
+}
+
+.social-img img {
+  display: block;
+  width: 28px;
+}
+
+.reviews {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 1201px) {
+  .founder {
+    width: 400px;
+  }
+
+  .founder.simple {
+    padding-bottom: 50px;
   }
 
   .founder__photo {
-    display: block;
-    width: 100%;
-    height: 350px;
-    max-width: 500px;
-    margin: 0 auto;
-    object-fit: cover;
+    height: 250px;
   }
 
-  h2 {
+  .founder p:last-child {
     text-align: center;
-    margin-top: -2rem;
-    font-size: 2rem;
-    padding: 0 1rem;
   }
-
-  .technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .technology {
-    display: flex;
-    align-items: center;
-    gap: .25rem;
-    font-family: Helvetica Neueu, sans-serif;
-  }
-
-  .technology img {
-    width: 20px;
-    padding-bottom: 3px;
-  }
-
-  .reviews {
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    z-index: 1;
-  }
-
-  @media (min-width: 1201px) {
-    .founder {
-      background-color: #151a17;
-      width: 400px;
-      position: relative;
-      padding-bottom: 50px;
-    }
-
-    .founder__photo {
-      height: 250px;
-    }
-
-    .founder p:last-child {
-      text-align: center;
-    }
-  }
+}
 </style>
-<div class="founder">
+<div class={`founder ${simple ? 'simple' : ''}`}>
   <img class="founder__photo" alt="founder" src={founder.photo} />
-  <h2>
+  <h2 class="name">
       <span class="text-bg-black">
           Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}
       </span>
   </h2>
-  <p>{founder.description}</p>
-  {founder.simple ? '' :
-    <Fragment>
-    <div class="technologies">
-      {founder.technologies.map(tech =>
-        <div class="technology">
-          <img src={`https://unpkg.com/material-icon-theme/icons/${tech.technology.logo}.svg`} />
-          <span>{tech.technology.name}</span>
-        </div>
+  {simple ? '' :
+    <div class="socials">
+      {founder.socials?.map(social =>
+        <a class="social-img" aria-label={`${social.social} link`} href={social.link} target="_blank" rel="noopener"><img src={`/assets/images/socials/${social.social.toLowerCase()}.png`} />
+        </a>
       )}
     </div>
-    <div class="socials"></div>
-    </Fragment>
   }
-  {founder.simple ? '': <a class="reviews" href="./team">Lees meer reviews</a>}
+  <p class="description">{founder.description}</p>
+  {simple ? '' :
+    <Fragment>
+      {founder.technologies.length > 0 ?
+        <Fragment>
+        <p class="trains">Trains in:</p>
+        <div class="technologies">
+          {founder.technologies.map(tech =>
+            <div class="technology">
+              <img src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} />
+              <span>{tech.name}</span>
+            </div>
+          )}
+        </div>
+        </Fragment>
+      : ''}
+      </Fragment>
+  }
+  {simple ? <LinkButton class={"reviews"} href={'./team'} label={'Lees meer reviews'}></LinkButton> : ''}
 </div>

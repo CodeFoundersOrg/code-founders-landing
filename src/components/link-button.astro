@@ -1,0 +1,17 @@
+---
+const {href, label, external, class: klass} = Astro.props;
+---
+<style>
+a {
+  font-family: Helvetica Neue, sans-serif;
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+  background-color: var(--color-secondary-green);
+  padding: 0.75rem 1.25rem;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+}
+</style>
+<a class={klass} href={href} {...(external && 'rel="noopener" target="_blank"')}>{label}</a>

@@ -1,9 +1,54 @@
 ---
-// import * as path from 'node:path';
 import BaseLayout from '../layouts/base.astro'
+import Founder from '../components/founder.astro';
 
-// const mds = Astro.fetchContent('../content/**/*.md');
+const founders = Astro.fetchContent('../content/founders/**/*.md')
 ---
-<BaseLayout>
+<style>
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 10rem 0;
+  }
 
+  .team::before {
+    content: '';
+    position: absolute;
+    width: min(100%, 1600px);
+    height: 550px;
+    border-radius: 50%;
+    bottom: 100px;
+    opacity: 0.6;
+    background: linear-gradient( var(--color-primary-green) 50%, var(--color-primary-blue) 50% );
+    filter: blur(225px);
+    left: 33%;
+  }
+
+  .relative-wrapper {
+    position: relative;
+  }
+
+  .founders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 1rem;
+    max-width: var(--page-max-width);
+    margin: 0 auto 10rem auto;
+  }
+</style>
+<BaseLayout>
+<div class="team">
+
+<div class="relative-wrapper">
+  <h1>Ons Team<span style="color: var(--color-primary-green);">.</span></h1>
+</div>
+<div class="founders">
+    {founders.map(founder => (
+        <Founder founder={founder} />
+    ))}
+</div>
+</div>
 </BaseLayout>

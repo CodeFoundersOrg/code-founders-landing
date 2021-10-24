@@ -1,5 +1,5 @@
 ---
-import Socials from '../components/socials.astro'
+import Footer from '../components/footer.astro';
 let title = 'Code.Founders_';
 
 // Create timestamp for deploy previews to show when last built/updated
@@ -56,29 +56,7 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
     <main>
     <slot />
     </main>
-    <footer>
-        <div class="socials-container-mobile">
-            <Socials></Socials>
-        </div>
-        <div class="reference-links">
-            <a href="/contact">Wordt een Code.Founder_</a>
-            <a href="/team">Bekijk je docenten</a>
-            <a href="/contact">Stel je vraag</a>
-            <a href="/contact">Samenwerken</a>
-        </div>
-        <a href="/" class="footer-logo-mobile">
-            <img alt="codefounders logo" src="/assets/images/logo/mark-green.jpg" />
-        </a>
-        <div class="socials-container-desktop">
-            <a class="logo" href="/"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
-
-            <div class="socials">
-                <Socials></Socials>
-            </div>
-            <p>info@codefounders.nl</p>
-            <p>088 - 88 8888 88</p>
-        </div>
-    </footer>
+    <Footer></Footer>
     <div class="copyright">
         <p>Privacybeleid - Gebruiksvoorwaarden - Disclaimer - © 2021 codefounders.nl | Webdesign: Myrthekoppelaar.nl | All Rights Reserved</p>
     </div>

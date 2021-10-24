@@ -2,6 +2,7 @@
 import * as path from 'node:path';
 import BaseLayout from '../layouts/base.astro';
 import Founder from '../components/founder.astro';
+import LinkButton from '../components/link-button.astro';
 
 const mds = Astro.fetchContent('../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders'));
@@ -15,7 +16,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                 <div class="content">
                     <h2>{content[0].slogan}</h2>
                     <p>{content[0].description}</p>
-                    <a href={content[0].button_navigation}>{content[0].button_text}</a>
+                    <LinkButton href={content[0].button_navigation} label={content[0].button_text}></LinkButton>
                 </div>
             </div>
         </section>
@@ -32,7 +33,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                             </div>)}
                         </div>
                     </div>
-                    <a href={pitch[pitch.length - 1]['pitch-button_navigation']}>{pitch[pitch.length - 1]['pitch-button_text']}</a>
+                    <LinkButton href={pitch[pitch.length - 1]['pitch-button_navigation']} label={pitch[pitch.length - 1]['pitch-button_text']}></LinkButton>
                 </div>
             </div>
         </section>
@@ -42,6 +43,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
         <div class="content">
             <h2>{content[1].heading}</h2>
             <p>{content[1].description}</p>
+            <LinkButton href={content[1].button_navigation} label={content[1].button_text}></LinkButton>
             <a href={content[1].button_navigation}>{content[1].button_text}</a>
         </div>
     </section>

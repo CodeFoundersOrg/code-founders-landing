@@ -1,0 +1,132 @@
+---
+import Socials from '../components/socials.astro';
+---
+<style>
+footer {
+  background-color: var(--color-primary-black);
+  position: relative;
+  padding: 5rem 0;
+}
+
+.wrapper {
+
+}
+
+.reference-links {
+  font-family: Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  gap: 1.5rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.reference-links a {
+  color: var(--color-text);
+}
+
+.footer-logo-mobile {
+  display: block;
+  position: relative;
+  margin: 5rem auto;
+  width: max-content;
+}
+
+.footer-logo-mobile img {
+  width: 100px;
+}
+
+.footer-logo-mobile::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 50%;
+  bottom: -8px;
+  right: 0;
+  background-color: white;
+}
+
+.socials-container-desktop {
+  display: none;
+}
+
+.socials-container-mobile {
+  display: flex;
+  position: absolute;
+  gap: 1.5rem;
+  margin-top: -1.5rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1201px) {
+  .wrapper {
+    display: flex;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .socials-container-mobile {
+    display: none;
+  }
+  .footer-logo-mobile {
+    display: none;
+  }
+  .socials-container-desktop {
+    display: block;
+    color: white;
+    text-align: right;
+  }
+  .reference-links {
+    text-align: left;
+  }
+  .reference-links a {
+    margin-bottom: 1.5rem;
+  }
+
+  .socials-container-desktop .logo {
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  .socials-container-desktop .logo img {
+    width: 400px;
+  }
+
+  .socials-container-mobile img {
+    width: 50px;
+  }
+
+  .socials-container-desktop p {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+</style>
+<footer>
+  <div class="wrapper">
+    <div class="socials-container-mobile">
+        <Socials></Socials>
+    </div>
+    <div class="reference-links">
+        <a href="/contact">Wordt een Code.Founder_</a>
+        <a href="/team">Bekijk je docenten</a>
+        <a href="/contact">Stel je vraag</a>
+        <a href="/contact">Samenwerken</a>
+    </div>
+    <a href="/" class="footer-logo-mobile">
+        <img alt="codefounders logo" src="/assets/images/logo/mark-green.jpg" />
+    </a>
+    <div class="socials-container-desktop">
+        <a class="logo" href="/"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
+
+
+        <Socials></Socials>
+        <p>info@codefounders.nl</p>
+        <p>088 - 88 8888 88</p>
+    </div>
+  </div>
+</footer>
