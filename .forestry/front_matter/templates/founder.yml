@@ -5,7 +5,7 @@ fields:
 - name: name
   type: text
   config:
-    required: false
+    required: true
   label: Name
   description: Name of the founder.
 - name: description
