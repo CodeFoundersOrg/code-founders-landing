@@ -6,7 +6,10 @@ description: Wow wat een stel toffe peren. Vooral Felix, die is pas écht aardig
 photo: "/assets/images/portraits/eddy.jpg"
 technologies:
 - technology:
-    logo: js
-    name: JavaScript
+    logo: ''
+    name: ''
+- technology:
+    logo: php
+    name: PHP
 
 ---
