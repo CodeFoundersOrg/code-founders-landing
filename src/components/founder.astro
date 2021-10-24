@@ -1,0 +1,93 @@
+---
+const { founder } = Astro.props;
+---
+<style>
+  .founder > *:not(h2, img, a) {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+  }
+
+  .founder__photo {
+    display: block;
+    width: 100%;
+    height: 350px;
+    max-width: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .technology {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-family: Helvetica Neueu, sans-serif;
+  }
+
+  .technology img {
+    width: 20px;
+    padding-bottom: 3px;
+  }
+
+  .reviews {
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 1;
+  }
+
+  @media (min-width: 1201px) {
+    .founder {
+      background-color: #151a17;
+      width: 400px;
+      position: relative;
+      padding-bottom: 50px;
+    }
+
+    .founder__photo {
+      height: 250px;
+    }
+
+    .founder p:last-child {
+      text-align: center;
+    }
+  }
+</style>
+<div class="founder">
+  <img class="founder__photo" alt="founder" src={founder.photo} />
+  <h2>
+      <span class="text-bg-black">
+          Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}
+      </span>
+  </h2>
+  <p>{founder.description}</p>
+  {founder.simple ? '' :
+    <Fragment>
+    <div class="technologies">
+      {founder.technologies.map(tech =>
+        <div class="technology">
+          <img src={`https://unpkg.com/material-icon-theme/icons/${tech.technology.logo}.svg`} />
+          <span>{tech.technology.name}</span>
+        </div>
+      )}
+    </div>
+    <div class="socials"></div>
+    </Fragment>
+  }
+  {founder.simple ? '': <a class="reviews" href="./team">Lees meer reviews</a>}
+</div>
