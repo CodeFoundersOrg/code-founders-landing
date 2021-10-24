@@ -95,6 +95,6 @@ fields:
     max: 
     step: 
 pages:
-- src/content/founders/2-Sander.md
 - src/content/founders/Eddy.md
+- src/content/founders/Sander.md
 - src/content/founders/Zoe.md
