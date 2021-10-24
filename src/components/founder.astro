@@ -23,6 +23,7 @@ const { founder, simple } = Astro.props;
   height: 350px;
   margin: 0 auto;
   object-fit: cover;
+  object-position: top;
 }
 
 .name {
@@ -46,7 +47,8 @@ const { founder, simple } = Astro.props;
 .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 0;
 }
 
 .technology {
@@ -62,6 +64,8 @@ const { founder, simple } = Astro.props;
 }
 
 .socials {
+  display: flex;
+  gap: 1rem;
   margin: 1rem auto 0 auto;
 }
 
