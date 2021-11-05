@@ -1,9 +1,11 @@
 ---
-order: 0
+order: -1
 name: Arjan
-description: Managing Partner
+description: ''
 photo: "/assets/foto-arjan.jpg"
-technologies: []
+technologies:
+- logo: ''
+  name: ''
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/arjanwiegerinck/
