@@ -95,6 +95,7 @@ fields:
     max: 
     step: 
 pages:
+- src/content/founders/Arjan Wiegerinck.md
 - src/content/founders/Eddy.md
 - src/content/founders/Felix.md
 - src/content/founders/Joren.md
