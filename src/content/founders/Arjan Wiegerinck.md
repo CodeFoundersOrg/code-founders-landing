@@ -1,5 +1,5 @@
 ---
-order: -1
+order: -2
 name: Arjan
 description: ''
 photo: "/assets/foto-arjan.jpg"
