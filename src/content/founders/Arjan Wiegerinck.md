@@ -1,6 +1,6 @@
 ---
 order: 0
-name: Arjan Wiegerinck
+name: Arjan
 description: Managing Partner
 photo: "/assets/foto-arjan.jpg"
 technologies: []
