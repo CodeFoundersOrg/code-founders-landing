@@ -11,7 +11,7 @@ const { founder, simple } = Astro.props;
 .founder {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  width: 500px;
   position: relative;
   background-color: #151a17;
   padding-bottom: 20px;
@@ -129,7 +129,7 @@ const { founder, simple } = Astro.props;
         <div class="technologies">
           {founder.technologies.map(tech =>
             <div class="technology">
-              <img alt={`${tech.name} logo`} src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} />
+              {tech.logo ? <img alt={`${tech.name} logo`} src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} /> : ''}
               <span>{tech.name}</span>
             </div>
           )}
