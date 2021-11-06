@@ -1,12 +1,15 @@
 ---
+import * as path from 'node:path';
 import BaseLayout from '../layouts/base.astro'
 import Founder from '../components/founder.astro';
 
-const founders = Astro.fetchContent('../content/founders/**/*.md').sort((a,b) => {
+const content = Astro.fetchContent('../content/**/*.md');
+const founders = content.filter(md => path.dirname(md.file.pathname).endsWith('founders')).sort((a,b) => {
   const orderA = a.order || 9999;
   const orderB = b.order || 9999;
   return orderA - orderB;
 });
+const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('team'));
 ---
 <style>
   h1 {
@@ -52,7 +55,7 @@ const founders = Astro.fetchContent('../content/founders/**/*.md').sort((a,b) =>
 <div class="team">
 
 <div class="relative-wrapper">
-  <h1>Ons Team<span style="color: var(--color-primary-green);">.</span></h1>
+  <h1>{team.title}</h1>
 </div>
 <div class="founders">
     {founders.map(founder => (
