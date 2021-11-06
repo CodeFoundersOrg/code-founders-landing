@@ -5,7 +5,7 @@ fields:
 - name: slogan
   type: text
   config:
-    required: false
+    required: true
   label: Slogan
   description: 'Wrap into &lt;span <em>style</em>="color: var(--color-primary-green);"&gt;&lt;/span&gt;
     if you want part of the slogan in green.'
@@ -13,7 +13,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
@@ -22,13 +22,13 @@ fields:
 - name: button_text
   type: text
   config:
-    required: false
+    required: true
   label: Button text
   description: Text of the action button
 - name: button_navigation
   type: text
   config:
-    required: false
+    required: true
   label: Button Navigation
   description: Page to navigate to, for the action button. E.g. /diensten or /contact
 pages:
