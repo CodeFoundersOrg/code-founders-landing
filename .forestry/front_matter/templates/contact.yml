@@ -5,9 +5,15 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: textarea
   name: description
   label: description
+  config:
+    required: true
 - type: text
   name: email
   label: email
+  config:
+    required: true
