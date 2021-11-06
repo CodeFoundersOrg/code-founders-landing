@@ -5,14 +5,14 @@ fields:
 - name: heading
   type: text
   config:
-    required: false
+    required: true
   label: Heading
   description: Title of methodiek section
 - name: description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
@@ -21,13 +21,13 @@ fields:
 - name: button_text
   type: text
   config:
-    required: false
+    required: true
   label: Button Text
   description: Text of the navigation button
 - name: button_navigation
   type: text
   config:
-    required: false
+    required: true
   label: Button Navigation
   description: Where to navigate to by clicking the button, e.g. /diensten or ./contact
 pages:
