@@ -5,7 +5,7 @@ fields:
 - name: heading
   type: text
   config:
-    required: false
+    required: true
   label: Heading
   description: Heading of the pitch section
 pages:
