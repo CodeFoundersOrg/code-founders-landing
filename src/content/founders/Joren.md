@@ -4,7 +4,7 @@ name: Joren
 description: Als frontend expert en DevOps & Backend hobbyist, heeft Joren met zijn
   brede kennis de mogelijkheid om mensen de "big picture" van moderne applicaties
   te leren.
-photo: "/assets/pp.jpeg"
+photo: "/assets/me-cropped.jpg"
 technologies:
 - logo: javascript
   name: JavaScript
