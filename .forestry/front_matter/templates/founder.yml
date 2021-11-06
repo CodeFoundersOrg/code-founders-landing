@@ -57,7 +57,7 @@ fields:
     type: select
     default: ''
     config:
-      required: false
+      required: true
       options:
       - LinkedIn
       - Facebook
@@ -73,7 +73,7 @@ fields:
   - name: link
     type: text
     config:
-      required: false
+      required: true
     label: Link
     description: Link to your profile/channel
   config:
