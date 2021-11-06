@@ -38,9 +38,14 @@ const founders = Astro.fetchContent('../content/founders/**/*.md').sort((a,b) =>
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    padding: 0 1rem;
     max-width: var(--page-max-width);
     margin: 0 auto 10rem auto;
+  }
+
+  @media (min-width: 601px) {
+    .founders {
+      padding: 0 1rem;
+    }
   }
 </style>
 <BaseLayout>

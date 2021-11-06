@@ -1,9 +1,52 @@
 ---
-// import * as path from 'node:path';
 import BaseLayout from '../layouts/base.astro'
 
-// const mds = Astro.fetchContent('../content/**/*.md');
+const [contact] = Astro.fetchContent('../content/contact/contact.md');
 ---
-<BaseLayout>
+<style>
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 10rem 0;
+  }
 
+  .team::before {
+    content: '';
+    position: absolute;
+    width: min(100%, 1600px);
+    height: 550px;
+    border-radius: 50%;
+    bottom: 100px;
+    opacity: 0.6;
+    background: linear-gradient( var(--color-primary-purple) 50%, var(--color-primary-green) 50% );
+    filter: blur(225px);
+    left: 33%;
+  }
+
+  .relative-wrapper {
+    position: relative;
+  }
+  .contact {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+  .contact p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+</style>
+<BaseLayout>
+<div class="team">
+
+<div class="relative-wrapper">
+  <h1>{contact.title}</h1>
+  <div class="contact">
+    <p>{contact.description}</p>
+    <p>{contact.email}</p>
+  </div>
+</div>
+</div>
 </BaseLayout>

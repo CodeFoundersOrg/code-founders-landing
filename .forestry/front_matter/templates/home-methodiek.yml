@@ -29,6 +29,6 @@ fields:
   config:
     required: true
   label: Button Navigation
-  description: Where to navigate to by clicking the button, e.g. /diensten or ./contact
+  description: Where to navigate to by clicking the button, e.g. /diensten or /contact
 pages:
 - src/content/home/2-methodiek.md
