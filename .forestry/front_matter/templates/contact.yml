@@ -17,3 +17,5 @@ fields:
   label: Email
   config:
     required: true
+pages:
+- src/content/contact/contact.md
