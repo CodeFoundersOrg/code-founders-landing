@@ -5,14 +5,14 @@ fields:
 - name: heading
   type: text
   config:
-    required: false
+    required: true
   label: Heading
   description: Heading of the pitch part
 - name: pitch_part_description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
