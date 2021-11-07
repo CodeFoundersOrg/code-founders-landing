@@ -1,0 +1,6 @@
+:root {
+  --blur-top-from: var(--color-primary-blue);
+  --blur-top-to: var(--color-primary-purple);
+  --blur-bottom-from: transparent;
+  --blur-bottom-to: transparent;
+}

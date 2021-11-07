@@ -1,0 +1,55 @@
+---
+const { content } = Astro.props;
+---
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: var(--color-primary-grey);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .wrapper:hover {
+    transform: translateY(-5px);
+  }
+
+  .wrapper:hover .hero {
+    transform: scale(1.05);
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  .hero-wrapper {
+    overflow: hidden;
+  }
+
+  .hero {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .description {
+  }
+</style>
+<div class="wrapper">
+  <div class="hero-wrapper">
+    <img class="hero" alt={content.hero_alt} src={content.hero} />
+  </div>
+  <div class="content">
+    <h2 class="name">
+      {content.heading}
+    </h2>
+    <p class="description">{content.subtitle}</p>
+  </div>
+</div>
