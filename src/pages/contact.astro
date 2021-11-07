@@ -4,28 +4,24 @@ import BlurLayout from '../layouts/blur.astro'
 const [contact] = Astro.fetchContent('../content/contact/contact.md');
 ---
 <style>
-  h1 {
+  .contact p {
+    font-size: 1rem;
     text-align: center;
-    font-size: 5rem;
-    line-height: 5rem;
-    padding: 10rem 0;
-  }
-  .contact {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-align: center;
-    max-width: 60ch;
     margin: 0 auto;
   }
   .contact p:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  @media (min-width: 601px) {
+    .contact p {
+      font-size: 1.5rem;
+    }
+  }
 </style>
 <link rel="stylesheet" href="/style/contact.css" />
-<BlurLayout>
-<h1>{contact.heading}</h1>
+<BlurLayout subtitle={contact.description} heading={contact.heading}>
 <div class="contact">
-  <p>{contact.description}</p>
   <p>{contact.email}</p>
 </div>
 </BlurLayout>

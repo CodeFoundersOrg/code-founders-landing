@@ -3,7 +3,7 @@ import LinkButton from './link-button.astro';
 const { founder, simple } = Astro.props;
 ---
 <style>
-.founder > *:not(h2, img, a) {
+.founder > *:not(h2, .founder__photowrapper, a) {
   padding-right: 3.5rem;
   padding-left: 3.5rem;
 }
@@ -11,18 +11,21 @@ const { founder, simple } = Astro.props;
 .founder {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: min(400px, 100%);
   position: relative;
   background-color: var(--color-primary-grey);
   padding-bottom: 20px;
 }
 
+.founder__photowrapper {
+  height: 300px;
+}
+
 .founder__photo {
   display: block;
   width: 100%;
-  margin: 0 auto;
+  height: 300px;
   object-fit: cover;
-  aspect-ratio: 4 / 3;
 }
 
 .name {
@@ -86,10 +89,6 @@ const { founder, simple } = Astro.props;
 }
 
 @media (min-width: 1201px) {
-  .founder {
-    width: 400px;
-  }
-
   .founder.simple {
     padding-bottom: 50px;
   }
@@ -100,7 +99,9 @@ const { founder, simple } = Astro.props;
 }
 </style>
 <div class={`founder ${simple ? 'simple' : ''}`}>
-  <img class="founder__photo" alt="founder" src={founder.photo} />
+  <div class="founder__photowrapper">
+    <img class="founder__photo" alt="founder" src={founder.photo} />
+  </div>
   <h2 class="name">
       <span class="text-bg-black">
           Code.<span style="color: var(--color-primary-green);">Founder</span>_{founder.name}

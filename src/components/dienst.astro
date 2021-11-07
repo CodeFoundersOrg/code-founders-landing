@@ -5,7 +5,7 @@ const { content } = Astro.props;
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
     background-color: var(--color-primary-grey);
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -30,7 +30,7 @@ const { content } = Astro.props;
   .hero {
     object-fit: cover;
     aspect-ratio: 16 / 9;
-    width: 100%;
+    max-width: 100%;
     display: block;
     transition: transform 0.3s ease-in-out;
   }

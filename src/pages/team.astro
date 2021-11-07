@@ -12,13 +12,6 @@ const founders = content.filter(md => path.dirname(md.file.pathname).endsWith('f
 const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('team'));
 ---
 <style>
-  h1 {
-    text-align: center;
-    font-size: 5rem;
-    line-height: 5rem;
-    padding: 10rem 0;
-  }
-
   .team {
     position: relative;
     z-index: 1;
@@ -47,7 +40,7 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
     justify-content: center;
     gap: 5rem;
     max-width: var(--page-max-width);
-    margin: 0 auto 10rem auto;
+    margin: 5rem auto 10rem auto;
   }
 
   @media (min-width: 601px) {
@@ -57,8 +50,7 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
   }
 </style>
 <link rel="stylesheet" href="/style/team.css" />
-<BlurLayout>
-<h1>{team.heading}</h1>
+<BlurLayout heading={team.heading}>
 <div class="founders">
   {founders.map(founder => (
     <Founder founder={founder} />

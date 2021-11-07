@@ -335,8 +335,9 @@ h3 {
   #founders .founders {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
+    gap: 5rem;
     margin-top: 15rem;
     padding: 0 5rem;
   }
