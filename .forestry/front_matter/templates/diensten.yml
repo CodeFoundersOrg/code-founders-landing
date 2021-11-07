@@ -1,4 +1,16 @@
 ---
 label: Diensten
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: true
+  label: Heading
+  description: Heading text of the Diensten page
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: Subtitel van de diensten pagina
