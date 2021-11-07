@@ -362,7 +362,7 @@ h3 {
     width: min(100%, 1600px);
     height: 700px;
     border-radius: 50%;
-    bottom: 0;
+    top: 700px;
     opacity: 0.6;
     background: linear-gradient(
       var(--color-primary-green) 50%,
