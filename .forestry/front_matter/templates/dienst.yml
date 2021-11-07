@@ -1,4 +1,42 @@
 ---
 label: Dienst
 hide_body: false
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: true
+  label: Heading
+  description: Titel van de dienst, e.g. Python + RaspberryPi
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Short description of the service
+- name: hero
+  type: file
+  config:
+    maxSize: 64
+  label: Hero image
+  description: Hero image of the service
+- name: hero_alt
+  type: text
+  config:
+    required: false
+  label: Hero alt
+  description: Alternative text for the image, in case it doesn't load or for visually
+    impaired users to be able to understand what the image describes.
+  default: hero image of the service
+- name: layout
+  type: text
+  config:
+    required: true
+  hidden: true
+  label: Layout
+  description: Astro layout used for this file
+  default: "../../layouts/dienst.astro"
