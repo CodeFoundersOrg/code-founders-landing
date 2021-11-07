@@ -38,18 +38,17 @@ const { content } = Astro.props;
   .name {
     text-align: center;
   }
-
-  .description {
-  }
 </style>
 <div class="wrapper">
-  <div class="hero-wrapper">
-    <img class="hero" alt={content.hero_alt} src={content.hero} />
-  </div>
+  {content.hero ?
+    <div class="hero-wrapper">
+      <img class="hero" alt={content.hero_alt} src={content.hero} />
+    </div> : ''
+  }
   <div class="content">
     <h2 class="name">
       {content.heading}
     </h2>
-    <p class="description">{content.subtitle}</p>
+    {content.subtitle ? <p class="description">{content.subtitle}</p> : ''}
   </div>
 </div>
