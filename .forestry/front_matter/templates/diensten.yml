@@ -14,3 +14,5 @@ fields:
     required: false
   label: Subtitle
   description: Subtitel van de diensten pagina
+pages:
+- src/content/diensten/diensten.md
