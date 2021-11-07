@@ -40,7 +40,7 @@ const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('cont
 <link rel="stylesheet" href="/style/diensten.css" />
 <BlurLayout>
 <h1>{content.heading}</h1>
-<p class="subtitle">{content.description}</p>
+{content.subtitle ? <p class="subtitle">{content.subtitle}</p> : ''}
 <div class="diensten">
   {diensten.map(dienst =>
     <a class="link" href={dienst.url}>
