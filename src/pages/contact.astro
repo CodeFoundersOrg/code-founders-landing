@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/base.astro'
+import BlurLayout from '../layouts/blur.astro'
 
 const [contact] = Astro.fetchContent('../content/contact/contact.md');
 ---
@@ -9,28 +9,6 @@ const [contact] = Astro.fetchContent('../content/contact/contact.md');
     font-size: 5rem;
     line-height: 5rem;
     padding: 10rem 0;
-  }
-
-  .contact-wrapper {
-    position: relative;
-    z-index: 1;
-  }
-
-  .contact-wrapper::before {
-    content: '';
-    position: absolute;
-    width: min(100%, 1600px);
-    height: 550px;
-    border-radius: 50%;
-    top: 150px;
-    opacity: 0.6;
-    background: linear-gradient( var(--color-primary-purple) 50%, var(--color-primary-green) 50% );
-    filter: blur(225px);
-    left: 33%;
-  }
-
-  .relative-wrapper {
-    position: relative;
   }
   .contact {
     font-size: 1.5rem;
@@ -43,15 +21,11 @@ const [contact] = Astro.fetchContent('../content/contact/contact.md');
     margin-bottom: 2rem;
   }
 </style>
-<BaseLayout>
-<div class="contact-wrapper">
-
-<div class="relative-wrapper">
-  <h1>{contact.heading}</h1>
-  <div class="contact">
-    <p>{contact.description}</p>
-    <p>{contact.email}</p>
-  </div>
+<link rel="stylesheet" href="/style/contact.css" />
+<BlurLayout>
+<h1>{contact.heading}</h1>
+<div class="contact">
+  <p>{contact.description}</p>
+  <p>{contact.email}</p>
 </div>
-</div>
-</BaseLayout>
+</BlurLayout>

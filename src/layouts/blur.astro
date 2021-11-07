@@ -1,0 +1,46 @@
+---
+import BaseLayout from './base.astro';
+---
+<style>
+  .content-wrapper {
+    position: relative;
+  }
+
+  .content-wrapper::before {
+    content: '';
+    position: absolute;
+    width: min(200%, 1600px);
+    height: 550px;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: linear-gradient( var(--blur-top-from) 50%, var(--blur-top-to) 50% );
+    filter: blur(225px);
+    left: 33%;
+  }
+
+  .content-wrapper::after {
+    content: '';
+    position: absolute;
+    width: min(200%, 1600px);
+    height: 550px;
+    border-radius: 50%;
+    bottom: 0;
+    opacity: 0.5;
+    background: linear-gradient( var(--blur-bottom-from) 50%, var(--blur-bottom-to) 50% );
+    filter: blur(225px);
+    right: 33%;
+  }
+
+  .relative-wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 0 2rem;
+  }
+</style>
+<BaseLayout>
+<div class="content-wrapper">
+  <div class="relative-wrapper">
+    <slot />
+  </div>
+</div>
+</BaseLayout>

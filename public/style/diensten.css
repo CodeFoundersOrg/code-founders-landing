@@ -1,53 +1,6 @@
-.relative-wrapper h2 {
-  font-size: 1.5rem;
-  text-align: right;
-  display: inline-block;
-  position: relative;
-  margin: 2rem 0 3rem 0;
-  background-color: var(--color-primary-green);
-  color: black;
-  box-shadow: -12px 0 0 var(--color-primary-green),
-    12px 0 0 var(--color-primary-green);
-  margin-left: 12px;
-  line-height: 4rem;
-}
-
-.relative-wrapper h2::after {
-  content: '';
-  position: absolute;
-  height: 8px;
-  width: 50%;
-  bottom: -16px;
-  right: -12px;
-  background-color: white;
-}
-
-.relative-wrapper h3,
-.relative-wrapper h4,
-.relative-wrapper h5,
-.relative-wrapper h6 {
-  margin: 2rem 0 1rem 0;
-  font-weight: normal;
-  color: var(--color-primary-green);
-}
-
-.relative-wrapper blockquote {
-  font-style: italic;
-  padding: 1rem 2rem;
-  border-left: 4px solid var(--color-primary-green);
-  background-color: rgba(255, 255, 255, 0.04);
-}
-
-.relative-wrapper a {
-  color: var(--color-primary-green);
-}
-
-@media (min-width: 601px) {
-  .relative-wrapper h1 {
-    font-size: 3rem;
-  }
-
-  .relative-wrapper h2 {
-    font-size: 2rem;
-  }
+:root {
+  --blur-top-from: var(--color-primary-blue);
+  --blur-top-to: var(--color-primary-purple);
+  --blur-bottom-from: transparent;
+  --blur-bottom-to: transparent;
 }

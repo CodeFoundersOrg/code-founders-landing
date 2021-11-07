@@ -6,12 +6,6 @@ hero_alt: 'raspberry pi'
 layout: ../../layouts/dienst.astro
 ---
 
-![raspberry pi](/assets/raspberrypi.jpg)
-
-# Python.<span style="color: var(--color-primary-green)">RaspberryPI</span>_
-
-<p class="subtitle">2 Daagse training in Python met RaspBerry PI en REST API</p>
-
 De drie hoofdelementen van deze training zijn:
 
 - Het leren van de fundamenten van Python programmeren.

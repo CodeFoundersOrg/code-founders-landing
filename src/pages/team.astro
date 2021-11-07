@@ -1,6 +1,6 @@
 ---
 import * as path from 'node:path';
-import BaseLayout from '../layouts/base.astro'
+import BlurLayout from '../layouts/blur.astro'
 import Founder from '../components/founder.astro';
 
 const content = Astro.fetchContent('../content/**/*.md');
@@ -56,16 +56,12 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
     }
   }
 </style>
-<BaseLayout>
-<div class="team">
-
-<div class="relative-wrapper">
-  <h1>{team.heading}</h1>
-</div>
+<link rel="stylesheet" href="/style/team.css" />
+<BlurLayout>
+<h1>{team.heading}</h1>
 <div class="founders">
-    {founders.map(founder => (
-        <Founder founder={founder} />
-    ))}
+  {founders.map(founder => (
+    <Founder founder={founder} />
+  ))}
 </div>
-</div>
-</BaseLayout>
+</BlurLayout>
