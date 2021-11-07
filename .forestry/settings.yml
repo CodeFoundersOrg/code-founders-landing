@@ -20,6 +20,18 @@ sections:
   create: documents
   match: "**/*.md"
 - type: directory
+  path: src/content/diensten
+  label: Diensten Page
+  create: all
+  match: "**/*.md"
+- type: directory
+  path: src/pages/diensten
+  label: Diensten
+  create: all
+  match: "**/*.md"
+  templates:
+  - dienst
+- type: directory
   path: src/content/contact
   label: Contact
   create: all
