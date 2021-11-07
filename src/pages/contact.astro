@@ -11,13 +11,18 @@ const [contact] = Astro.fetchContent('../content/contact/contact.md');
     padding: 10rem 0;
   }
 
-  .team::before {
+  .contact-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-wrapper::before {
     content: '';
     position: absolute;
     width: min(100%, 1600px);
     height: 550px;
     border-radius: 50%;
-    bottom: 100px;
+    top: 150px;
     opacity: 0.6;
     background: linear-gradient( var(--color-primary-purple) 50%, var(--color-primary-green) 50% );
     filter: blur(225px);
@@ -39,7 +44,7 @@ const [contact] = Astro.fetchContent('../content/contact/contact.md');
   }
 </style>
 <BaseLayout>
-<div class="team">
+<div class="contact-wrapper">
 
 <div class="relative-wrapper">
   <h1>{contact.heading}</h1>

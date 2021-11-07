@@ -19,13 +19,18 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
     padding: 10rem 0;
   }
 
+  .team {
+    position: relative;
+    z-index: 1;
+  }
+
   .team::before {
     content: '';
     position: absolute;
     width: min(100%, 1600px);
     height: 550px;
     border-radius: 50%;
-    bottom: 100px;
+    top: 150px;
     opacity: 0.6;
     background: linear-gradient( var(--color-primary-green) 50%, var(--color-primary-blue) 50% );
     filter: blur(225px);

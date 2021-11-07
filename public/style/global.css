@@ -12,6 +12,7 @@
   --color-primary-purple: #4e008e;
   --color-primary-black: #000000;
   --color-primary-blue: #166db9;
+  --color-primary-grey: #151a17;
   --color-text: #fff;
   --content-width: 1200px;
   --page-max-width: 1600px;
@@ -34,7 +35,7 @@ h6 {
 }
 
 header {
-  background-color: #151a17;
+  background-color: var(--color-primary-grey);
   width: 100%;
   position: relative;
   z-index: 1;
@@ -95,6 +96,7 @@ header {
 main {
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 button {

@@ -304,7 +304,7 @@ h3 {
  */
 #founders {
   position: relative;
-  background-color: #151a17;
+  background-color: var(--color-primary-grey);
   padding-bottom: 12rem;
 }
 
@@ -443,7 +443,7 @@ h3 {
 
 .copyright {
   padding: 1.5rem 0;
-  background-color: #151a17;
+  background-color: var(--color-primary-grey);
 }
 
 .copyright p {

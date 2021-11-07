@@ -1,9 +1,79 @@
 ---
-// import * as path from 'node:path';
-import BaseLayout from '../layouts/base.astro'
+import * as path from 'node:path';
+import BaseLayout from '../layouts/base.astro';
+import Dienst from '../components/dienst.astro';
 
-// const mds = Astro.fetchContent('../content/**/*.md');
+const mds = Astro.fetchContent('../{content,pages}/diensten/**/*.md');
+const diensten = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/diensten'));
+const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('content/diensten'));
+console.log(diensten);
 ---
-<BaseLayout>
+<style>
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 10rem 0 5rem 0;
+  }
 
+  .diensten-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .diensten-wrapper::before {
+    content: '';
+    position: absolute;
+    width: min(100%, 1600px);
+    height: 550px;
+    border-radius: 50%;
+    top: 150px;
+    opacity: 0.6;
+    background: linear-gradient( var(--color-primary-blue) 50%, var(--color-primary-purple) 50% );
+    filter: blur(225px);
+    left: 33%;
+  }
+
+  .relative-wrapper {
+    position: relative;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    max-width: 60ch;
+    margin: 0 auto 5rem auto;
+  }
+
+  .diensten {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: var(--page-max-width);
+    margin: 0 auto 10rem auto;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+</style>
+<BaseLayout>
+<div class="diensten-wrapper">
+
+<div class="relative-wrapper">
+  <h1>{content.heading}</h1>
+  <p class="subtitle">{content.description}</p>
+  <div class="diensten">
+    {diensten.map(dienst =>
+      <a class="link" href={dienst.url}>
+        <Dienst content={dienst} class="dienst"></Dienst>
+      </a>
+    )}
+  </div>
+</div>
+
+</div>
 </BaseLayout>
