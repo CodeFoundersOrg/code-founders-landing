@@ -1,5 +1,6 @@
 ---
 import Footer from '../components/footer.astro';
+import NavMenu from '../components/nav-menu.astro';
 let title = 'Code.Founders_';
 
 // Create timestamp for deploy previews to show when last built/updated
@@ -16,6 +17,14 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
         }
     ).format(new Date()) : null;
 ---
+<style>
+.nav-mobile {
+    background-color: var(--color-primary-grey);
+}
+rev-drawer {
+    display: flex;
+}
+</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,17 +36,9 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
 
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/home.css">
+    <script type="module" src="../components/rev-drawer-prebundled.js"></script>
 </head>
 <body>
-    <!-- <cf-drawer client:idle>
-        <nav class="nav-mobile">
-            <ul>
-                <li><a href="/diensten">Diensten</a></li>
-                <li><a href="/team">Team</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </cf-drawer> -->
     {timestamp ?
         <span style="color: white; position: absolute; top: 65px; left: 8px; z-index: 1;">
             Preview last updated: {timestamp}
@@ -46,18 +47,19 @@ const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
     }
     <header>
         <div class="header-container">
-            <div class="hamburger">
-                <div class="hamburger-icon"></div>
-            </div>
+            <rev-drawer side="left" breakpoint="1200">
+                <button class="hamburger" slot="invoker">
+                    <div class="hamburger-icon"></div>
+                </button>
+                <nav class="nav-mobile" slot="content">
+                    <NavMenu></NavMenu>
+                </nav>
+            </rev-drawer>
             <a href="/" class="header-logo" aria-label="home">
                 <img alt="codefounders logo" src="/assets/images/logo/logo.png" />
             </a>
             <nav class="nav-desktop">
-                <ul>
-                    <li><a href="/diensten">Diensten</a></li>
-                    <li><a href="/team">Team</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
+                <NavMenu></NavMenu>
             </nav>
             <div class="search-placeholder"></div>
         </div>

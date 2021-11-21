@@ -51,13 +51,16 @@ header {
 }
 
 .hamburger {
-  height: 15px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  height: 28px;
 }
 
 .hamburger-icon {
-  height: 0;
-  width: 22px;
-  box-shadow: 0 0 0 1.5px white, 0 7px 0 1.5px white, 0 14px 0 1.5px white;
+  margin-top: -8px;
+  width: 28px;
+  box-shadow: 0 0 0 1.5px white, 0 8px 0 1.5px white, 0 16px 0 1.5px white;
 }
 
 .header-logo img {
@@ -76,20 +79,6 @@ header {
 
   .nav-desktop {
     display: block;
-  }
-
-  .nav-desktop ul {
-    font-family: Helvetica Neue, sans-serif;
-    display: flex;
-    padding: 0;
-    gap: 10rem;
-    list-style: none;
-    justify-content: space-between;
-  }
-
-  .nav-desktop a {
-    text-decoration: none;
-    color: white;
   }
 }
 
