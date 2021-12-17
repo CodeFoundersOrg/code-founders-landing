@@ -31,7 +31,7 @@ fields:
     required: true
   label: Button Navigation
   description: Page to navigate to, for the action button. E.g. /diensten or /contact
-- name: unique-id
+- name: unique_id
   type: text
   config:
     required: true
