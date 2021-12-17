@@ -31,5 +31,14 @@ fields:
     required: true
   label: Button Navigation
   description: Page to navigate to, for the action button. E.g. /diensten or /contact
+- name: unique-id
+  type: text
+  config:
+    required: true
+  hidden: false
+  label: Unique ID
+  description: "<strong>Do Not Edit!! </strong><br>The site uses this unique identifier
+    in order to put the content in the right place. If you edit, it must be edited
+    in the site code as well."
 pages:
 - 'src/content/home/Intro: Code is de toekomst.md'
