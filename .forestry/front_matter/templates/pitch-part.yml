@@ -19,6 +19,6 @@ fields:
   label: Pitch part description
   description: Pitch part description
 pages:
+- src/content/home/pitch/Bewezen Mehodiek.md
 - src/content/home/pitch/Bewezen methodiek.md
 - src/content/home/pitch/Docenten die programmeren.md
-- src/content/home/pitch/Fouten maken moet.md
