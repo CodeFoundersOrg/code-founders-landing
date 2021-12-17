@@ -16,4 +16,4 @@ fields:
   description: Where to navigate to from the pitch action button, e.g. /diensten or
     /contact
 pages:
-- src/content/home/pitch/4-button.md
+- 'src/content/home/pitch/4-button: meer over de methodiek.md'
