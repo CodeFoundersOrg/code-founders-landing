@@ -13,5 +13,6 @@ description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cil
 button_navigation: "/contact"
 heading: '<span class="text-bg-black"><span style="color: var(--color-primary-green);">De   effectiefste
   didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>'
+unique_id: methodiek-section
 
 ---
