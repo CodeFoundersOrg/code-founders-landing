@@ -20,6 +20,12 @@ h3 {
   }
 }
 
+@media (min-width: 1201px) {
+  .content {
+    padding: 1rem 7rem;
+  }
+}
+
 .content a:hover,
 .founder a:hover {
   background-color: var(--color-primary-green);

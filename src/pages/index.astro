@@ -11,16 +11,20 @@ const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('found
     return orderA - orderB;
 });
 const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
+const introHeading = content.find(md => md.unique_id === 'intro-heading');
+const methodiekSection = content.find(md => md.unique_id === 'methodiek-section');
 const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
+const pitchHeading = pitch.find(md => md.unique_id === 'pitch-heading');
+const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
 ---
 <BaseLayout>
     <div class="purple-bg">
         <section id="intro">
             <div class="content-container">
                 <div class="content">
-                    <h2>{content[0].slogan}</h2>
-                    <p>{content[0].description}</p>
-                    <LinkButton href={content[0].button_navigation} label={content[0].button_text}></LinkButton>
+                    <h2>{introHeading.slogan}</h2>
+                    <p>{introHeading.description}</p>
+                    <LinkButton href={introHeading.button_navigation} label={introHeading.button_text}></LinkButton>
                 </div>
             </div>
         </section>
@@ -29,7 +33,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
             <div class="content-container">
                 <div class="content">
                     <div class="flex-content">
-                        <h2>{pitch[0].heading}</h2>
+                        <h2>{pitchHeading.heading}</h2>
                         <div class="flex-paragraphs">
                             {pitch.slice(1, pitch.length - 1).map(part => <div>
                                 <h3>{part.heading}</h3>
@@ -37,7 +41,7 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
                             </div>)}
                         </div>
                     </div>
-                    <LinkButton href={pitch[pitch.length - 1]['pitch-button_navigation']} label={pitch[pitch.length - 1]['pitch-button_text']}></LinkButton>
+                    <LinkButton href={pitchButton['pitch-button_navigation']} label={pitchButton['pitch-button_text']}></LinkButton>
                 </div>
             </div>
         </section>
@@ -45,10 +49,10 @@ const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'))
     <section id="methodiek">
         <div class="img-laptop"></div>
         <div class="content">
-            <h2>{content[1].heading}</h2>
-            <p>{content[1].description}</p>
-            <LinkButton href={content[1].button_navigation} label={content[1].button_text}></LinkButton>
-            <a href={content[1].button_navigation}>{content[1].button_text}</a>
+            <h2>{methodiekSection.heading}</h2>
+            <p>{methodiekSection.description}</p>
+            <LinkButton href={methodiekSection.button_navigation} label={methodiekSection.button_text}></LinkButton>
+            <a href={methodiekSection.button_navigation}>{methodiekSection.button_text}</a>
         </div>
     </section>
 
