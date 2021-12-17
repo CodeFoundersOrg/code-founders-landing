@@ -1,15 +1,16 @@
 ---
 title: 2-methodiek.md
 button_text: Boek een studie
-description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-  dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing
-  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. <span style="color: var(--color-secondary-green);">Duis aute
-  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  pariatur</span>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-  officia deserunt mollit anim id est laborum. veritatis et quasi architecto beatae
-  vitae dicta ss'
+description: "Code.Founders_ specialiseert zich in het leggen van het fundament. Een
+  brede basis van kennis & kunde zodat jij klaar wordt gestoomd voor jouw eerste stappen
+  in het IT Domein.\nHet Code.Founders_ IT- fundamentals traject is een omvangrijk
+  traineeship opgedeeld in drie fases die leiden tot een startkwalificatie in Software
+  development, Devops, Big Data of Testing.\nNaast het fundament bieden wij verschillende
+  verdiepingscursussen voor de junior IT ‘er om hun skills naar het volgende niveau
+  te tillen. \nCentraal in al onze cursussen staat de StepDown methodiek en de ABC
+  Formule die een zorgen voor een duurzame en snelle skills ontwikkeling. Daarnaast
+  leiden onze trainingen tot een werkende applicatie, dus een “tastbaar” resultaat
+  en een element voor jouw portfolio.\n"
 button_navigation: "/contact"
 heading: '<span class="text-bg-black"><span style="color: var(--color-primary-green);">De   effectiefste
   didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>'
