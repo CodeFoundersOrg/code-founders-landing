@@ -9,7 +9,5 @@ technologies:
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/arjanwiegerinck/
-- social: ''
-  link: ''
 
 ---
