@@ -8,5 +8,13 @@ fields:
     required: true
   label: Heading
   description: Heading of the pitch section
+- name: unique_id
+  type: text
+  config:
+    required: true
+  description: "<strong>Do Not Edit!! </strong><br>The site uses this unique identifier
+    in order to put the content in the right place. If you edit, it must be edited
+    in the site code as well.  "
+  label: Unique ID
 pages:
 - 'src/content/home/pitch/header: love the glamour in error.md'
