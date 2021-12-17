@@ -19,6 +19,6 @@ fields:
   label: Pitch part description
   description: Pitch part description
 pages:
-- src/content/home/pitch/1-fouten.md
+- src/content/home/pitch/1-fouten maken moet.md
 - src/content/home/pitch/2-methodiek.md
 - src/content/home/pitch/3-code.md
