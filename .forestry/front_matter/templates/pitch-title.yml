@@ -9,4 +9,4 @@ fields:
   label: Heading
   description: Heading of the pitch section
 pages:
-- 'src/content/home/pitch/header: love the glamour in error.md'
+- 'src/content/home/pitch/1-header: love the glamour in error.md'
