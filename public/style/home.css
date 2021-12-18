@@ -167,8 +167,14 @@ h3 {
 
 .text-bg-black {
   background-color: var(--color-primary-black);
-  box-shadow: -12px 0 0 var(--color-primary-black),
-    12px 0 0 var(--color-primary-black);
+  padding: 0.5rem 1rem;
+  line-height: 3.2rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: split;
+}
+
+#opsomming .text-bg-black {
+  line-height: 3.5rem;
 }
 
 #opsomming h3 {

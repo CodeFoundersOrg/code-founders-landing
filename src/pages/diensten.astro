@@ -9,12 +9,14 @@ const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('cont
 ---
 <style>
   .diensten {
-    display: flex;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 5rem;
-    max-width: var(--page-max-width);
     margin: 0 auto 10rem auto;
+
+
   }
 
   .link {

@@ -5,11 +5,7 @@ import Socials from '../components/socials.astro';
 footer {
   background-color: var(--color-primary-black);
   position: relative;
-  padding: 5rem 0;
-}
-
-.wrapper {
-
+  padding: 5rem 3rem;
 }
 
 .reference-links {
@@ -20,10 +16,12 @@ footer {
   gap: 1.5rem;
   color: var(--color-text);
   text-align: center;
+  font-weight: bold;
 }
 
 .reference-links a {
   color: var(--color-text);
+  text-decoration: none;
 }
 
 .footer-logo-mobile {
@@ -49,6 +47,7 @@ footer {
 
 .socials-container-desktop {
   display: none;
+  font-weight: bold;
 }
 
 .socials-container-mobile {
@@ -122,8 +121,6 @@ footer {
     </a>
     <div class="socials-container-desktop">
         <a class="logo" href="/"><img alt="codefounders logo" src="/assets/images/logo/logo.png"></a>
-
-
         <Socials></Socials>
         <p>info@codefounders.nl</p>
         <p>088 - 88 8888 88</p>
