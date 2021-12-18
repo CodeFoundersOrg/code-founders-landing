@@ -20,6 +20,6 @@ socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/jorenbroekema/
 - social: Twitter
-  link: https://twitter.com/jorenbroekema
+  link: https://twitter.com/jorenbroekemaa
 
 ---
