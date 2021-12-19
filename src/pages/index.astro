@@ -45,6 +45,7 @@ let title = 'Code.Founders_';
 
   (async function() {
     let green = false;
+    await new Promise(resolve => setTimeout(resolve, 1000));
     for (let char of headingChars) {
       const charEl = document.createElement('span');
       charEl.innerText = char;
