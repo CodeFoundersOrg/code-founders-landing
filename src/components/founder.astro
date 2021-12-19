@@ -37,13 +37,17 @@ const { founder, simple } = Astro.props;
   line-height: 2.20rem;
 }
 
+.text-bg-black {
+  line-height: 2.70rem;
+}
+
 .description {
   flex-grow: 1;
   margin-top: 1rem;
 }
 
 .trains {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: HelveticaNeue, sans-serif;
   margin: 1.5rem 0 0 0;
 }
 
@@ -58,7 +62,7 @@ const { founder, simple } = Astro.props;
   display: flex;
   align-items: center;
   gap: .25rem;
-  font-family: Helvetica Neueu, sans-serif;
+  font-family: HelveticaNeueu, sans-serif;
 }
 
 .technology img {
@@ -135,5 +139,5 @@ const { founder, simple } = Astro.props;
       : ''}
       </Fragment>
   }
-  {simple ? <LinkButton class={"reviews"} href={'/team'} label={'Lees meer reviews'}></LinkButton> : ''}
+  {simple ? <LinkButton class={"reviews"} href={'/preview__/team'} label={'Lees meer reviews'}></LinkButton> : ''}
 </div>

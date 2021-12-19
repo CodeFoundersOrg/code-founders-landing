@@ -1,9 +1,9 @@
 ---
 import * as path from 'node:path';
-import BlurLayout from '../layouts/blur.astro'
-import Founder from '../components/founder.astro';
+import BlurLayout from '../../layouts/blur.astro'
+import Founder from '../../components/founder.astro';
 
-const content = Astro.fetchContent('../content/**/*.md');
+const content = Astro.fetchContent('../../content/**/*.md');
 const founders = content.filter(md => path.dirname(md.file.pathname).endsWith('founders')).sort((a,b) => {
   const orderA = a.order || 9999;
   const orderB = b.order || 9999;

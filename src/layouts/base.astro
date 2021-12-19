@@ -3,8 +3,8 @@ import Footer from '../components/footer.astro';
 import NavMenu from '../components/nav-menu.astro';
 let title = 'Code.Founders_';
 
-// Create timestamp for deploy previews to show when last built/updated
-const timestamp = process.env.DEPLOY_PREVIEW === 'true' ?
+// Create timestamp for deploy preview__s to show when last built/updated
+const timestamp = process.env.DEPLOY_preview__ === 'true' ?
     new Intl.DateTimeFormat(
         "nl-NL",
         {
@@ -41,7 +41,7 @@ rev-drawer {
 <body>
     {timestamp ?
         <span style="color: white; position: absolute; top: 65px; left: 8px; z-index: 1;">
-            Preview last updated: {timestamp}
+            preview__ last updated: {timestamp}
         </span>
         : ''
     }
@@ -55,7 +55,7 @@ rev-drawer {
                     <NavMenu></NavMenu>
                 </nav>
             </rev-drawer>
-            <a href="/" class="header-logo" aria-label="home">
+            <a href="/preview__/" class="header-logo" aria-label="home">
                 <img alt="codefounders logo" src="/assets/images/logo/logo.png" />
             </a>
             <nav class="nav-desktop">
