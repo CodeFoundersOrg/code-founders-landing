@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: HelveticaNeue, sans-serif;
   font-weight: bold;
 }
 
@@ -103,9 +103,9 @@ button {
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeue';
   font-style: bold;
   font-weight: 700;
   font-display: block;
-  src: local(''), url('../assets/fonts/helvetica-neue.otf') format('otf');
+  src: local(''), url('../assets/fonts/helvetica-neue.woff') format('woff');
 }

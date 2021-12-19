@@ -8,7 +8,7 @@ description: "Code.Founders_ specialiseert zich in het leggen van het fundament.
   development, Devops, Big Data of Testing.\nNaast het fundament bieden wij verschillende
   verdiepingscursussen voor de junior IT ‘er om hun skills naar het volgende niveau
   te tillen. \n\n"
-button_navigation: "/contact"
+button_navigation: "/preview__/contact"
 heading: '<span class="text-bg-black"><span style="color: var(--color-primary-green);">De   effectiefste
   didactiek</span> door de juiste methodiek<span style="color: var(--color-primary-green);">.</span></span>'
 unique_id: methodiek-section

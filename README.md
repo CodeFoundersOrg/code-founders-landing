@@ -1,3 +1,3 @@
 # Code Founders Landing
 
-See <https://codefounders-preview.netlify.app/>
+See <https://www.codefounders.nl/preview__>

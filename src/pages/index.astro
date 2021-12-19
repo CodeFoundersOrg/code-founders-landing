@@ -1,79 +1,62 @@
 ---
-import * as path from 'node:path';
-import BaseLayout from '../layouts/base.astro';
-import Founder from '../components/founder.astro';
-import LinkButton from '../components/link-button.astro';
-
-const mds = Astro.fetchContent('../content/**/*.md');
-const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders')).sort((a,b) => {
-    const orderA = a.order || 9999;
-    const orderB = b.order || 9999;
-    return orderA - orderB;
-});
-const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
-const introHeading = content.find(md => md.unique_id === 'intro-heading');
-const methodiekSection = content.find(md => md.unique_id === 'methodiek-section');
-const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
-const pitchHeading = pitch.find(md => md.unique_id === 'pitch-heading');
-const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
+let title = 'Code.Founders_';
 ---
-<BaseLayout>
-    <div class="purple-bg">
-        <section id="intro">
-            <div class="content-container">
-                <div class="content">
-                    <h2>{introHeading.slogan}</h2>
-                    <p>{introHeading.description}</p>
-                    <LinkButton href={introHeading.button_navigation} label={introHeading.button_text}></LinkButton>
-                </div>
-            </div>
-        </section>
+<style>
 
-        <section id="opsomming">
-            <div class="content-container">
-                <div class="content">
-                    <div class="flex-content">
-                        <h2>{pitchHeading.heading}</h2>
-                        <div class="flex-paragraphs">
-                            {pitch.slice(1, pitch.length - 1).map(part => <div>
-                                <h3>{part.heading}</h3>
-                                <p>{part.pitch_part_description}</p>
-                            </div>)}
-                        </div>
-                    </div>
-                    <LinkButton href={pitchButton['pitch-button_navigation']} label={pitchButton['pitch-button_text']}></LinkButton>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section id="methodiek">
-        <div class="img-laptop"></div>
-        <div class="content">
-            <h2>{methodiekSection.heading}</h2>
-            <p>{methodiekSection.description}</p>
-            <LinkButton href={methodiekSection.button_navigation} label={methodiekSection.button_text}></LinkButton>
-            <a href={methodiekSection.button_navigation}>{methodiekSection.button_text}</a>
-        </div>
-    </section>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--color-primary-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: HelveticaNeue, serif;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  #cursor {
+    text-shadow: 0px 2px white
+  }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Code.Founders. If you can code, you can do anything.">
+    <title>{title}</title>
 
-    <section id="alles_is_code">
-        <h2>
-        <span class="green">Alles is </span><span class="strike">liefde</span><br>
-        <span>Code</span><span class="green">.</span>
-        </h2>
-    </section>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <section id="founders">
-        <div class="alles_is_code">
-            <h2>
-            <span class="green">Alles is </span><span class="strike">liefde</span><br>
-            <span>Code</span><span class="green">.</span>
-            </h2>
-        </div>
-        <div class="founders">
-            {founders.slice(0, 3).map(founder => (
-                <Founder founder={founder} simple={true} />
-            ))}
-        </div>
-    </section>
-</BaseLayout>
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+<h1>
+  <span id="cursor">_</span>
+</h1>
+<script>
+  const headingChars = 'Code.Founders'.split('');
+  const cursorEl = document.getElementById('cursor');
+  setInterval(() => {
+    cursorEl.style.visibility = getComputedStyle(cursorEl).getPropertyValue('visibility') === 'hidden' ? '' : 'hidden';
+  }, 500);
+
+  (async function() {
+    let green = false;
+    for (let char of headingChars) {
+      const charEl = document.createElement('span');
+      charEl.innerText = char;
+      if (green)
+        charEl.style.color = 'var(--color-primary-green)';
+      if (char === '.')
+        green = true;
+
+      cursorEl.insertAdjacentElement('beforebegin', charEl);
+      await new Promise(resolve => setTimeout(resolve, 50 + Math.floor(Math.random() * 300)));
+    }
+  })();
+</script>
+</body>
+</html>
