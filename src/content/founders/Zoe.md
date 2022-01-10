@@ -6,6 +6,8 @@ description: Met zijn jarenlange praktijk ervaring en ruime technische kennis we
 photo: "/assets/images/portraits/iris.jpg"
 technologies:
 - logo: ''
+  name: Mendix
+- logo: ''
   name: SQL
 - logo: html.svg
   name: html
