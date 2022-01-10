@@ -9,7 +9,7 @@ photo: "/assets/moose.jpg"
 technologies:
 - logo: html
   name: Html
-- logo: Java
+- logo: java
   name: Java
 - logo: C#
   name: C#
