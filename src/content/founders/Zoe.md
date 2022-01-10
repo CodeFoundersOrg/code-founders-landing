@@ -11,8 +11,8 @@ technologies:
   name: SQL
 - logo: html
   name: html
-- logo: '"azure"'
-  name: '"Azure Devops"'
+- logo: azure
+  name: Azure Devops
 - logo: javascript
   name: JavaScript
 - logo: php
