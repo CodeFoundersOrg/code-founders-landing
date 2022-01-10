@@ -13,7 +13,7 @@ technologies:
   name: Java
 - logo: C#
   name: C#
-- logo: Python
+- logo: python
   name: Python
 - logo: ''
   name: SQL
