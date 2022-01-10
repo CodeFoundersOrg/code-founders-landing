@@ -7,6 +7,8 @@ description: Felix is een als allround IT 'er gespecialiseerd in de ontwikkeling
   van het curriculum binnen Code.Founders_
 photo: "/assets/moose.jpg"
 technologies:
+- logo: php
+  name: Php
 - logo: html
   name: Html
 - logo: java
