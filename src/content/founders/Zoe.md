@@ -1,10 +1,12 @@
 ---
-name: Zoe
-description: Wow wat een stel toffe peren. Vooral Felix, die is pas écht aardig. Excepteur
-  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-  anim id est laborum.
+name: Martijn
+description: Met zijn jarenlange praktijk ervaring en ruime technische kennis weet
+  Martijn zijn studenten optimaal voor te bereiden voor een carrière binnen de IT.
+  Een veelvoud aan onderwerpen worden door hem behandeld.
 photo: "/assets/images/portraits/iris.jpg"
 technologies:
+- logo: ''
+  name: '"azuredevops"'
 - logo: javascript
   name: JavaScript
 - logo: php
