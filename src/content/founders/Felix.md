@@ -17,8 +17,8 @@ technologies:
   name: Python
 - logo: ''
   name: SQL
-- logo: java
-  name: Java
+- logo: javascript
+  name: JavaScript
 - logo: git
   name: Git
 socials:
