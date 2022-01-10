@@ -4,6 +4,8 @@ name: Felix
 description: Toffe gast
 photo: "/assets/moose.jpg"
 technologies:
+- logo: html
+  name: Html
 - logo: Java
   name: Java
 - logo: C#
