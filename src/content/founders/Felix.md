@@ -4,7 +4,7 @@ name: Felix
 description: Felix is een als allround IT 'er gespecialiseerd in de ontwikkeling van
   Junioren. Door zijn sterke focus op de juiste didactiek kan hij iedereen leren programmeren.
   Naast een actieve rol als docent is hij tevens verantwoordelijk voor de ontwikkeling
-  van het curriculum.
+  van het curriculum binnen Code.Founders_
 photo: "/assets/moose.jpg"
 technologies:
 - logo: html
