@@ -7,6 +7,10 @@ description: Felix is een als allround IT 'er gespecialiseerd in de ontwikkeling
   van het curriculum binnen Code.Founders_
 photo: "/assets/moose.jpg"
 technologies:
+- logo: azure
+  name: Azure Devops
+- logo: css
+  name: CSS
 - logo: php
   name: Php
 - logo: html
