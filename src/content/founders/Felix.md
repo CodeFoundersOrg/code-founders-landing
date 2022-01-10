@@ -11,7 +11,7 @@ technologies:
   name: Html
 - logo: java
   name: Java
-- logo: C#
+- logo: csharp
   name: C#
 - logo: python
   name: Python
