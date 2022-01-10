@@ -4,6 +4,8 @@ name: Felix
 description: Toffe gast
 photo: "/assets/moose.jpg"
 technologies:
+- logo: Java
+  name: Java
 - logo: C#
   name: C#
 - logo: Python
