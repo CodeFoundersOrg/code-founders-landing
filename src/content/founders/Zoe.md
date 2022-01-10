@@ -9,7 +9,7 @@ technologies:
   name: Mendix
 - logo: ''
   name: SQL
-- logo: '"html"'
+- logo: html
   name: html
 - logo: '"azure"'
   name: '"Azure Devops"'
