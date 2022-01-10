@@ -5,6 +5,8 @@ description: Met zijn jarenlange praktijk ervaring en ruime technische kennis we
   Een veelvoud aan onderwerpen worden door hem behandeld.
 photo: "/assets/images/portraits/iris.jpg"
 technologies:
+- logo: html.svg
+  name: html
 - logo: azure.svg
   name: '"Azure Devops"'
 - logo: javascript
