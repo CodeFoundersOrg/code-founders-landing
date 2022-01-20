@@ -6,6 +6,8 @@ description: Als frontend expert en DevOps & Backend hobbyist, heeft Joren met z
   te leren.
 photo: "/assets/me-cropped.jpg"
 technologies:
+- logo: git
+  name: GIT
 - logo: javascript
   name: JavaScript
 - logo: css
