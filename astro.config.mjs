@@ -1,3 +1,3 @@
 export default {
-  renderers: ['@astrojs/renderer-lit'],
+  renderers: ['@astrojs/renderer-lit', '@astrojs/renderer-react'],
 };

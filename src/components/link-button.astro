@@ -1,5 +1,10 @@
 ---
 const {href, label, external, class: klass} = Astro.props;
+
+const attrs = external ? {
+  rel: "noopener",
+  target: "_blank"
+} : {};
 ---
 <style>
 a {
@@ -15,4 +20,4 @@ a {
   border: none;
 }
 </style>
-<a class={klass} href={href} {...(external && 'rel="noopener" target="_blank"')}>{label}</a>
+<a class={klass} href={href} {...attrs}>{label}</a>

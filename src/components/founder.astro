@@ -1,5 +1,6 @@
 ---
 import LinkButton from './link-button.astro';
+import SplitNewlines from '../utils/split-newlines.jsx';
 const { founder, simple } = Astro.props;
 ---
 <style>
@@ -121,7 +122,9 @@ const { founder, simple } = Astro.props;
       )}
     </div>
   }
-  <p class="description">{founder.description}</p>
+  <div class="description">
+    <SplitNewlines content={founder.description}></SplitNewlines>
+  </div>
   {simple ? '' :
     <Fragment>
       {founder.technologies.length > 0 ?

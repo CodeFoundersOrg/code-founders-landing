@@ -3,6 +3,7 @@ import * as path from 'node:path';
 import BaseLayout from '../../layouts/base.astro';
 import Founder from '../../components/founder.astro';
 import LinkButton from '../../components/link-button.astro';
+import SplitNewlines from '../../utils/split-newlines.jsx';
 
 const mds = Astro.fetchContent('../../content/**/*.md');
 const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders')).sort((a,b) => {
@@ -23,7 +24,7 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
             <div class="content-container">
                 <div class="content">
                     <h2>{introHeading.slogan}</h2>
-                    <p>{introHeading.description}</p>
+                    <SplitNewlines content={introHeading.description}></SplitNewlines>
                     <LinkButton href={introHeading.button_navigation} label={introHeading.button_text}></LinkButton>
                 </div>
             </div>
@@ -37,7 +38,7 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
                         <div class="flex-paragraphs">
                             {pitch.slice(1, pitch.length - 1).map(part => <div>
                                 <h3>{part.heading}</h3>
-                                <p>{part.pitch_part_description}</p>
+                                <SplitNewlines content={part.pitch_part_description}></SplitNewlines>
                             </div>)}
                         </div>
                     </div>
@@ -50,7 +51,7 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
         <div class="img-laptop"></div>
         <div class="content">
             <h2>{methodiekSection.heading}</h2>
-            <p>{methodiekSection.description}</p>
+            <SplitNewlines content={methodiekSection.description}></SplitNewlines>
             <LinkButton href={methodiekSection.button_navigation} label={methodiekSection.button_text}></LinkButton>
             <a href={methodiekSection.button_navigation}>{methodiekSection.button_text}</a>
         </div>
