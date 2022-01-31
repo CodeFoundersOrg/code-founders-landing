@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './base.astro';
+import SplitNewlines from '../utils/split-newlines.jsx';
+
 const {heading, subtitle} = Astro.props;
 ---
 <style>
@@ -71,7 +73,7 @@ const {heading, subtitle} = Astro.props;
 <div class="content-wrapper">
   <div class="relative-wrapper">
     {heading ? <h1>{heading}</h1> : ''}
-    {subtitle ? <p class="subtitle">{subtitle}</p> : ''}
+    {subtitle ? <div class="subtitle"><SplitNewlines content={subtitle}></SplitNewlines></div> : ''}
     <slot />
   </div>
 </div>

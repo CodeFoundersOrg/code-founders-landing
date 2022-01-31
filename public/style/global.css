@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
 :root {
   font-family: Roboto Slab, sans-serif;
   font-size: 14px;
