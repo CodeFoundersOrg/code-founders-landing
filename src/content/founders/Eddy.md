@@ -4,8 +4,8 @@ description: 'Begonnen als Trainee en ontwikkeld tot docent. Freek heeft een gro
   passie voor Big Data met een sterke focus op.... '
 photo: "/assets/images/portraits/eddy.jpg"
 technologies:
-- logo: javascript
-  name: JavaScript
+- logo: ''
+  name: Pandas
 - logo: python
   name: Python
 socials:
