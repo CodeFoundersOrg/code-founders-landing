@@ -16,7 +16,7 @@ technologies:
   logo-upload: "/assets/mendix-logo-wine-small.png"
 - logo: ''
   name: SQL
-  logo-upload: ''
+  logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
 - logo: html
   name: html
   logo-upload: ''
