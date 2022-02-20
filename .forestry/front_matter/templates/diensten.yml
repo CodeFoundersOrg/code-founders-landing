@@ -8,11 +8,15 @@ fields:
     required: true
   label: Heading
   description: Heading text of the Diensten page
-- name: subtitle
-  type: text
+- name: description
+  type: textarea
+  default: ''
   config:
     required: false
-  label: Subtitle
-  description: Subtitel van de diensten pagina
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description text of Diensten page
 pages:
 - src/content/diensten/diensten.md
