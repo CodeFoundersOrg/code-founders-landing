@@ -38,6 +38,13 @@ fields:
       target="_blank">https://github.com/PKief/vscode-material-icon-theme/tree/main/icons</a>
       . Make sure to omit ".svg" extension. So if you want Javascript, the right value
       is "javascript"
+  - name: logo-upload
+    type: file
+    config:
+      maxSize: 64
+    label: Logo upload
+    description: If logo does not already exist in the repository, upload your own.
+      Make sure background is transparent (e.g. .png or .svg file).
   - name: name
     type: text
     config:
