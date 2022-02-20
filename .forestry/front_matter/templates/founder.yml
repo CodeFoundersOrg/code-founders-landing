@@ -27,6 +27,12 @@ fields:
 - name: technologies
   type: field_group_list
   fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    description: Name of the Technology, for example "JavaScript"
   - name: logo
     type: text
     config:
@@ -45,12 +51,6 @@ fields:
     label: Logo upload
     description: If logo does not already exist in the repository, upload your own.
       Make sure background is transparent (e.g. .png or .svg file).
-  - name: name
-    type: text
-    config:
-      required: true
-    label: Name
-    description: Name of the Technology, for example "JavaScript"
   config:
     min: 
     max: 
