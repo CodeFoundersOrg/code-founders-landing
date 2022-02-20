@@ -6,8 +6,10 @@ photo: "/assets/images/portraits/eddy.jpg"
 technologies:
 - logo: ''
   name: Pandas
+  logo-upload: "/assets/small-pandas_logo.png"
 - logo: python
   name: Python
+  logo-upload: ''
 socials:
 - social: Twitter
   link: https://twitter.com/jorenbroekema
