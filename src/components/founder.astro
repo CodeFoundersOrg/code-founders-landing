@@ -133,7 +133,7 @@ const { founder, simple } = Astro.props;
         <div class="technologies">
           {founder.technologies.map(tech =>
             <div class="technology">
-              {tech.logo ? <img alt={`${tech.name} logo`} src={`https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg`} /> : ''}
+              {tech.logo || tech['logo-upload'] ? <img alt={`${tech.name} logo`} src={tech.logo ? `https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg` : tech['logo-upload']} /> : ''}
               <span>{tech.name}</span>
             </div>
           )}
