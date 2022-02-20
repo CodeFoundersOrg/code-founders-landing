@@ -7,5 +7,15 @@ fields:
   config:
     required: true
   label: Heading
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Introduction / description text for Teams page
 pages:
 - src/content/team/team.md
