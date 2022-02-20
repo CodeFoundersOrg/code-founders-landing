@@ -10,7 +10,8 @@ const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('cont
 <style>
   .diensten {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 500px);
+    max-width: var(--page-max-width);
+    grid-template-columns: repeat(auto-fill,min(100%, 485px));
     justify-items: center;
     justify-content: center;
     gap: 5rem;
