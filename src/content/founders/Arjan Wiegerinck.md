@@ -6,7 +6,7 @@ photo: "/assets/foto-arjan.jpg"
 technologies:
 - name: Scrum
   logo: ''
-  logo-upload: "/assets/53-539760_scrum-logo-hd-png-download.png"
+  logo-upload: "/assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg"
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/arjanwiegerinck/
