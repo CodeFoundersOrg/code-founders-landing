@@ -1,6 +1,6 @@
 ---
 slogan: 'If you can <span style="color: var(--color-primary-green);">Code</span> you
-  can do <span style="color: var(--color-primary-green);">anything</span>'
+  can do <span style="color: var(--color-primary-green);">anything</span>.'
 description: "Code is de toekomst. \n\nDe digitale revolutie zorgt ervoor dat we meer
   en meer afhankelijk worden van code. \n\nWaar code vroeger het domein was van de
   IT afdeling, is code nu van essentieel belang voor alle branches en beroepen. Het
