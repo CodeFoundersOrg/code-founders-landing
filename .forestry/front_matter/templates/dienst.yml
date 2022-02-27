@@ -39,6 +39,6 @@ fields:
   hidden: true
   label: Layout
   description: Astro layout used for this file
-  default: "../../layouts/dienst.astro"
+  default: "../../../layouts/dienst.astro"
 pages:
 - src/pages/preview__/diensten/TestPagina.md
