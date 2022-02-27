@@ -1,6 +1,6 @@
 ---
 hero_alt: hero image of the service
-layout: "../../layouts/dienst.astro"
+layout: "../../../layouts/dienst.astro"
 heading: Test pagina
 subtitle: Dit is een test
 hero: "/assets/53-539760_scrum-logo-hd-png-download.png"
