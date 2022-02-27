@@ -7,7 +7,7 @@ description: "Code is de toekomst. \n\nDe digitale revolutie zorgt ervoor dat we
   beheersen van code geeft je \nCode.Founders_ maakt coderen bereikbaar voor iedereen.\n\n\nCode
   is de toekomst, die toekomst maken wij bereikbaar. \n\nCode.Founders_ legt het fundament
   voor de toekomst.\n"
-button_text: Ontdek de taal van de toekomst
+button_text: Ontdek de taal van de toekomst.
 button_navigation: "/preview__/diensten"
 unique_id: intro-heading
 
