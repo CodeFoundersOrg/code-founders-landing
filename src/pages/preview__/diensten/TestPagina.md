@@ -2,9 +2,8 @@
 hero_alt: hero image of the service
 layout: "../../../layouts/dienst.astro"
 heading: OCA. Examen-Training
-subtitle: "Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. \nDeze
-  training stoomt je klaar en maakt je \" Examen scherp\" zodat jij succesvol het
-  OCA behaalt."
+subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze training
+  stoomt je klaar en maakt je " Examen scherp" zodat jij succesvol het OCA behaalt.
 hero: "/assets/53-539760_scrum-logo-hd-png-download.png"
 
 ---
