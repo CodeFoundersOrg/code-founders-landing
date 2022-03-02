@@ -7,12 +7,13 @@ subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze
 hero: "/assets/53-539760_scrum-logo-hd-png-download.png"
 
 ---
-# dit is een header
+# Opzet van de training.
 
-Dit is een stukje tekst. hier kan je onderwerpen benoemen.
+In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen aan bod komen.   
+We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit.
 
 ## Dit is een tweede header
 
 Hallo, dit is een tweede stukje tekst, dat onder de header staat.
 
-> dit is een quote die in een blok komt te staan.
+> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht voor moest hebben. 
