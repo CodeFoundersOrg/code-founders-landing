@@ -22,6 +22,15 @@ Wanneer je het certificaat hebt behaald beschik je over een startkwalificatie en
 Tijdens de OCA-examentraining behandelen we voornamelijk de onderwerpen welke tijdens het examen veel aan bod komen: een praktische en efficiëntie methodiek.  
 De volgende onderwerpen zullen ruimschoots aan bod komen.
 
+* Uitleg van de Java Basics
+* Werken met Java Data Types
+* Het gebruik van Operators en Decision Constructs
+* Het maken en gebruiken van Arrays
+* Het gebruiken van Loop constructs
+* Werken met methoden en inkapseling
+* Werken met overerving
+* Omgaan met Exceptions
+
 Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra aandacht behoeven op individueel niveau.  
 Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
 Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
