@@ -4,6 +4,9 @@ name: Arjan
 description: ''
 photo: "/assets/foto-arjan.jpg"
 technologies:
+- name: UML
+  logo: ''
+  logo-upload: ''
 - name: Scrum
   logo: ''
   logo-upload: "/assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg"
