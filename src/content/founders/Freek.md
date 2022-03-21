@@ -12,9 +12,7 @@ technologies:
 - logo: python
   name: Python
   logo-upload: ''
-socials:
-- social: Twitter
-  link: https://twitter.com/jorenbroekema
+socials: []
 order: 1
 
 ---
