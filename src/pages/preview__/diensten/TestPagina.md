@@ -1,13 +1,13 @@
 ---
 hero_alt: hero image of the service
 layout: "../../../layouts/dienst.astro"
-heading: 'OCA <span style="color: var(--color-primary-green)">ExamenTraining</span>_'
+heading: 'OCA.<span style="color: var(--color-primary-green)">ExamenTraining</span>_'
 subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze training
   stoomt je klaar en maakt je " Examen scherp" zodat jij succesvol het OCA behaalt.
 hero: "/assets/c_oracle_certified_associate_-oca-_java_se_8_programmer5d6984f6-e3c9-eb11-bacc-000d3a21e9d7.png"
 
 ---
-# Wat de training je oplevert.
+# Dit levert de training je op.
 
 In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen (OCA Java 8 1Z0-808) aan bod komen. We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit.  
 Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
@@ -26,7 +26,7 @@ Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra
 Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
 Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
 
-## "Het OCA als kwalificatie-race voor het OCP-JD"
+## "Het OCA als eerste stap richting OCP-JD Examen"
 
 Het OCA is een goede basis, een goed Fundament en het behalen leidt tot het Associate niveau.  
 Momenteel worden er verschillende nieuwe examens ontwikkeld en uitgerold. Het OCP-JD is er hier een van.
