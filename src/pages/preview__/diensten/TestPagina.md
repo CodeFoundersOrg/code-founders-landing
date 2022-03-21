@@ -35,7 +35,7 @@ Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra
 Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
 Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
 
-## "Het OCA als eerste stap richting OCP-JD Examen"
+## "Het OCA als de eerste stap richting OCP-JD Examen"
 
 Het OCA is een goede basis, een goed Fundament en het behalen leidt tot het Associate niveau.  
 Momenteel worden er verschillende nieuwe examens ontwikkeld en uitgerold. Het OCP-JD is er hier een van.
