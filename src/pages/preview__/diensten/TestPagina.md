@@ -1,18 +1,37 @@
 ---
 hero_alt: hero image of the service
 layout: "../../../layouts/dienst.astro"
-heading: OCA. Examen-Training
+heading: 'OCA <span style="color: var(--color-primary-green)">ExamenTraining</span>_'
 subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze training
   stoomt je klaar en maakt je " Examen scherp" zodat jij succesvol het OCA behaalt.
-hero: "/assets/53-539760_scrum-logo-hd-png-download.png"
+hero: "/assets/c_oracle_certified_associate_-oca-_java_se_8_programmer5d6984f6-e3c9-eb11-bacc-000d3a21e9d7.png"
 
 ---
 # Wat de training je oplevert.
 
-In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen aan bod komen. We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit.
+In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen (OCA Java 8 1Z0-808) aan bod komen. We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit.  
+Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
 
-## Het OCA-Examen is het "rijbewijs" voor de Java-programmeur.
+## Het OCA-Examen is het rijbewijs voor de Java-programmeur.
 
-Het OCA is de internationale certificeringsstandaard voor de beheersing van Java.  Wanneer je het certificaat hebt behaald beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren ( OOP) begrijpt en toe kan passen.
+Het OCA is de internationale certificeringsstandaard voor de beheersing van Java op Basisniveau, ook wel het Associate- niveau genoemd.  
+Wanneer je het certificaat hebt behaald beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren in Java begrijpt en toe kan passen.
 
-> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht voor moest hebben.
+> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht voor moest besteden. "
+
+Tijdens de OCA-examentraining behandelen we voornamelijk de onderwerpen welke tijdens het examen veel aan bod komen: een praktische en efficiëntie methodiek.  
+De volgende onderwerpen zullen ruimschoots aan bod komen.
+
+Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra aandacht behoeven op individueel niveau.  
+Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
+Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
+
+## "Het OCA als kwalificatie-race voor het OCP-JD"
+
+Het OCA is een goede basis, een goed Fundament en het behalen leidt tot het Associate niveau.  
+Momenteel worden er verschillende nieuwe examens ontwikkeld en uitgerold. Het OCP-JD is er hier een van.
+
+> "Het OCP- JD is écht van een andere orde dan het OCA. Dit zal een waardevol certificaat worden en staat hoof in aanzien."
+
+Met een veelvoud aan onderwerpen en diepgang ten opzichte van het OCA is dit een examen van de buitencategorie!  
+Logisch dat met het behalen van dit examen je het niveau van Associatie (OC**A**) overstijgt  en opereert op het niveau Professional (OC**P**)
