@@ -17,8 +17,6 @@ Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
 Het OCA is de internationale certificeringsstandaard voor de beheersing van Java op Basisniveau, ook wel het Associate- niveau genoemd.  
 Wanneer je het certificaat hebt behaald beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren in Java begrijpt en toe kan passen.
 
-> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht aan moest besteden. "
-
 Tijdens de OCA-examentraining behandelen we voornamelijk de onderwerpen welke tijdens het examen veel aan bod komen: een praktische en efficiëntie methodiek.  
 De volgende onderwerpen zullen ruimschoots aan bod komen.
 
@@ -34,6 +32,8 @@ De volgende onderwerpen zullen ruimschoots aan bod komen.
 Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra aandacht behoeven op individueel niveau.  
 Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
 Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
+
+> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht aan moest besteden. "
 
 ## "Het OCA als de eerste stap richting OCP-JD Examen"
 
