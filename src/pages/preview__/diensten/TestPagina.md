@@ -33,7 +33,7 @@ Naast de algemene behandeling zoomen we specifiek in op de onderwerpen die extra
 Op de tweede dag zal er een analyse worden gemaakt van de antwoorden op de door ons ontwikkelde oefenvragen. Dit leidt tot verdieping en extra uitleg, exact op die elementen waar deze van toegevoegde waarde is.  
 Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maximaal resultaat wordt behaald.
 
-> "Oefenen, oefenen, oefenen"  Via de ABC- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht aan moest besteden. "
+> "Oefenen, oefenen, oefenen"  Via de ABCD- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht aan moest besteden. "
 
 ## "Het OCA als de eerste stap richting OCP-JD Examen"
 
