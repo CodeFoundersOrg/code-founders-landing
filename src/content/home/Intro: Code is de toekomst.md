@@ -8,7 +8,7 @@ description: "Code is de taal van de toekomst. \n\nDe wereld van nu is een digit
   op allerlei vlakken.\n\nDoor onze unieke opleidingsmethode maken we coderen voor
   iedereen boeiend en toegankelijk.\n\nBij ons leg jij het fundament voor de toekomst.
   En jouw toekomst!\n"
-button_text: Ontdek de taal van de toekomst!
+button_text: Ontdek de taal van de toekomst
 button_navigation: "/preview__/diensten"
 unique_id: intro-heading
 
