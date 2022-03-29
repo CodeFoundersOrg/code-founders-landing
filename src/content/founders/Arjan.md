@@ -6,7 +6,7 @@ photo: "/assets/foto-arjan.jpg"
 technologies:
 - name: UML
   logo: ''
-  logo-upload: ''
+  logo-upload: "/assets/uml_logo.png"
 - name: Scrum
   logo: ''
   logo-upload: "/assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg"
