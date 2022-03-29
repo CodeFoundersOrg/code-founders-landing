@@ -15,9 +15,9 @@ Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
 ## Het OCA-Examen is het rijbewijs voor de Java-programmeur.
 
 Het OCA is de internationale certificeringsstandaard voor de beheersing van Java op Basisniveau, ook wel het Associate- niveau genoemd.  
-Wanneer je het certificaat hebt behaald beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren in Java begrijpt en toe kan passen.
+Wanneer je het certificaat hebt behaald, beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren in Java begrijpt en toe kan passen.
 
-Tijdens de OCA-examentraining behandelen we voornamelijk de onderwerpen welke tijdens het examen veel aan bod komen: een praktische en efficiëntie methodiek.  
+Tijdens de OCA-examentraining behandelen we voornamelijk de onderwerpen welke tijdens het examen veel aan bod komen: een praktische en efficiënte methodiek.  
 De volgende onderwerpen zullen ruimschoots aan bod komen.
 
 * Uitleg van de Java Basics
