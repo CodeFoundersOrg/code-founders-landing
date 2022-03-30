@@ -11,7 +11,9 @@ technologies:
 - logo: php
   name: PHP
   logo-upload: ''
-socials: []
+socials:
+- social: LinkedIn
+  link: https://www.linkedin.com/in/rloman/
 order: 2
 
 ---
