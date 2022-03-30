@@ -1,7 +1,10 @@
 ---
 order: 
 name: Arjan
-description: ''
+description: 'Binnen onze club houdt Arjan zich bezig met de verschillende ondersteunende
+  zaken. Finance, Sales en kwaliteit: hij speelt verbindende rol tussen de docenten,
+  klanten en studenten. Technisch inhoudelijk richt Arjan zich op de Scrum methodiek,
+  BI en modellering.'
 photo: "/assets/foto-arjan.jpg"
 technologies:
 - name: UML
