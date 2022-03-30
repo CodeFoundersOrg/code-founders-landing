@@ -12,7 +12,9 @@ technologies:
 - logo: python
   name: Python
   logo-upload: ''
-socials: []
+socials:
+- social: LinkedIn
+  link: https://www.linkedin.com/in/freek-hoogstede/
 order: 1
 
 ---
