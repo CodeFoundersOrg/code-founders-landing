@@ -1,5 +1,5 @@
 ---
-label: Dienst
+label: Opleiding
 hide_body: false
 fields:
 - name: draft
@@ -13,7 +13,7 @@ fields:
   config:
     required: true
   label: Heading
-  description: Titel van de dienst, e.g. Python + RaspberryPi
+  description: Titel van de opleiding, e.g. Python + RaspberryPi
 - name: subtitle
   type: textarea
   default: ''
@@ -45,6 +45,6 @@ fields:
   hidden: true
   label: Layout
   description: Astro layout used for this file
-  default: "../../../layouts/dienst.astro"
+  default: "../../../layouts/opleiding.astro"
 pages:
-- src/pages/preview__/diensten/TestPagina.md
+- src/pages/preview__/opleidingen/TestPagina.md

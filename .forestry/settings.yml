@@ -1,8 +1,8 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: directory
   path: src/content/home
@@ -20,17 +20,17 @@ sections:
   create: documents
   match: "**/*.md"
 - type: directory
-  path: src/content/diensten
-  label: Diensten Page
+  path: src/content/opleidingen
+  label: Opleidingen Page
   create: all
   match: "**/*.md"
 - type: directory
-  path: src/pages/preview__/diensten
-  label: Diensten
+  path: src/pages/preview__/opleidingen
+  label: Opleidingen
   create: all
   match: "**/*.md"
   templates:
-  - dienst
+  - opleiding
 - type: directory
   path: src/content/contact
   label: Contact

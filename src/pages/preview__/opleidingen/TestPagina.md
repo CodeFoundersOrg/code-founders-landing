@@ -1,7 +1,7 @@
 ---
 draft: true
 hero_alt: hero image of the service
-layout: "../../../layouts/dienst.astro"
+layout: "../../../layouts/opleiding.astro"
 heading: 'OCA.<span style="color: var(--color-primary-green)">ExamenTraining</span>_'
 subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze training
   stoomt je klaar en maakt je " Examen scherp" zodat jij succesvol het OCA behaalt.

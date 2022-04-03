@@ -4,7 +4,7 @@ heading: 'Python.<span style="color: var(--color-primary-green)">RaspberryPI</sp
 subtitle: '2 Daagse training in Python met RaspBerry PI en REST API'
 hero: '/assets/raspberrypi.jpg'
 hero_alt: 'raspberry pi'
-layout: ../../../layouts/dienst.astro
+layout: ../../../layouts/opleiding.astro
 ---
 
 De drie hoofdelementen van deze training zijn:
