@@ -2,6 +2,12 @@
 label: Dienst
 hide_body: false
 fields:
+- name: draft
+  type: boolean
+  label: Draft
+  description: Whether it is a draft, hidden from readers in the overview but visitable
+    if you have the URL.
+  default: false
 - name: heading
   type: text
   config:
