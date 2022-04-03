@@ -4,7 +4,7 @@ import BlurLayout from '../../layouts/blur.astro';
 import Dienst from '../../components/dienst.astro';
 
 const mds = Astro.fetchContent('../../{content,pages/preview__}/diensten/**/*.md');
-const diensten = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/preview__/diensten'));
+const diensten = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/preview__/diensten')).filter(dienst => !dienst.draft);
 const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('content/diensten'));
 ---
 <style>

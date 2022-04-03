@@ -1,4 +1,5 @@
 ---
+draft: false
 heading: 'Python.<span style="color: var(--color-primary-green)">RaspberryPI</span>_'
 subtitle: '2 Daagse training in Python met RaspBerry PI en REST API'
 hero: '/assets/raspberrypi.jpg'

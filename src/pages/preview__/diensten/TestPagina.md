@@ -1,4 +1,5 @@
 ---
+draft: true
 hero_alt: hero image of the service
 layout: "../../../layouts/dienst.astro"
 heading: 'OCA.<span style="color: var(--color-primary-green)">ExamenTraining</span>_'

@@ -1,4 +1,5 @@
 ---
+draft: false
 heading: 'Java.<span style="color: var(--color-primary-green)">Advanced</span>_'
 subtitle: Het landschap van Java icm Spring. Een doorloop van Java in een geavanceerde
   backend applicatie.
