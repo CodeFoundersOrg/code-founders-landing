@@ -36,6 +36,7 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
   }
 
   .intro {
+    position: relative;
     font-size: 1rem;
     line-height: 1.75rem;
     text-align: center;
@@ -43,6 +44,15 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
     margin: 0 auto 5rem auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .shirt {
+    width: 750px;
+    position: absolute;
+    top: -375px;
+    right: -350px;
+    z-index: -1;
+    filter: drop-shadow(0px 8px 10px black)
   }
 
   @media (min-width: 601px) {
@@ -69,12 +79,15 @@ const [team] = content.filter(md => path.dirname(md.file.pathname).endsWith('tea
 </style>
 <link rel="stylesheet" href="/style/team.css" />
 <BlurLayout heading={team.heading}>
-<div class="intro">
-<SplitNewlines content={team.description}></SplitNewlines>
-</div>
-<div class="founders">
-  {founders.map(founder => (
-    <Founder founder={founder} />
-  ))}
-</div>
+  <div class="relative-wrapper">
+    <div class="intro">
+      <img class="shirt" src="/assets/images/t-shirt.png" />
+      <SplitNewlines content={team.description}></SplitNewlines>
+    </div>
+  </div>
+  <div class="founders">
+    {founders.map(founder => (
+      <Founder founder={founder} />
+    ))}
+  </div>
 </BlurLayout>
