@@ -4,6 +4,12 @@ import BlurLayout from '../../layouts/blur.astro';
 const [contact] = Astro.fetchContent('../../content/contact/contact.md');
 ---
 <style>
+  .relative-wrapper {
+    margin: 0 auto;
+    max-width: var(--content-width);
+    position: relative;
+  }
+
   .contact p {
     font-size: 1rem;
     text-align: center;
@@ -11,6 +17,22 @@ const [contact] = Astro.fetchContent('../../content/contact/contact.md');
   }
   .contact p:not(:last-child) {
     margin-bottom: 2rem;
+  }
+
+  .finger-guns {
+    width: 600px;
+    position: absolute;
+    top: -250px;
+    left: -150px;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 1280px) {
+    .finger-guns {
+      width: 400px;
+      top: 0;
+    }
   }
 
   @media (min-width: 601px) {
@@ -21,7 +43,10 @@ const [contact] = Astro.fetchContent('../../content/contact/contact.md');
 </style>
 <link rel="stylesheet" href="/style/contact.css" />
 <BlurLayout subtitle={contact.description} heading={contact.heading}>
-<div class="contact">
-  <p>{contact.email}</p>
-</div>
+  <div class="relative-wrapper">
+    <img class="finger-guns" alt="man with finger guns" src="/assets/images/man-finger-guns.png">
+    <div class="contact">
+      <p>{contact.email}</p>
+    </div>
+  </div>
 </BlurLayout>
