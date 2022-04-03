@@ -13,8 +13,8 @@ fields:
   config:
     required: false
   label: Pitch - Button Navigation
-  description: Where to navigate to from the pitch action button, e.g. /opleidingen or
-    /contact
+  description: Where to navigate to from the pitch action button, e.g. /opleidingen
+    or /contact
 - name: unique_id
   type: text
   config:

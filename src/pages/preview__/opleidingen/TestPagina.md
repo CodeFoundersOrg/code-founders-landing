@@ -8,7 +8,7 @@ subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze
 hero: "/assets/c_oracle_certified_associate_-oca-_java_se_8_programmer5d6984f6-e3c9-eb11-bacc-000d3a21e9d7.png"
 
 ---
-# Dit levert de training je op.
+## Dit levert de training je op.
 
 In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen (OCA Java 8 1Z0-808) aan bod komen. We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit. De term "struikelcode" zal je vaak horen in deze training.  
 Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
