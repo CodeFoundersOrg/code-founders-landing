@@ -47,4 +47,5 @@ fields:
   description: Astro layout used for this file
   default: "../../../layouts/opleiding.astro"
 pages:
+- src/pages/preview__/opleidingen/Fundamentals.md
 - src/pages/preview__/opleidingen/OCAexamentraining.md
