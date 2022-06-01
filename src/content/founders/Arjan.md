@@ -1,7 +1,7 @@
 ---
 order: 
 name: Arjan
-description: Binnen onze club houdt  speelt Arjan de verbindende rol tussen de docenten,
+description: Binnen onze club speelt Arjan de verbindende rol tussen de docenten,
   klanten en studenten. Op educatief vlak specialiseert hij zich op de Scrum methodiek,
   BI en modellering.
 photo: "/assets/foto-arjan.jpg"
