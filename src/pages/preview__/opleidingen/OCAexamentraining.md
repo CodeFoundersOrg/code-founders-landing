@@ -13,7 +13,7 @@ hero: "/assets/c_oracle_certified_associate_-oca-_java_se_8_programmer5d6984f6-e
 In deze tweedaagse-training gaan we intensief aan de slag met de onderdelen die in het OCA-examen (OCA Java 8 1Z0-808) aan bod komen. We behandelen op een praktische manier de vragen en waarschuwen je voor de valkuilen waar het OCA vol mee zit. De term "struikelcode" zal je vaak horen in deze training.  
 Met deze tweedaagse is het behalen van het certificaat binnen handbereik!
 
-## Het OCA-Examen is het rijbewijs voor de Java-programmeur.
+### Het OCA-Examen is het rijbewijs voor de Java-programmeur.
 
 Het OCA is de internationale certificeringsstandaard voor de beheersing van Java op Basisniveau, ook wel het Associate- niveau genoemd.  
 Wanneer je het certificaat hebt behaald, beschik je over een startkwalificatie en kan je aantonen dat je de basis van Object Georiënteerd Programmeren in Java begrijpt en toe kan passen.
@@ -36,7 +36,7 @@ Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maxim
 
 > "Oefenen, oefenen, oefenen"  Via de ABCD- methodiek van Code.Founders_ wist ik exact waar ik extra aandacht aan moest besteden. "
 
-## "Het OCA als de eerste stap richting OCP-JD Examen"
+#### "Het OCA als de eerste stap richting OCP-JD Examen"
 
 Het OCA is een goede basis, een goed Fundament en het behalen leidt tot het Associate niveau.  
 Momenteel worden er verschillende nieuwe examens ontwikkeld en uitgerold. Het OCP-JD is er hier een van.
