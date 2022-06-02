@@ -33,3 +33,13 @@ De review, retrospective en sprintplanning zijn vaste events in deze fase.
 ### Certificeringen.
 
 Naast het  het vergaren van kennis & kunde,  het bouwen aan individuele en de gemeenschappelijke applicatie, zijn er tal van certificeringen waarmee het traineeship afgesloten kan worden.
+
+* OCA
+* OCP -JD
+* AZ - 900
+* IREB
+* ISTQB
+* PCEP - 30
+* PCAP - 31
+* PCPP - 32_1
+* PCPP - 32_2
