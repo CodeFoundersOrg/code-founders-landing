@@ -19,9 +19,10 @@ In een periode van ruim vijf jaar hebben wij dit traject geoptimaliseerd en tall
 
 ### Maatwerk.
 
-Een effectief en efficient traineeship staat centraal, "tailor made" naar de behoefte van de organisatie. Minder behoefte aan Developers en meer aan Low Coders ? Het traineeship kan worden aangepast aan specifieke eisen.  Specifieke frameworks, talen of werkwijzen die worden gebruikt ?  Wij implementeren deze in het curriculum.
+Een effectief en efficient traineeship staat centraal, "tailor made" naar de behoefte van de organisatie.  Onze curriculum verantwoordelijk zal samen met de IT afdeling onderzoek doen naar de behoeften en vereisten dat resulteert in leerpad dat perfect aansluit.  
+Specifieke frameworks, talen of werkwijzen die worden gebruikt ?  Wij implementeren deze in het curriculum.
 
-Op deze manier is er een directe aansluiting met de praktijk.
+Op deze manier is er een directe, naadloze aansluiting met de praktijk.
 
 > Na jaren gebruik te hebben gemaakt van detacheringsclubs, zijn we zelf onze nieuwe medewerkers op gaan leiden. Met CodeFounders hebben we hier een goede partner in gevonden. Meer controle en financieel aantrekkelijker.
 
@@ -44,3 +45,6 @@ Naast het  het vergaren van kennis & kunde,  het bouwen aan individuele en de ge
 * PCAP - 31
 * PCPP - 32_1
 * PCPP - 32_2
+* Lowcode: Mendix, Outsystems.
+
+`klijhghlkjlskrtjlh code layout `
