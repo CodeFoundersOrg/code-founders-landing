@@ -1,7 +1,7 @@
 ---
 hero_alt: hero image of the service
 layout: "../../../layouts/opleiding.astro"
-draft: true
+draft: false
 heading: IT - Fundamentals traject.
 subtitle: 'Uniek Traineeship waar Software Development, Big Data, Informatie Analyse
   & Devops samenkomen. '
