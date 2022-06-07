@@ -6,9 +6,9 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
   vindt het enorm mooi om huidige generaties te voorzien van goede kennis voor de
   toekomst. "
 technologies:
-- name: C ++
-  logo: cpp
-  logo-upload: ''
+- name: Spring
+  logo: ''
+  logo-upload: "/assets/354-3543373_spring-framework-logo-svg-png-download-java-spring.png"
 - name: C
   logo: c
   logo-upload: ''
@@ -17,6 +17,9 @@ technologies:
   logo-upload: ''
 - name: Git
   logo: git
+  logo-upload: ''
+- name: C ++
+  logo: cpp
   logo-upload: ''
 - name: Java
   logo: java
