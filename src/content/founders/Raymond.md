@@ -11,7 +11,7 @@ technologies:
   logo-upload: "/assets/kisspng-logo-kubernetes-transparency-font-computer-softwar-5c6d56116f6969-6604844515506693294564.jpg"
 - name: Spring
   logo: ''
-  logo-upload: "/assets/354-3543373_spring-framework-logo-svg-png-download-java-spring.png"
+  logo-upload: "/assets/kisspng-logo-kubernetes-transparency-font-computer-softwar-5c6d56116f6969-6604844515506693294564.png"
 - name: C
   logo: c
   logo-upload: ''
