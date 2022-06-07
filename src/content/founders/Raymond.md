@@ -6,6 +6,9 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
   vindt het enorm mooi om huidige generaties te voorzien van goede kennis voor de
   toekomst. "
 technologies:
+- name: C++
+  logo: Cpp
+  logo-upload: ''
 - name: C
   logo: c
   logo-upload: ''
