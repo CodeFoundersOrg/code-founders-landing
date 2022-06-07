@@ -6,6 +6,12 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
   vindt het enorm mooi om huidige generaties te voorzien van goede kennis voor de
   toekomst. "
 technologies:
+- name: Docker
+  logo: docker
+  logo-upload: ''
+- name: Git
+  logo: git
+  logo-upload: ''
 - name: Java
   logo: java
   logo-upload: ''
