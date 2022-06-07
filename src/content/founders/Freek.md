@@ -6,6 +6,9 @@ description: Bij ons begonnen als student en ontwikkeld tot docent. Als speciali
   de voet.
 photo: "/assets/images/portraits/eddy.jpg"
 technologies:
+- name: Matlab
+  logo: matlab
+  logo-upload: ''
 - logo: ''
   name: Pandas
   logo-upload: "/assets/small-pandas_logo.png"
