@@ -1,15 +1,13 @@
 ---
 photo: "/assets/images/portraits/sander.jpg"
 name: Raymond
-description: Wow wat een stel toffe peren. Vooral Felix, die is pas écht aardig. Excepteur
-  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-  anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.
+description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
+  Boot. Hij is ook de laatste jaren veel bezig met containerisatie met Docker en Kubernetes.\nHij
+  vindt het enorm mooi om huidige generaties te voorzien van goede kennis voor de
+  toekomst. "
 technologies:
-- logo: javascript
-  name: JavaScript
-  logo-upload: ''
-- logo: php
-  name: PHP
+- name: Java
+  logo: java
   logo-upload: ''
 socials:
 - social: LinkedIn
