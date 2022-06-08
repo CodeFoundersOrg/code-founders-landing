@@ -6,6 +6,9 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
   vindt het enorm mooi om huidige generaties te voorzien van goede kennis voor de
   toekomst. "
 technologies:
+- name: SQL
+  logo: ''
+  logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
 - name: Kubernetes
   logo: folder-kubernetes-open
   logo-upload: ''
