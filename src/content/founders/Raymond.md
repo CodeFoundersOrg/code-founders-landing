@@ -10,9 +10,8 @@ technologies:
   logo: folder-kubernetes-open
   logo-upload: ''
 - name: Spring
-  logo: <img src="https://www.clipartmax.com/png/small/354-3543373_spring-framework-logo-svg-png-download-java-spring.png"
-    alt="Spring Framework Logo Svg , Png Download - Java Spring @clipartmax.com">
-  logo-upload: ''
+  logo: ''
+  logo-upload: "/assets/354-3543373_spring-framework-logo-svg-png-download-java-spring-1.png"
 - name: C
   logo: c
   logo-upload: ''
