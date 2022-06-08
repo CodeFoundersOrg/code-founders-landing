@@ -3,8 +3,8 @@ photo: "/assets/images/portraits/sander.jpg"
 name: Raymond
 description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
   Boot. Sinds geruime tijd is hij zich ook gaan richten op de technologie van containerisatie
-  met Docker en Kubernetes. \n\"Ik vind het enorm mooi om huidige generaties te voorzien
-  van goede kennis voor de toekomst. \""
+  met Docker en Kubernetes. \nRaymond vindt het enorm mooi om huidige generaties door
+  zijn trainingen, te voorzien van goede kennis voor de toekomst"
 technologies:
 - name: SQL
   logo: ''
