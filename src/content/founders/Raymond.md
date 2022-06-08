@@ -7,8 +7,8 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
   toekomst. "
 technologies:
 - name: Kubernetes
-  logo: ''
-  logo-upload: "/assets/kisspng-logo-kubernetes-transparency-font-computer-softwar-5c6d56116f6969-6604844515506693294564.jpg"
+  logo: folder-kubernetes-open
+  logo-upload: ''
 - name: Spring
   logo: ''
   logo-upload: "/assets/kisspng-logo-kubernetes-transparency-font-computer-softwar-5c6d56116f6969-6604844515506693294564.png"
