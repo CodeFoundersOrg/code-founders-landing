@@ -7,6 +7,9 @@ description: Felix is een als allround IT 'er gespecialiseerd in de ontwikkeling
   van het curriculum en heeft de rol als "leidraaddocent" in onze traineeships.
 photo: "/assets/070122-code-founders-felix-_65281.jpg"
 technologies:
+- name: Outsystems
+  logo: ''
+  logo-upload: "/assets/outsystemsicon-260x260.webp"
 - logo: azure
   name: Azure Devops
   logo-upload: ''
