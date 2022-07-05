@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 3
 name: Leandro
 description: Binnen ons team is Leandro actief als developer en beheerder van onze
   software systemen. Daarnaast houdt hij zich bezig met de planning van de docenten
