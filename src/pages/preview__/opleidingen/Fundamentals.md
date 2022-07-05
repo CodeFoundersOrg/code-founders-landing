@@ -5,7 +5,7 @@ draft: false
 heading: 'IT.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
 subtitle: 'Uniek Traineeship waar Software Development, Big Data, Informatie Analyse
   & Devops samenkomen. '
-hero: ''
+hero: "/assets/cf_img_beeld_paars_code-6_1920x1280.png"
 
 ---
 ### Het Traject.
