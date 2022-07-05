@@ -13,6 +13,8 @@ technologies:
 - name: Java
   logo: java
   logo-upload: ''
-socials: []
+socials:
+- social: LinkedIn
+  link: https://www.linkedin.com/in/leandrodagostino/
 
 ---
