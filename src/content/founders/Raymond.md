@@ -1,5 +1,5 @@
 ---
-photo: "/assets/images/portraits/sander.jpg"
+photo: "/assets/cf_img_avatar_male-1_1920px.png"
 name: Raymond
 description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
   Boot. Sinds geruime tijd is hij zich ook gaan richten op de technologie van containerisatie
