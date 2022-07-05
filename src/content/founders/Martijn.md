@@ -32,6 +32,6 @@ technologies:
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/martijn-hiemstra/
-order: 3
+order: 2
 
 ---
