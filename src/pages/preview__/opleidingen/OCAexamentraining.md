@@ -5,7 +5,7 @@ layout: "../../../layouts/opleiding.astro"
 heading: 'OCA.<span style="color: var(--color-primary-green)">ExamenTraining</span>_'
 subtitle: Het OCA examen wordt vaak omschreven als het rijbewijs voor JAVA. Deze training
   stoomt je klaar en maakt je " Examen scherp" zodat jij succesvol het OCA behaalt.
-hero: "/assets/c_oracle_certified_associate_-oca-_java_se_8_programmer5d6984f6-e3c9-eb11-bacc-000d3a21e9d7.png"
+hero: "/assets/cf_img_beeld_paars_laptop-3_1920x1280.png"
 
 ---
 ## Dit levert de training je op.
