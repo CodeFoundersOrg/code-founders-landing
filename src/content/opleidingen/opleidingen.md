@@ -1,5 +1,5 @@
 ---
-heading: 'Onze  <span style="color: var(--color-primary-green)">Opleidingen</span>.'
+heading: 'Onze  <span style="color: var(--color-primary-green)">Trainingen</span>.'
 description: ''
 
 ---
