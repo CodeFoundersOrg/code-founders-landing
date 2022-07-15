@@ -41,7 +41,7 @@ Deze "ABC-Methode" zorgt voor een effectief leerpad waar in een korte tijd maxim
 Het OCA is een goede basis, een goed Fundament en het behalen leidt tot het Associate niveau.  
 Momenteel worden er verschillende nieuwe examens ontwikkeld en uitgerold. Het OCP-JD is er hier een van.
 
-> "Het OCP- JD de overtreffende trap van het OCA. Dit zal een waardevol certificaat worden en staat hoog in aanzien. Het OCA is een ideale opstap."
+> "Het OCP- JD  is de overtreffende trap van het OCA. Dit zal een waardevol certificaat worden en staat hoog in aanzien. Het OCA is een ideale opstap."
 
 Met een veelvoud aan onderwerpen en diepgang ten opzichte van het OCA is dit een examen van de buitencategorie!  
-Logisch dat met het behalen van dit examen je het niveau van Associatie (OC**A**) overstijgt  en opereert op het niveau Professional (OC**P**)
+Logisch dat met het behalen van dit examen je het niveau van Associatie overstijgt en je kan groeien naar het niveau Professional.
