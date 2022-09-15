@@ -1,6 +1,6 @@
 ---
 name: Freek
-description: Bij ons begonnen als student en ontwikkeld tot docent. Als specialist
+description: Bij ons begonnen als student en zichzelf ontwikkeld tot docent. Als specialist
   in het domein van Big Data is Freek actief op het snijvlak van Development en Business
   Analyse. Met beide benen in het werkveld, volgt hij de nieuwste ontwikkelingen op
   de voet.
