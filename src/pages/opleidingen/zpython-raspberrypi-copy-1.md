@@ -5,7 +5,7 @@ subtitle: Het landschap van Java icm Spring. Een doorloop van Java in een geavan
   backend applicatie.
 hero: "/assets/cf_img_beeld_paars_laptop-4_1920x1280.png"
 hero_alt: java hero image
-layout: "../../../layouts/opleiding.astro"
+layout: "../../layouts/opleiding.astro"
 
 ---
 De drie hoofdelementen van deze training zijn:
