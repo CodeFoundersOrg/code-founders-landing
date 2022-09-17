@@ -29,10 +29,10 @@ Op deze manier is er een directe, naadloze aansluiting met de praktijk.
 
 Gedurende de tweede fase van het traineeship wordt gewerkt aan een gezamenlijke applicatie.  Hier kan gekozen worden voor een thema die door de groep wordt bedacht of een applicatie die aansluit op een concrete doelstelling van de organisatie.
 
-De door ons ontwikkelede opzet zorgt niet alleen voor het opbouwen van technische kennis en kunde, ook leert de groep effectief samenwerken en wordt er iedere sprint opgeleverd.  
-De review, retrospective en sprintplanning zijn vaste events in deze fase.
+De door ons ontwikkelde opzet zorgt niet alleen voor het opbouwen van technische kennis en kunde, ook leert de groep effectief samenwerken en wordt er iedere sprint opgeleverd.  
+De review, retrospective en sprintplanning zijn vaste events in deze fase. 
 
-> " Doordat onze nieuwe medewerkers, naast hun individuele leerdoelen ook aan een gezamenlijke applicatie bouwden, leerde zij samenwerken en kregen zij zicht op de uitdagingen in het domein van de collega's."
+> " Doordat onze nieuwe medewerkers, naast hun individuele leerdoelen ook aan een gezamenlijk een applicatie hebben gebouwd, leerden zij samenwerken en kregen zij zicht op de werkzaamheden en uitdagingen in het domein van de collega's."
 
 ### Certificeringen.
 
