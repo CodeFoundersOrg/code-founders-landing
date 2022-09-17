@@ -8,11 +8,6 @@ hero_alt: java hero image
 layout: "../../layouts/opleiding.astro"
 
 ---
-De drie hoofdelementen van deze training zijn:
-
-* Het leren van de fundamenten van Python programmeren.
-* Het toepassen van Python op een Raspberry Pi.
-* Het aanroepen en verwerken van gegevens uit een REST/API met behulp van Python.
 
 ## Componenten & Beans
 
