@@ -8,8 +8,7 @@ hero_alt: java hero image
 layout: "../../layouts/opleiding.astro"
 
 ---
-
-## Componenten & Beans
+## Componenten & Beans 
 
 > "Werken met de Bean architectuur, geavanceerd software architectuur, Maven en Deploy"
 
