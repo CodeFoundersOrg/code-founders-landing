@@ -3,8 +3,8 @@ hero_alt: hero image of the service
 layout: "../../layouts/opleiding.astro"
 draft: false
 heading: 'IT.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
-subtitle: 'Uniek Traineeship waar Software Development, Big Data, Informatie Analyse
-  & Devops samenkomt. '
+subtitle: 'Uniek Traineeship met een specialisatie in Software Development, Big Data,
+  Informatie Analyse & Devops en in de eindopdracht samenkomt. '
 hero: "/assets/cf_img_beeld_paars_code-6_1920x1280.png"
 
 ---
