@@ -1,7 +1,7 @@
 ---
 draft: false
 heading: 'Python.<span style="color: var(--color-primary-green)">RaspberryPI</span>_'
-subtitle: 2 daagse training in Python met RaspBerry PI en REST API
+subtitle: Een twee daagse training in Python met RaspBerry PI en REST API.
 hero: "/assets/cf_img_beeld_paars_code-7a_1920x1280.png"
 hero_alt: raspberry pi
 layout: "../../layouts/opleiding.astro"
