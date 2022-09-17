@@ -1,6 +1,6 @@
 ---
 hero_alt: hero image of the service
-layout: "../../../layouts/opleiding.astro"
+layout: "../../layouts/opleiding.astro"
 draft: false
 heading: 'IT.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
 subtitle: 'Uniek Traineeship waar Software Development, Big Data, Informatie Analyse

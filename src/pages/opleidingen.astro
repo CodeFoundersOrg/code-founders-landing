@@ -1,10 +1,10 @@
 ---
 import * as path from 'node:path';
-import BlurLayout from '../../layouts/blur.astro';
-import Opleiding from '../../components/opleiding.astro';
+import BlurLayout from '../layouts/blur.astro';
+import Opleiding from '../components/opleiding.astro';
 
-const mds = Astro.fetchContent('../../{content,pages/preview__}/opleidingen/**/*.md');
-const opleidingen = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/preview__/opleidingen')).filter(opleiding => !opleiding.draft);
+const mds = Astro.fetchContent('../{content,pages}/opleidingen/**/*.md');
+const opleidingen = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/opleidingen')).filter(opleiding => !opleiding.draft);
 const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('content/opleidingen'));
 ---
 <style>

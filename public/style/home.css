@@ -272,15 +272,6 @@ h3 {
   color: var(--color-primary-black);
 }
 
-#methodiek a {
-  text-decoration: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  z-index: 1;
-}
-
 @media (min-width: 1201px) {
   #methodiek {
     max-width: 1600px;

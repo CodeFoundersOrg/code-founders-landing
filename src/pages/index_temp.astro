@@ -1,0 +1,79 @@
+---
+let title = 'Code.Founders_';
+---
+<style>
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--color-primary-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: HelveticaNeue, serif;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  #cursor {
+    text-shadow: 0px 2px white
+  }
+</style>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Code.Founders. If you can code, you can do anything.">
+    <meta name="author" content="Code.Founders_">
+    <meta name="keywords" content="code, founders, educatie, traineeship, bootcamp, docenten, leraren, leerlingen, studenten, IT, programmeren, coderen">
+    <meta name="theme-color" content="#00cc99">
+    <meta name="twitter:title" content="Code.Founders_ | If you can code, you can do anything">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CodeFoundersNL">
+    <meta name="twitter:creator" content="@divRIOTS">
+    <meta name="twitter:image" content="https://codefounders.nl/assets/meta-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl-NL">
+    <meta property="og:site" content="https://codefounders.nl/">
+    <meta property="og:site_name" content="Code.Founders_">
+    <meta property="og:title" content="Code.Founders_ | If you can code, you can do anything">
+    <meta property="og:description" content="Code.Founders. If you can code, you can do anything.">
+    <meta property="og:image" content="https://codefounders.nl/assets/meta-image.jpg">
+    <meta property="og:image:alt" content="Display picture of Code.Founders_">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+<h1>
+  <span id="cursor">_</span>
+</h1>
+<script>
+  const headingChars = 'Code.Founders'.split('');
+  const cursorEl = document.getElementById('cursor');
+  setInterval(() => {
+    cursorEl.style.visibility = getComputedStyle(cursorEl).getPropertyValue('visibility') === 'hidden' ? '' : 'hidden';
+  }, 500);
+
+  (async function() {
+    let green = false;
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    for (let char of headingChars) {
+      const charEl = document.createElement('span');
+      charEl.innerText = char;
+      if (green)
+        charEl.style.color = 'var(--color-primary-green)';
+      if (char === '.')
+        green = true;
+
+      cursorEl.insertAdjacentElement('beforebegin', charEl);
+      await new Promise(resolve => setTimeout(resolve, 50 + Math.floor(Math.random() * 300)));
+    }
+  })();
+</script>
+</body>
+</html>
