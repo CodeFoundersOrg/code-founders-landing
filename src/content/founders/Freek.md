@@ -6,6 +6,9 @@ description: Bij ons begonnen als student en zichzelf ontwikkeld tot docent. Als
   de voet.
 photo: "/assets/cf_img_avatar_male-3_1920px.png"
 technologies:
+- name: Azure Devops
+  logo: azure.svg
+  logo-upload: ''
 - name: Git
   logo: git.svg
   logo-upload: ''
