@@ -10,7 +10,7 @@ technologies:
   logo: azure.svg
   logo-upload: ''
 - name: Git
-  logo: git.svg
+  logo: git
   logo-upload: ''
 - name: SQL
   logo: ''
