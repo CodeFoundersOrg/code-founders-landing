@@ -6,6 +6,12 @@ description: Bij ons begonnen als student en zichzelf ontwikkeld tot docent. Als
   de voet.
 photo: "/assets/cf_img_avatar_male-3_1920px.png"
 technologies:
+- name: Git
+  logo: git.svg
+  logo-upload: ''
+- name: SQL
+  logo: ''
+  logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
 - name: Matlab
   logo: matlab
   logo-upload: ''
