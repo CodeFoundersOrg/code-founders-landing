@@ -1,11 +1,14 @@
 ---
-photo: "/assets/cf_img_avatar_male-1_1920px.png"
+photo: "/assets/100722-code-founders-_83870.jpg"
 name: Raymond
 description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
   Boot. Sinds geruime tijd is hij zich ook gaan richten op de technologie van containerisatie
   met Docker en Kubernetes. \nRaymond vindt het enorm mooi om huidige generaties door
   zijn trainingen, te voorzien van goede kennis voor de toekomst"
 technologies:
+- name: Angular
+  logo: angular
+  logo-upload: ''
 - name: SQL
   logo: ''
   logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
