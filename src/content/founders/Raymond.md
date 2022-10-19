@@ -1,5 +1,5 @@
 ---
-photo: "/assets/100722-code-founders-_83870.jpg"
+photo: "/assets/100722-code-founders-_83870-social.jpg"
 name: Raymond
 description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
   Boot. Sinds geruime tijd is hij zich ook gaan richten op de technologie van containerisatie
