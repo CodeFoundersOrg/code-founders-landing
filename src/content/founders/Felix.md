@@ -5,7 +5,7 @@ description: Felix is als allround IT 'er gespecialiseerd in de ontwikkeling van
   Door zijn sterke focus op de juiste didactiek kan hij iedereen leren programmeren.
   Naast een actieve rol als docent is hij verantwoordelijk voor de ontwikkeling van
   het curriculum en heeft de rol als "leidraaddocent" in onze traineeships.
-photo: "/assets/070122-code-founders-felix-_65281.jpg"
+photo: "/assets/070122-code-founders-felix-_65281-social.jpg"
 technologies:
 - name: Outsystems
   logo: ''
