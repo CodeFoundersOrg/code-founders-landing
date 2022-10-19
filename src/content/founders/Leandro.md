@@ -5,7 +5,7 @@ description: Binnen ons team is Leandro actief als developer en beheerder van on
   software systemen. Daarnaast houdt hij zich bezig met de planning van de docenten
   op de diverse trajecten. Als trainer is hij gespecialiseerd in de backend en werkt
   met diverse frameworks en technieken.
-photo: "/assets/062022-code-founders-leandro59741.jpg"
+photo: "/assets/062022-code-founders-leandro59741-social.jpg"
 technologies:
 - name: SQL
   logo: ''
