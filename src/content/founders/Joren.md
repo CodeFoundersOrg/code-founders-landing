@@ -1,6 +1,6 @@
 ---
 order: 0
-name: Jorenn
+name: Joren
 description: >-
   Als Frontend expert en DevOps & Backend hobbyist, heeft Joren met zijn brede
   kennis de mogelijkheid om mensen de "big picture" van moderne applicaties te
@@ -31,4 +31,5 @@ socials:
   - social: Twitter
     link: 'https://twitter.com/jorenbroekema'
 ---
+
 
