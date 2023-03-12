@@ -4,8 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "start": "npx tinacms dev -c \"astro dev\"",
     "build": "npx tinacms build && astro build",
     "build:watch": "npm run build && concurrently \"chokidar '{src,public}/**/*' -c 'rimraf dist && npm run build'\" \"wds --root-dir dist\"",
     "build:preview": "DEPLOY_PREVIEW=true npm run build",

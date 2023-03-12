@@ -22,16 +22,10 @@ export default defineConfig({
         label: 'Home Content',
         name: 'home_content',
         path: 'src/content/home',
+        format: 'md',
         templates: [
           {
             fields: [
-              {
-                type: 'rich-text',
-                name: 'body',
-                label: 'Body of Document',
-                description: 'This is the markdown body',
-                isBody: true,
-              },
               {
                 type: 'string',
                 name: 'heading',
@@ -72,13 +66,6 @@ export default defineConfig({
           {
             fields: [
               {
-                type: 'rich-text',
-                name: 'body',
-                label: 'Body of Document',
-                description: 'This is the markdown body',
-                isBody: true,
-              },
-              {
                 type: 'string',
                 name: 'slogan',
                 label: 'Slogan',
@@ -118,13 +105,6 @@ export default defineConfig({
           {
             fields: [
               {
-                type: 'rich-text',
-                name: 'body',
-                label: 'Body of Document',
-                description: 'This is the markdown body',
-                isBody: true,
-              },
-              {
                 type: 'string',
                 name: 'pitch_button_text',
                 nameOverride: 'pitch-button_text',
@@ -149,13 +129,6 @@ export default defineConfig({
           {
             fields: [
               {
-                type: 'rich-text',
-                name: 'body',
-                label: 'Body of Document',
-                description: 'This is the markdown body',
-                isBody: true,
-              },
-              {
                 type: 'string',
                 name: 'heading',
                 label: 'Heading',
@@ -176,13 +149,6 @@ export default defineConfig({
           },
           {
             fields: [
-              {
-                type: 'rich-text',
-                name: 'body',
-                label: 'Body of Document',
-                description: 'This is the markdown body',
-                isBody: true,
-              },
               {
                 type: 'string',
                 name: 'heading',
@@ -205,14 +171,8 @@ export default defineConfig({
         label: 'Team',
         name: 'team',
         path: 'src/content/team',
+        format: 'md',
         fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
           {
             type: 'string',
             name: 'heading',
@@ -233,28 +193,40 @@ export default defineConfig({
         label: 'Founders',
         name: 'founders',
         path: 'src/content/founders',
+        format: 'md',
         fields: [
           {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
+            type: 'number',
+            name: 'order',
+            label: 'Order',
           },
+          {
+            type: 'string',
+            name: 'name',
+            label: 'Name',
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+            ui: {
+              component: 'textarea',
+            },
+          },
+          {
+            type: 'image',
+            name: 'photo',
+            label: 'Photo',
+          },
+          // TODO: technologies / socials groups -> find workaround
         ],
       },
       {
         label: 'Opleidingen Page',
         name: 'opleidingen_page',
         path: 'src/content/opleidingen',
+        format: 'md',
         fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
           {
             type: 'string',
             name: 'heading',
@@ -275,6 +247,7 @@ export default defineConfig({
         label: 'Opleidingen',
         name: 'opleidingen',
         path: 'src/pages/opleidingen',
+        format: 'md',
         fields: [
           {
             type: 'rich-text',
@@ -324,14 +297,8 @@ export default defineConfig({
         label: 'Contact',
         name: 'contact',
         path: 'src/content/contact',
+        format: 'md',
         fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
           {
             type: 'string',
             name: 'heading',

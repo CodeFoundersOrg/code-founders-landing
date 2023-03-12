@@ -4,7 +4,7 @@ name: Joren
 description: Als Frontend expert en DevOps & Backend hobbyist, heeft Joren met zijn
   brede kennis de mogelijkheid om mensen de "big picture" van moderne applicaties
   te leren.
-photo: "/assets/cf_img_avatar_male-4_1920px.png"
+photo: /assets/cf_img_avatar_male-4_1920px.png
 technologies:
 - logo: git
   name: GIT

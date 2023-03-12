@@ -1,5 +1,5 @@
 ---
-photo: "/assets/100722-code-founders-_83870-social.jpg"
+photo: /assets/100722-code-founders-_83870-social.jpg
 name: Raymond
 description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spring
   Boot. Sinds geruime tijd is hij zich ook gaan richten op de technologie van containerisatie
@@ -11,13 +11,13 @@ technologies:
   logo-upload: ''
 - name: SQL
   logo: ''
-  logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
+  logo-upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
 - name: Kubernetes
   logo: folder-kubernetes-open
   logo-upload: ''
 - name: Spring
   logo: ''
-  logo-upload: "/assets/354-3543373_spring-framework-logo-svg-png-download-java-spring-1.png"
+  logo-upload: /assets/354-3543373_spring-framework-logo-svg-png-download-java-spring-1.png
 - name: C
   logo: c
   logo-upload: ''

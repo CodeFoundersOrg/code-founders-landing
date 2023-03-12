@@ -3,7 +3,7 @@ name: Martijn
 description: Met zijn jarenlange praktijk ervaring en ruime technische kennis weet
   Martijn zijn studenten optimaal voor te bereiden voor een carrière binnen de IT.
   Een veelvoud aan onderwerpen worden door hem behandeld.
-photo: "/assets/061322-code-founders-martijn-_54744-linkedin.jpg"
+photo: /assets/061322-code-founders-martijn-_54744-linkedin.jpg
 technologies:
 - logo: css
   name: CSS
