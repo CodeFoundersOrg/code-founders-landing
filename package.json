@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run tinacms && astro build",
     "build:watch": "npm run build && concurrently \"chokidar '{src,public}/**/*' -c 'rimraf dist && npm run build'\" \"wds --root-dir dist\"",
     "build:preview": "DEPLOY_PREVIEW=true npm run build",
     "build:start": "npm run build && cd dist && http-server -o -c-1",

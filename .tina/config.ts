@@ -4,8 +4,8 @@ const branch = 'tinacms';
 
 export default defineConfig({
   branch,
-  clientId: null, // Get this from tina.io
-  token: null, // Get this from tina.io
+  clientId: '2440ba50-81a4-4cde-aeef-45a18915a829', // Get this from tina.io
+  token: 'c776b80ca5900cdfa07dab3bb07235261ae23b56', // Get this from tina.io
   build: {
     outputFolder: 'admin',
     publicFolder: 'public/assets',
