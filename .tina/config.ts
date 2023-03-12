@@ -1,11 +1,11 @@
 import { defineConfig } from 'tinacms';
 
-const branch = 'tinacms';
+const branch = 'main';
 
 export default defineConfig({
   branch,
-  clientId: '2440ba50-81a4-4cde-aeef-45a18915a829', // Get this from tina.io
-  token: 'c776b80ca5900cdfa07dab3bb07235261ae23b56', // Get this from tina.io
+  clientId: '2577917c-c54f-412a-933d-10657d0d06c0', // Get this from tina.io
+  token: '2996bda0f6067ec3e184fc60f40a7250a189b357', // Get this from tina.io
   build: {
     outputFolder: 'admin',
     publicFolder: 'public/assets',
