@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "@divriots/rev": "^0.1.10",
-    "lit": "^2.1.2"
+    "@tinacms/cli": "^1.3.2",
+    "lit": "^2.1.2",
+    "tinacms": "^1.3.2"
   },
   "prettier": {
     "tabWidth": 2,

@@ -1,14 +1,16 @@
 ---
 hero_alt: hero image of the service
-layout: "../../layouts/opleiding.astro"
+layout: ../../layouts/opleiding.astro
 draft: false
 heading: 'IT.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
-subtitle: Uniek Traineeship met een specialisatie in Software Development, Big Data,
-  Informatie Analyse & Devops, die in de eindopdracht samenkomt tot een Fullstack
-  applicatie.
-hero: "/assets/cf_img_beeld_paars_code-6_1920x1280.png"
-
+subtitle: >-
+  Uniek Traineeship met een specialisatie in Software Development, Big Data,
+  Informatie Analyse & Devops, die in de eindopdracht samenkomt tot een
+  Fullstack applicatie.
+hero: /assets/cf_img_beeld_paars_code-6_1920x1280.png
+_template: opleiding
 ---
+
 ### Het Traject.
 
 Dit unieke traject stelt organisaties in staat de volledige IT afdeling te laten groeien.  

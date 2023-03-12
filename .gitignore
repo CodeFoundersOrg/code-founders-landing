@@ -18,3 +18,4 @@ yarn-error.log*
 .DS_Store
 
 **/*prebundled.js
+node_modules
