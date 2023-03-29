@@ -8,31 +8,31 @@ description: "Raymond is een senior programmeur,  gespecialiseerd in Java en Spr
 technologies:
 - name: Angular
   logo: angular
-  logo-upload: ''
+  logo_upload: ''
 - name: SQL
   logo: ''
-  logo-upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
+  logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
 - name: Kubernetes
   logo: folder-kubernetes-open
-  logo-upload: ''
+  logo_upload: ''
 - name: Spring
   logo: ''
-  logo-upload: /assets/354-3543373_spring-framework-logo-svg-png-download-java-spring-1.png
+  logo_upload: /assets/354-3543373_spring-framework-logo-svg-png-download-java-spring-1.png
 - name: C
   logo: c
-  logo-upload: ''
+  logo_upload: ''
 - name: Docker
   logo: docker
-  logo-upload: ''
+  logo_upload: ''
 - name: Git
   logo: git
-  logo-upload: ''
+  logo_upload: ''
 - name: C ++
   logo: cpp
-  logo-upload: ''
+  logo_upload: ''
 - name: Java
   logo: java
-  logo-upload: ''
+  logo_upload: ''
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/rloman/

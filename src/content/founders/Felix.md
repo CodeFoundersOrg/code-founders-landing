@@ -11,39 +11,30 @@ photo: /assets/070122-code-founders-felix-_65281.jpg
 technologies:
   - name: Outsystems
     logo: ''
-    logo-upload: /assets/outsystemsicon-260x260.webp
-  - logo: azure
-    name: Azure Devops
-    logo-upload: ''
-  - logo: css
-    name: CSS
-    logo-upload: ''
-  - logo: php
-    name: Php
-    logo-upload: ''
-  - logo: html
-    name: Html
-    logo-upload: ''
-  - logo: java
-    name: Java
-    logo-upload: ''
-  - logo: csharp
-    name: C#
-    logo-upload: ''
-  - logo: python
-    name: Python
-    logo-upload: ''
-  - logo: ''
-    name: SQL
-    logo-upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
-  - logo: javascript
-    name: JavaScript
-    logo-upload: ''
-  - logo: git
-    name: Git
-    logo-upload: ''
+    logo_upload: /assets/outsystemsicon-260x260.webp
+  - name: Azure Devops
+    logo: azure
+  - name: CSS
+    logo: css
+  - name: Php
+    logo: php
+  - name: Html
+    logo: html
+  - name: Java
+    logo: java
+  - name: C#
+    logo: csharp
+  - name: Python
+    logo: python
+  - name: SQL
+    logo: ''
+    logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
+  - name: JavaScript
+    logo: javascript
+  - name: Git
+    logo: git
 socials:
   - social: LinkedIn
-    link: https://www.linkedin.com/in/felix-van-loenen-932a312a/
-
+    link: 'https://www.linkedin.com/in/felix-van-loenen-932a312a/'
 ---
+

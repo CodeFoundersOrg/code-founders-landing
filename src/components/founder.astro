@@ -2,6 +2,8 @@
 import LinkButton from './link-button.astro';
 import SplitNewlines from '../utils/split-newlines.jsx';
 const { founder, simple } = Astro.props;
+
+console.log(founder.technologies)
 ---
 <style>
 .founder > *:not(h2, .founder__photowrapper, a) {
@@ -133,7 +135,7 @@ const { founder, simple } = Astro.props;
         <div class="technologies">
           {founder.technologies.map(tech =>
             <div class="technology">
-              {tech.logo || tech['logo-upload'] ? <img alt={`${tech.name} logo`} src={tech.logo ? `https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg` : tech['logo-upload']} /> : ''}
+              {tech.logo || tech['logo_upload'] ? <img alt={`${tech.name} logo`} src={tech.logo ? `https://unpkg.com/material-icon-theme/icons/${tech.logo}.svg` : tech['logo_upload']} /> : ''}
               <span>{tech.name}</span>
             </div>
           )}

@@ -6,24 +6,18 @@ description: Als Frontend expert en DevOps & Backend hobbyist, heeft Joren met z
   te leren.
 photo: /assets/cf_img_avatar_male-4_1920px.png
 technologies:
-- logo: git
-  name: GIT
-  logo-upload: ''
-- logo: javascript
-  name: JavaScript
-  logo-upload: ''
-- logo: css
-  name: CSS
-  logo-upload: ''
-- logo: html
-  name: HTML
-  logo-upload: ''
-- logo: azure
-  name: Azure DevOps
-  logo-upload: ''
-- logo: vue
-  name: Vue
-  logo-upload: ''
+- name: GIT
+  logo: git
+- name: JavaScript
+  logo: javascript
+- name: CSS
+  logo: css
+- name: HTML
+  logo: html
+- name: Azure DevOps
+  logo: azure
+- name: Vue
+  logo: vue
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/jorenbroekema/

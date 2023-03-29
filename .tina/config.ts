@@ -12,7 +12,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: '',
+      mediaRoot: 'assets',
       publicFolder: 'public',
     },
   },
@@ -31,6 +31,7 @@ export default defineConfig({
                 name: 'heading',
                 label: 'Heading',
                 required: true,
+                description: 'Title of methodiek section',
               },
               {
                 type: 'string',
@@ -40,24 +41,30 @@ export default defineConfig({
                   component: 'textarea',
                 },
                 required: true,
+                description: 'Description of methodiek section',
               },
               {
                 type: 'string',
                 name: 'button_text',
                 label: 'Button Text',
                 required: true,
+                description: 'Text of the navigation button',
               },
               {
                 type: 'string',
                 name: 'button_navigation',
                 label: 'Button Navigation',
                 required: true,
+                description:
+                  'Where to navigate to by clicking the button, e.g. /opleidingen or /contact',
               },
               {
                 type: 'string',
                 name: 'unique_id',
                 label: 'Unique ID',
                 required: true,
+                description:
+                  'Do Not Edit!! The site uses this unique identifier in order to put the content in the right place. If you edit, it must be edited in the site code as well.',
               },
             ],
             label: 'home-methodiek',
@@ -69,12 +76,15 @@ export default defineConfig({
                 type: 'string',
                 name: 'slogan',
                 label: 'Slogan',
+                description:
+                  'Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the slogan in green.',
                 required: true,
               },
               {
                 type: 'string',
                 name: 'description',
                 label: 'Description',
+                description: 'Intro description',
                 ui: {
                   component: 'textarea',
                 },
@@ -84,12 +94,15 @@ export default defineConfig({
                 type: 'string',
                 name: 'button_text',
                 label: 'Button text',
+                description: 'Text of the action button',
                 required: true,
               },
               {
                 type: 'string',
                 name: 'button_navigation',
                 label: 'Button Navigation',
+                description:
+                  'Page to navigate to, for the action button. E.g. /opleidingen or /contact',
                 required: true,
               },
               {
@@ -97,6 +110,8 @@ export default defineConfig({
                 name: 'unique_id',
                 label: 'Unique ID',
                 required: true,
+                description:
+                  'Do Not Edit!! The site uses this unique identifier in order to put the content in the right place. If you edit, it must be edited in the site code as well.',
               },
             ],
             label: 'intro',
@@ -107,20 +122,24 @@ export default defineConfig({
               {
                 type: 'string',
                 name: 'pitch_button_text',
-                nameOverride: 'pitch-button_text',
                 label: 'Pitch - Button text',
+                description: 'Text inside the button in the pitch section',
               },
               {
                 type: 'string',
                 name: 'pitch_button_navigation',
-                nameOverride: 'pitch-button_navigation',
                 label: 'Pitch - Button Navigation',
+                description: `Where to navigate to from the pitch action button, e.g. /opleidingen
+                or /contact`,
               },
               {
                 type: 'string',
                 name: 'unique_id',
                 label: 'Unique ID',
                 required: true,
+                description: `Do Not Edit!! The site uses this unique identifier
+                in order to put the content in the right place. If you edit, it must be edited
+                in the site code as well.`,
               },
             ],
             label: 'pitch-action-button',
@@ -133,11 +152,14 @@ export default defineConfig({
                 name: 'heading',
                 label: 'Heading',
                 required: true,
+                description:
+                  'Heading of the pitch part. Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the heading in green.',
               },
               {
                 type: 'string',
                 name: 'pitch_part_description',
                 label: 'Pitch part description',
+                description: 'Pitch part description',
                 ui: {
                   component: 'textarea',
                 },
@@ -154,12 +176,17 @@ export default defineConfig({
                 name: 'heading',
                 label: 'Heading',
                 required: true,
+                description:
+                  'Heading of the pitch section. Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the heading in green.',
               },
               {
                 type: 'string',
                 name: 'unique_id',
                 label: 'Unique ID',
                 required: true,
+                description: `Do Not Edit!! The site uses this unique identifier
+                in order to put the content in the right place. If you edit, it must be edited
+                in the site code as well.`,
               },
             ],
             label: 'pitch-title',
@@ -177,12 +204,15 @@ export default defineConfig({
             type: 'string',
             name: 'heading',
             label: 'Heading',
+            description:
+              'Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the heading in green.',
             required: true,
           },
           {
             type: 'string',
             name: 'description',
             label: 'Description',
+            description: 'Introduction / description text for Teams page',
             ui: {
               component: 'textarea',
             },
@@ -196,19 +226,16 @@ export default defineConfig({
         format: 'md',
         fields: [
           {
-            type: 'number',
-            name: 'order',
-            label: 'Order',
-          },
-          {
             type: 'string',
             name: 'name',
             label: 'Name',
+            description: 'Name of the founder',
           },
           {
             type: 'string',
             name: 'description',
             label: 'Description',
+            description: 'Description of this founder',
             ui: {
               component: 'textarea',
             },
@@ -217,8 +244,78 @@ export default defineConfig({
             type: 'image',
             name: 'photo',
             label: 'Photo',
+            description: 'Photo of the founder',
           },
-          // TODO: technologies / socials groups -> find workaround
+          {
+            label: 'Technologies',
+            name: 'technologies',
+            type: 'object',
+            description:
+              'List of technologies this person can give trainings in',
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: `${item?.name}` };
+              },
+            },
+            fields: [
+              {
+                label: 'Name',
+                name: 'name',
+                type: 'string',
+                required: true,
+                description: 'Name of the Technology, for example "JavaScript"',
+              },
+              {
+                label: 'Logo',
+                name: 'logo',
+                type: 'string',
+                description: `For now we use material icon theme, so please pick from this list:
+                https://github.com/PKief/vscode-material-icon-theme/tree/main/icons. Make sure to omit ".svg" extension. So if you want Javascript, the right value
+                is "javascript"`,
+              },
+              {
+                label: 'Logo upload',
+                name: 'logo_upload',
+                type: 'image',
+                description: `If logo does not already exist in the repository, upload your own.
+                Make sure background is transparent (e.g. .png or .svg file)`,
+              },
+            ],
+          },
+          {
+            label: 'Socials',
+            name: 'socials',
+            type: 'object',
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: `${item?.social}` };
+              },
+            },
+            fields: [
+              {
+                label: 'Social',
+                name: 'social',
+                type: 'string',
+                required: true,
+                options: ['LinkedIn', 'Facebook', 'Twitter', 'YouTube'],
+                description: 'Social media platform of choice',
+              },
+              {
+                label: 'Link',
+                name: 'link',
+                type: 'string',
+                required: true,
+                description: 'Link to your profile/channel',
+              },
+            ],
+          },
+          {
+            type: 'number',
+            name: 'order',
+            label: 'Order',
+          },
         ],
       },
       {
@@ -232,11 +329,14 @@ export default defineConfig({
             name: 'heading',
             label: 'Heading',
             required: true,
+            description:
+              'Heading text of the Opleidingen page. Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the heading in green.',
           },
           {
             type: 'string',
             name: 'description',
             label: 'Description',
+            description: 'Description text of Opleidingen page',
             ui: {
               component: 'textarea',
             },
@@ -250,27 +350,24 @@ export default defineConfig({
         format: 'md',
         fields: [
           {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
-          {
             type: 'boolean',
             name: 'draft',
             label: 'Draft',
+            description:
+              'Whether it is a draft, hidden from readers in the overview but visitable if you have the URL',
           },
           {
             type: 'string',
             name: 'heading',
             label: 'Heading',
             required: true,
+            description: 'Titel van de opleiding, e.g. Python + RaspberryPi',
           },
           {
             type: 'string',
             name: 'subtitle',
             label: 'Description',
+            description: 'Short description of the service',
             ui: {
               component: 'textarea',
             },
@@ -279,16 +376,27 @@ export default defineConfig({
             type: 'image',
             name: 'hero',
             label: 'Hero image',
+            description: 'Hero image of the service',
           },
           {
             type: 'string',
             name: 'hero_alt',
             label: 'Hero alt',
+            description: `Alternative text for the image, in case it doesn't load or for visually
+            impaired users to be able to understand what the image describes.`,
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body of Document',
+            description: 'This is the markdown body',
+            isBody: true,
           },
           {
             type: 'string',
             name: 'layout',
             label: 'Layout',
+            description: 'Astro layout used for this file',
             required: true,
           },
         ],
@@ -304,6 +412,8 @@ export default defineConfig({
             name: 'heading',
             label: 'Heading',
             required: true,
+            description:
+              'Wrap into <span style="color: var(--color-primary-green);"></span>; if you want part of the heading in green.',
           },
           {
             type: 'string',

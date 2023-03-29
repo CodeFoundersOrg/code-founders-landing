@@ -8,22 +8,18 @@ photo: /assets/cf_img_avatar_male-3_1920px.png
 technologies:
 - name: Azure Devops
   logo: azure
-  logo-upload: ''
 - name: Git
   logo: git
-  logo-upload: ''
 - name: SQL
   logo: ''
-  logo-upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
+  logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
 - name: Matlab
   logo: matlab
-  logo-upload: ''
-- logo: ''
-  name: Pandas
-  logo-upload: /assets/small-pandas_logo.png
-- logo: python
-  name: Python
-  logo-upload: ''
+- name: Pandas
+  logo: ''
+  logo_upload: /assets/small-pandas_logo.png
+- name: Python
+  logo: python
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/freek-hoogstede/

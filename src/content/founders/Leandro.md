@@ -9,10 +9,10 @@ photo: /assets/062022-code-founders-leandro59741-social.jpg
 technologies:
 - name: SQL
   logo: ''
-  logo-upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
+  logo_upload: "/assets/microsoft-sql-server-mysql-database-logo-others-small.png"
 - name: Java
   logo: java
-  logo-upload: ''
+  logo_upload: ''
 socials:
 - social: LinkedIn
   link: https://www.linkedin.com/in/leandrodagostino/
