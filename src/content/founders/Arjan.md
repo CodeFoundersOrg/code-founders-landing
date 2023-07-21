@@ -12,7 +12,7 @@ description: >-
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
   - name: Scrum
-    logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
+    logo_upload: ''
   - name: Databases
     logo: folder-database-open
   - name: Power Bi
@@ -21,6 +21,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
