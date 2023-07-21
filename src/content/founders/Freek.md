@@ -24,8 +24,9 @@ technologies:
 socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/freek-hoogstede/'
-order: 8
+order: 6
 ---
+
 
 
 
