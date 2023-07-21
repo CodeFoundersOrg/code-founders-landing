@@ -13,6 +13,10 @@ description: >-
   Daarnaast behoort de planning, finance en marketing & sales tot zijn
   werkzaamheden. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
+technologies:
+  - name: UML
+    logo: uml_light
 ---
+
 
 
