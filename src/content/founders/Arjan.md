@@ -11,12 +11,15 @@ description: >-
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
+  - name: Databases
+    logo: folder-database-open
   - name: Power Bi
     logo_upload: /assets/Daco_6114310.png
   - name: UML
     logo: uml_light
 order: 4
 ---
+
 
 
 
