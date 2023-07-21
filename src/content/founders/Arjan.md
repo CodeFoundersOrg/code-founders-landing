@@ -13,7 +13,7 @@ photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
   - name: ' '
     logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
-  - name: ' '
+  - name: Scrum
     logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
   - name: Databases
     logo: folder-database-open
@@ -23,6 +23,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
