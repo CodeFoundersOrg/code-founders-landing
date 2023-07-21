@@ -12,7 +12,8 @@ description: >-
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
   - name: Scrum
-    logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
+    logo_upload: >-
+      /assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg
   - name: SQL
     logo: ''
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
@@ -22,6 +23,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
