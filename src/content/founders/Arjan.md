@@ -11,6 +11,8 @@ description: >-
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
+  - name: ISTQB
+    logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
     logo_upload: >-
       /assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg
@@ -23,6 +25,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
