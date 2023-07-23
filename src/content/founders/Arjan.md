@@ -10,6 +10,8 @@ description: >-
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
+  - name: IREB
+    logo_upload: /assets/ireb.png
   - name: ISTQB
     logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
@@ -23,6 +25,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
