@@ -5,8 +5,7 @@ description: >-
   projectmatig werken.  
 
   Van het Use Case Diagram naar de technische requirements, het Klassediagram,
-  om af te sluiten met ontwerp van test procedures en de uiteindelijke
-  oplevering.
+  vaststellen & ontwerp van de testprocedures en de uiteindelijke oplevering.
 
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
@@ -24,6 +23,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
