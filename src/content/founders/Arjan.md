@@ -13,7 +13,7 @@ technologies:
   - name: ISTQB
     logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
-    logo_upload: /assets/scrum.svg
+    logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
   - name: SQL
     logo: ''
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
@@ -23,6 +23,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
