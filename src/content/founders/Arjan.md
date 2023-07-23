@@ -4,9 +4,9 @@ description: >-
   Arjan richt zich op het functioneel ontwerp, de technische strategie en het
   projectmatig werken.  
 
-  Van klantwens naar Use Case Diagram,  technische requirements, naar
-  Klassediagrammen, coderen om af te sluiten met ontwerp van test procedures en
-  de uiteindelijke oplevering.
+  Van het Use Case Diagram naar de technische requirements, het
+  Klassediagrammen, om af te sluiten met ontwerp van test procedures en de
+  uiteindelijke oplevering.
 
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
@@ -25,6 +25,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
