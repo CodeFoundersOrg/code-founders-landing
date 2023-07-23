@@ -14,8 +14,7 @@ technologies:
   - name: ISTQB
     logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
-    logo_upload: >-
-      /assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg
+    logo_upload: /assets/scrum.svg
   - name: SQL
     logo: ''
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
@@ -25,6 +24,7 @@ technologies:
     logo: uml_light
 order: 4
 ---
+
 
 
 
