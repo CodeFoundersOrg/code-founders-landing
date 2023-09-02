@@ -2,8 +2,6 @@
 name: Colin
 photo: /assets/230830 CodeFouders Colin _47513 Social.jpg
 technologies:
-  - name: Bootstrap
-    logo: bootstrap
   - name: PHP
     logo: php
   - name: CSS
@@ -17,6 +15,7 @@ technologies:
 order: 3
 description: kjhkj
 ---
+
 
 
 
