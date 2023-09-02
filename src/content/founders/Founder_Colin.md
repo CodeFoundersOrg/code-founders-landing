@@ -20,7 +20,11 @@ description: >-
   als software matige projecten worden door hem bedacht, ontwikkeld en
   uitgevoerd. Met een grote passie voor het overdragen van zijn kennis is hij
   een waardevol teamlid van onze club.
+socials:
+  - social: LinkedIn
+    link: 'https://www.linkedin.com/in/colinvmil/'
 ---
+
 
 
 
