@@ -24,7 +24,11 @@ technologies:
   - name: UML
     logo: uml_light
 order: 4
+socials:
+  - social: LinkedIn
+    link: 'https://www.linkedin.com/in/arjanwiegerinck/'
 ---
+
 
 
 
