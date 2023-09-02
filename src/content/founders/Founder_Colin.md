@@ -12,7 +12,7 @@ technologies:
     logo: javascript
   - name: Python
     logo: python
-order: 3
+order: 2
 description: >-
   Colin kenmerkt zich door zijn veelzijdigheid. Van het ontwikkelen van een
   applicatie tot de duiksport, het beheer van webshops tot het aanleggen en
@@ -24,6 +24,7 @@ socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/colinvmil/'
 ---
+
 
 
 
