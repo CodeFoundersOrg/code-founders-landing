@@ -8,6 +8,7 @@ subtitle: >-
   Deze training is een perfect startpunt voor het behalen van het ISTQB
   foundations level of je kunt de kennis direct toepassen in de praktijk.
 hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
+draft: true
 ---
 
 > Goede kennis & het toepassen van de juiste test types in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten.
