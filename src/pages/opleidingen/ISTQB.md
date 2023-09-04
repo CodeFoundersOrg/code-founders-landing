@@ -14,7 +14,10 @@ draft: false
 
 > Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten.
 
-* **Solide Fundament.**
+De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis en de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
+
+De onderstaande onderwerpen komen aan bod:
+
 * **Het Geheim van Effectief Testen.**
 * **Krachtige Testtechnieken.**
 * **Testautomatisering.**
