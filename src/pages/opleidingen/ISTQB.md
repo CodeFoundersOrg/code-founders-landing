@@ -2,13 +2,13 @@
 heading: 'ISTQB.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
 layout: ../../layouts/opleiding.astro
 subtitle: >-
-  Deze ISTQB training is geschikt voor zowel beginners als doorgewinterde
+  Deze training is geschikt voor zowel beginners als doorgewinterde
   professionals, en leert je een solide basis hebt in softwaretesten, klaar om
   resultaten te leveren en bij te dragen aan het succes van elke software
   project.
 
   Deze training is een perfect startpunt voor het behalen van het ISTQB
-  foundations level.
+  foundations level of je kunt de kennis direct toepassen in de praktijk.
 hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
 ---
 
