@@ -19,4 +19,4 @@ draft: false
 * **Onmisbare Documentatie:** Verwerf de kunst van het maken en onderhouden van cruciale testdocumentatie, waaronder gedetailleerde testplannen, ontwerpen en rapporten.
 * **Integratie in de Software Development Life Cycle:** Ontdek hoe testen naadloos wordt geïntegreerd in elke fase van de SDLC voor optimale resultaten.
 * **Het Spoor van Softwarefouten volgen:** Word een expert in het identificeren, rapporteren en beheren van defecten, en begrijp hoe deze defecten het testproces kunnen beïnvloeden.
-* **Ethisch en Professioneel Leiderschap: **Leer de ethische en professionele aspecten van softwaretesten kennen, en ontdek hoe je als een verantwoordelijke en toegewijde tester kunt bijdragen aan projecten.
+* \*\*Ethisch en Professioneel Leiderschap:\*\*Leer de ethische en professionele aspecten van softwaretesten kennen, en ontdek hoe je als een verantwoordelijke en toegewijde tester kunt bijdragen aan projecten.
