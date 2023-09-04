@@ -13,7 +13,7 @@ draft: false
 
 * **Solide Fundamenten:**\
   Leer de basisprincipes van softwaretesten, begrijp de doelstellingen en voordelen van testen en krijg grip op de fundamenten.
-* **Het Geheim van Effectief Testen:**
+* **Het Geheim van Effectief Testen:**\
   Ontdek het volledige testproces, van planning tot rapportage en evaluatie van testresultaten. Leer hoe je testactiviteiten op een effectieve manier kunt organiseren en beheren.
 * **Krachtige Testtechnieken:**
   Verfijn je vaardigheden met verschillende testtechnieken, van Blackbox tot Whitebox- en experience based testen. Leer deze technieken toe te passen voor het identificeren van kritieke fouten.
