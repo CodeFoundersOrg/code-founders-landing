@@ -12,6 +12,8 @@ hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
 draft: false
 ---
 
+> Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten.
+
 * **Solide Fundament.**
 * **Het Geheim van Effectief Testen.**
 * **Krachtige Testtechnieken.**
