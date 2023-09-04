@@ -1,6 +1,6 @@
 ---
 heading: ISTQB Fundamentals
-layout: astro
+layout: ../../layouts/opleiding.astro
 subtitle: >-
   Deze certificering is geschikt voor zowel beginners als doorgewinterde
   professionals, en toont aan dat je een solide basis hebt in softwaretesten,
