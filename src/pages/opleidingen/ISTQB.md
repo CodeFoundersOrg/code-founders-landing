@@ -1,5 +1,5 @@
 ---
-heading: ISTQB Fundamentals
+heading: 'ISTQB.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
 layout: ../../layouts/opleiding.astro
 subtitle: >-
   Deze ISTQB training is geschikt voor zowel beginners als doorgewinterde
