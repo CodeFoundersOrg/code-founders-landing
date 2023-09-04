@@ -2,10 +2,13 @@
 heading: ISTQB Fundamentals
 layout: ../../layouts/opleiding.astro
 subtitle: >-
-  Deze certificering is geschikt voor zowel beginners als doorgewinterde
-  professionals, en toont aan dat je een solide basis hebt in softwaretesten,
-  klaar om resultaten te leveren en bij te dragen aan het succes van elke
-  softwareontwikkelingsinspanning.
+  Deze ISTQB training is geschikt voor zowel beginners als doorgewinterde
+  professionals, en leert je een solide basis hebt in softwaretesten, klaar om
+  resultaten te leveren en bij te dragen aan het succes van elke software
+  project.
+
+  Deze training biedt je de kennis benodigd voor het behalen van het ISTQB
+  foundations level.
 ---
 
 1. Solide Fundamenten: Leer de basisprincipes van softwaretesten, begrijp de doelstellingen en voordelen van testen, en krijg grip op de fundamenten.
@@ -17,3 +20,5 @@ subtitle: >-
 7. Integratie in de Software Development Life Cycle: Ontdek hoe testen naadloos wordt geïntegreerd in elke fase van de SDLC voor optimale resultaten.
 8. Meester in het Vinden van Gebreken: Word een expert in het identificeren, rapporteren en beheren van defecten, en begrijp hoe deze defecten het testproces kunnen beïnvloeden.
 9. Ethisch en Professioneel Leiderschap: Leer de ethische en professionele aspecten van softwaretesten kennen, en ontdek hoe je als een verantwoordelijke en toegewijde tester kunt bijdragen aan projecten.
+
+> Goede kennis & het toepassen van de juiste test types in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten.
