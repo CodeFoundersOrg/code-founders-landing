@@ -8,7 +8,7 @@ subtitle: >-
   Deze training is een perfect startpunt voor het behalen van het ISTQB
   foundations level of je kunt de kennis direct toepassen in de praktijk.
 hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
-draft: true
+draft: false
 ---
 
 1. Solide Fundamenten: Leer de basisprincipes van softwaretesten, begrijp de doelstellingen en voordelen van testen, en krijg grip op de fundamenten.
