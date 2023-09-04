@@ -5,6 +5,7 @@ subtitle: >-
   Deze training is geschikt voor zowel beginners als doorgewinterde
   professionals en leert je een solide basis hebt in softwaretesten.
 
+
   Deze training is een perfect startpunt voor het behalen van het ISTQB
   foundations level of je kunt de kennis direct toepassen in de praktijk.
 hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
