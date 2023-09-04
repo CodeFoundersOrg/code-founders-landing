@@ -7,7 +7,7 @@ subtitle: >-
   resultaten te leveren en bij te dragen aan het succes van elke software
   project.
 
-  Deze training biedt je de kennis benodigd voor het behalen van het ISTQB
+  Deze training is een perfect startpunt voor het behalen van het ISTQB
   foundations level.
 ---
 
