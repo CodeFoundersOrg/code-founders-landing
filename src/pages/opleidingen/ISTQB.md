@@ -14,7 +14,7 @@ draft: false
 
 > " Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten ".
 
-De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis en de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
+"In deze intensieve eendaagse training leer je de essentie van softwaretesten, inclusief het doel en de voordelen ervan. Je ontdekt het volledige testproces, van planning tot resultaatrapportage, en maakt kennis met diverse testtechnieken, waaronder zwarte doos en witte doos testen. We delen inzichten over testautomatisering en kwaliteitsmanagement, terwijl we je begeleiden in het creëren van cruciale testdocumentatie. Je begrijpt hoe testen naadloos wordt geïntegreerd in de softwarelevenscyclus en ontwikkelt vaardigheden om defecten effectief op te sporen en te beheren. Deze training stelt je in staat om als ethische en professionele tester bij te dragen aan elk softwareontwikkelingsproject."
 
 De onderstaande onderwerpen komen aan bod:
 
@@ -26,3 +26,5 @@ De onderstaande onderwerpen komen aan bod:
 * **Integratie in de Software Development Life Cycle.**
 * **Het Spoor van Softwarefouten volgen.**
 * **Ethisch en Professioneel Leiderschap.**
+
+De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis en de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
