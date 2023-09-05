@@ -12,7 +12,7 @@ hero: /assets/cf_img_beeld_paars_code-7a_1920x1280.png
 draft: false
 ---
 
-> Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten.
+> " Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagd de kosten ".
 
 De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis en de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
 
