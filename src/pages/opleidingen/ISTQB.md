@@ -30,4 +30,4 @@ De onderstaande onderwerpen komen aan bod:
 
 De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis als de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
 
-> De ISTQB Fundamentals training is een goede start om toe te werken naar het behalen de ISTQB Foundation level Certificering.  Met praktische tips en diverse proefexamens is dit een ideale voorbereiding.
+> De ISTQB Fundamentals training is een goede start om toe te werken naar het behalen van de ISTQB Foundation level Certificering.  Met praktische tips en diverse proefexamens is dit een ideale voorbereiding.
