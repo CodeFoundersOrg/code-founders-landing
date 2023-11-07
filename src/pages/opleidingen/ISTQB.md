@@ -27,7 +27,6 @@ De onderstaande onderwerpen komen aan bod:
 * **Onmisbare Documentatie.**
 * **Integratie in de Software Development Life Cycle.**
 * **Het onthullen en aanpakken van Software tekortkomingen.**
-* **Ethisch en Professioneel Leiderschap.**
 
 De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis als de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
 
