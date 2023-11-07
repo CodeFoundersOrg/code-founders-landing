@@ -14,7 +14,9 @@ draft: false
 
 > " Het toepassen van de meest effectieve testtypen op het juiste moment in de Software Development Life Cycle verhoogt de kwaliteit en verlaagt de kosten ".
 
-"In deze intensieve eendaagse training leer je de essentie van softwaretesten, inclusief het doel en de voordelen ervan. Je ontdekt het volledige testproces, van planning tot resultaatrapportage, en maakt kennis met diverse testtechnieken, waaronder black box en white box testen. We delen inzichten over testautomatisering en kwaliteitsmanagement, terwijl we je begeleiden in het creëren van cruciale testdocumentatie. Je begrijpt hoe testen naadloos wordt geïntegreerd in de softwarelevenscyclus en ontwikkelt vaardigheden om defecten effectief op te sporen en te beheren. Deze training stelt je in staat om als ethische en professionele tester bij te dragen aan elk softwareontwikkelingsproject."
+"In deze intensieve eendaagse training leer je de essentie van softwaretesten, inclusief het doel en de voordelen ervan. Je ontdekt het volledige testproces, van planning tot resultaatrapportage, en maakt kennis met diverse testtechnieken, waaronder black box en white box testen. We delen inzichten over testautomatisering en kwaliteitsmanagement, terwijl we je begeleiden in het creëren van cruciale testdocumentatie. 
+
+Je begrijpt hoe testen naadloos wordt geïntegreerd in de softwarelevenscyclus en ontwikkelt vaardigheden om defecten effectief op te sporen en te beheren. Deze training stelt je in staat om als ethische en professionele tester bij te dragen aan elk softwareontwikkelingsproject."
 
 De onderstaande onderwerpen komen aan bod:
 
