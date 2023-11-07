@@ -26,7 +26,9 @@ De onderstaande onderwerpen komen aan bod:
 * **Strategisch Kwaliteitsmanagement.**
 * **Onmisbare Documentatie.**
 * **Integratie in de Software Development Life Cycle.**
-* **Het Spoor van Softwarefouten volgen.**
+* **Het onthullen en aanpakken van Software tekortkomingen.**
 * **Ethisch en Professioneel Leiderschap.**
 
-De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis en de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
+De training legt een solide fundament en leert je zowel theoretisch de essentiële kennis als de praktische vaardigheden om uit te blinken in Software Testing. De opzet van de training maakt deze zeer waardevol voor zowel de programmeur, de tester en de Buisiness Analist.
+
+> De ISTQB Fundamentals training is een goede start om toe te werken naar het behalen de ISTQB Foundation level Certificering.  Met praktische tips en diverse proefexamens is dit een ideale voorbereiding.
