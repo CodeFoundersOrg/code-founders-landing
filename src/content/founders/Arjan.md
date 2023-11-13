@@ -11,7 +11,7 @@ description: >-
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
   - name: IREB
-    logo_upload: /assets/ireb.png
+    logo_upload: /assets/logo.ireb.transparent.png
   - name: ISTQB
     logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
@@ -28,6 +28,7 @@ socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/arjanwiegerinck/'
 ---
+
 
 
 
