@@ -15,7 +15,7 @@ technologies:
   - name: ISTQB
     logo_upload: /assets/pngwing.com (11).png
   - name: Scrum
-    logo_upload: /assets/53-539760_scrum-logo-hd-png-download.png
+    logo_upload: /assets/logo.scrum.transparent.png
   - name: SQL
     logo: ''
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small.png
@@ -28,6 +28,7 @@ socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/arjanwiegerinck/'
 ---
+
 
 
 
