@@ -13,7 +13,7 @@ technologies:
   - name: IREB
     logo_upload: /assets/logo.ireb.transparent.png
   - name: ISTQB
-    logo_upload: /assets/pngwing.com (11).png
+    logo_upload: /assets/logo.istqb.png
   - name: Scrum
     logo_upload: /assets/logo.scrum.transparent.png
   - name: SQL
@@ -28,6 +28,7 @@ socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/arjanwiegerinck/'
 ---
+
 
 
 
