@@ -4,9 +4,12 @@ photo: /assets/231204 Codefounders Ivo _81091 Social.jpg
 order: 2
 description: ''
 technologies:
+  - name: Java
+    logo: java
   - name: git
     logo: git
 ---
+
 
 
 
