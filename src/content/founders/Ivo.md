@@ -12,7 +12,11 @@ technologies:
     logo: html
   - name: git
     logo: git
+socials:
+  - social: LinkedIn
+    link: 'https://www.linkedin.com/in/ivo-diris-5a562968/'
 ---
+
 
 
 
