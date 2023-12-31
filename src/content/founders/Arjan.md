@@ -10,6 +10,8 @@ description: >-
   Kort gezegd: het snijvlak tussen de klant, gebruiker en de IT'er. 
 photo: /assets/230714 Codefounders Arjan _34849 Social.jpg
 technologies:
+  - name: Azure
+    logo: azure
   - name: IREB
     logo_upload: /assets/logo.ireb.transparent.png
   - name: ISTQB
@@ -28,6 +30,7 @@ socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/arjanwiegerinck/'
 ---
+
 
 
 
