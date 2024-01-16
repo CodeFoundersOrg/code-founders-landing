@@ -1,6 +1,8 @@
 ---
 name: Matthew
 technologies:
+  - name: SQL
+    logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small (1).png
   - name: SCRUM
     logo_upload: >-
       /assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg
@@ -23,6 +25,7 @@ description: >-
   certificeringen.
 order: 5
 ---
+
 
 
 
