@@ -1,6 +1,8 @@
 ---
 name: Matthew
 technologies:
+  - name: HTML
+    logo: html
   - name: Outsystems
     logo: ''
     logo_upload: /assets/Outsystems.png
@@ -16,6 +18,7 @@ description: >-
   certificeringen.
 order: 5
 ---
+
 
 
 
