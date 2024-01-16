@@ -1,6 +1,9 @@
 ---
 name: Matthew
 technologies:
+  - name: Outsystems
+    logo: ''
+    logo_upload: /assets/Outsystems.png
   - name: SQL
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small (1).png
   - name: SCRUM
@@ -9,9 +12,6 @@ technologies:
     logo: css
   - name: HTML
     logo: html
-  - name: Outsystems
-    logo: ''
-    logo_upload: /assets/Outsystems.png
 socials:
   - social: LinkedIn
     link: 'https://www.linkedin.com/in/memdejong/'
@@ -24,6 +24,7 @@ description: >-
   certificeringen.
 order: 5
 ---
+
 
 
 
