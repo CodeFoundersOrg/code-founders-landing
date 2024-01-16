@@ -4,8 +4,7 @@ technologies:
   - name: SQL
     logo_upload: /assets/microsoft-sql-server-mysql-database-logo-others-small (1).png
   - name: SCRUM
-    logo_upload: >-
-      /assets/imgbin-agile-software-development-scrum-computer-icons-iteration-good-night-blue-loop-illustration-ksv3hskmum28q8tdyg7jypbaf.jpg
+    logo_upload: /assets/logo.scrum.transparent.png
   - name: CSS
     logo: css
   - name: HTML
@@ -25,6 +24,7 @@ description: >-
   certificeringen.
 order: 5
 ---
+
 
 
 
