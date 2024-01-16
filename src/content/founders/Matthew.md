@@ -1,6 +1,8 @@
 ---
 name: Matthew
 technologies:
+  - name: CSS
+    logo: css
   - name: HTML
     logo: html
   - name: Outsystems
@@ -18,6 +20,7 @@ description: >-
   certificeringen.
 order: 5
 ---
+
 
 
 
