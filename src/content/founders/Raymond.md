@@ -1,5 +1,5 @@
 ---
-photo: /assets/100722-code-founders-_83870-social.jpg
+photo: /assets/100722 Code Founders _83870 2.jpg
 name: Raymond
 description: >-
   Raymond is een senior programmeur,  gespecialiseerd in Java en Spring Boot.
@@ -42,4 +42,5 @@ socials:
     link: 'https://www.linkedin.com/in/rloman/'
 order: 1
 ---
+
 
