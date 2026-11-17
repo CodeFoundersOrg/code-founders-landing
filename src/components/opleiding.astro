@@ -47,9 +47,7 @@ const { content } = Astro.props;
     </div> : ''
   }
   <div class="content">
-    <h2 class="name">
-      {content.heading}
-    </h2>
+    <h2 class="name" set:html={content.heading} />
     {content.subtitle ? <p class="description">{content.subtitle}</p> : ''}
   </div>
 </div>

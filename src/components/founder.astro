@@ -1,9 +1,7 @@
 ---
 import LinkButton from './link-button.astro';
-import SplitNewlines from '../utils/split-newlines.jsx';
+import SplitNewlines from './split-newlines.astro';
 const { founder, simple } = Astro.props;
-
-console.log(founder.technologies)
 ---
 <style>
 .founder > *:not(h2, .founder__photowrapper, a) {

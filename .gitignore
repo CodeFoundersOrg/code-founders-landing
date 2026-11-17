@@ -19,3 +19,6 @@ yarn-error.log*
 
 **/*prebundled.js
 node_modules
+# TinaCMS generated files
+tina/__generated__
+.astro/

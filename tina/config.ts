@@ -346,7 +346,7 @@ export default defineConfig({
       {
         label: 'Opleidingen',
         name: 'opleidingen',
-        path: 'src/pages/opleidingen',
+        path: 'src/content/opleiding-items',
         format: 'md',
         fields: [
           {
@@ -396,8 +396,7 @@ export default defineConfig({
             type: 'string',
             name: 'layout',
             label: 'Layout',
-            description: 'Astro layout used for this file',
-            required: true,
+            description: 'No longer used (kept for older files). Leave as is.',
           },
         ],
       },

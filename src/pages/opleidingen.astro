@@ -1,11 +1,10 @@
 ---
-import * as path from 'node:path';
 import BlurLayout from '../layouts/blur.astro';
 import Opleiding from '../components/opleiding.astro';
+import { inDir, opleidingSlug } from '../utils/content.js';
 
-const mds = Astro.fetchContent('../{content,pages}/opleidingen/**/*.md');
-const opleidingen = mds.filter(md => path.dirname(md.file.pathname).endsWith('pages/opleidingen')).filter(opleiding => !opleiding.draft);
-const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('content/opleidingen'));
+const opleidingen = inDir('opleiding-items').filter(opleiding => !opleiding.draft);
+const [content] = inDir('opleidingen');
 ---
 <style>
   .opleidingen {
@@ -23,12 +22,11 @@ const [content] = mds.filter(md => path.dirname(md.file.pathname).endsWith('cont
     color: white;
   }
 </style>
-<link rel="stylesheet" href="/style/opleidingen.css" />
 <BlurLayout subtitle={content.description} heading={content.heading}>
+<link slot="head" rel="stylesheet" href="/style/opleidingen.css" />
 <div class="opleidingen">
-  <></>
   {opleidingen.map(opleiding =>
-    <a class="link" href={opleiding.url}>
+    <a class="link" href={`/opleidingen/${opleidingSlug(opleiding)}`}>
       <Opleiding content={opleiding} class="opleiding"></Opleiding>
     </a>
   )}

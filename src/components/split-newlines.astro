@@ -1,0 +1,10 @@
+---
+// Turns blank lines into paragraphs and the first single newline into a <br>,
+// exactly like the original React helper. Content may contain HTML
+// (e.g. <span> for green text), so it is rendered as HTML.
+const { content = '' } = Astro.props;
+const html = String(content)
+  .replace(/\n([ \t]*\n)+/g, '</p><p>')
+  .replace('\n', '<br />');
+---
+<p set:html={html} />

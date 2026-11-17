@@ -1,7 +1,8 @@
 ---
 import BlurLayout from '../layouts/blur.astro';
+import { inDir } from '../utils/content.js';
 
-const [contact] = Astro.fetchContent('../content/contact/contact.md');
+const [contact] = inDir('contact');
 ---
 <style>
   .relative-wrapper {
@@ -41,8 +42,8 @@ const [contact] = Astro.fetchContent('../content/contact/contact.md');
     }
   }
 </style>
-<link rel="stylesheet" href="/style/contact.css" />
 <BlurLayout subtitle={contact.description} heading={contact.heading}>
+  <link slot="head" rel="stylesheet" href="/style/contact.css" />
   <div class="relative-wrapper">
     <img class="finger-guns" alt="man with finger guns" src="/assets/images/man-finger-guns.png">
     <div class="contact">

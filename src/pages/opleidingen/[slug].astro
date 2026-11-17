@@ -1,0 +1,21 @@
+---
+// One page per opleiding (src/content/opleiding-items/*.md, edited via TinaCMS).
+// Drafts get no page, just like on the original site.
+import OpleidingLayout from '../../layouts/opleiding.astro';
+import { inDir, opleidingSlug } from '../../utils/content.js';
+
+export function getStaticPaths() {
+  return inDir('opleiding-items')
+    .filter((opleiding) => !opleiding.draft)
+    .map((opleiding) => ({
+      params: { slug: opleidingSlug(opleiding) },
+      props: { opleiding },
+    }));
+}
+
+const { opleiding } = Astro.props;
+const body = await opleiding.html();
+---
+<OpleidingLayout content={opleiding}>
+  <Fragment set:html={body} />
+</OpleidingLayout>
