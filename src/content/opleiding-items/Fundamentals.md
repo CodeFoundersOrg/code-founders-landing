@@ -1,7 +1,7 @@
 ---
 draft: false
 heading: 'IT.<span style="color: var(--color-primary-green)">Fundamentals</span>_'
-subtitle: 'Traineeship met een specialisatie in Software Development, Big Data, Informatie Analyse & Devops, die in de eindopdracht samenkomt tot een Fullstack applicatie.'
+subtitle: 'Uniek Traineeship met een specialisatie in Software Development, Big Data, Informatie Analyse & Devops, die in de eindopdracht samenkomt tot een Fullstack applicatie.'
 hero: /assets/cf_img_beeld_paars_code-6_1920x1280.png
 hero_alt: hero image of the service
 layout: ../../layouts/opleiding.astro
