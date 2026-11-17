@@ -1,20 +1,15 @@
 ---
-import * as path from 'node:path';
 import BaseLayout from '../layouts/base.astro';
 import Founder from '../components/founder.astro';
 import LinkButton from '../components/link-button.astro';
-import SplitNewlines from '../utils/split-newlines.jsx';
+import SplitNewlines from '../components/split-newlines.astro';
+import { inDir, sortedFounders } from '../utils/content.js';
 
-const mds = Astro.fetchContent('../content/**/*.md');
-const founders = mds.filter(md => path.dirname(md.file.pathname).endsWith('founders')).sort((a,b) => {
-    const orderA = a.order || 9999;
-    const orderB = b.order || 9999;
-    return orderA - orderB;
-});
-const content = mds.filter(md => path.dirname(md.file.pathname).endsWith('home'));
+const founders = sortedFounders();
+const content = inDir('home');
 const introHeading = content.find(md => md.unique_id === 'intro-heading');
 const methodiekSection = content.find(md => md.unique_id === 'methodiek-section');
-const pitch = mds.filter(md => path.dirname(md.file.pathname).endsWith('pitch'));
+const pitch = inDir('home/pitch');
 const pitchHeading = pitch.find(md => md.unique_id === 'pitch-heading');
 const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
 ---
@@ -23,7 +18,7 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
         <section id="intro">
             <div class="content-container">
                 <div class="content">
-                    <h2>{introHeading.slogan}</h2>
+                    <h2 set:html={introHeading.slogan} />
                     <SplitNewlines content={introHeading.description}></SplitNewlines>
                     <LinkButton href={introHeading.button_navigation} label={introHeading.button_text}></LinkButton>
                 </div>
@@ -34,10 +29,10 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
             <div class="content-container">
                 <div class="content">
                     <div class="flex-content">
-                        <h2>{pitchHeading.heading}</h2>
+                        <h2 set:html={pitchHeading.heading} />
                         <div class="flex-paragraphs">
                             {pitch.slice(1, pitch.length - 1).map(part => <div>
-                                <h3>{part.heading}</h3>
+                                <h3 set:html={part.heading} />
                                 <SplitNewlines content={part.pitch_part_description}></SplitNewlines>
                             </div>)}
                         </div>
@@ -50,7 +45,7 @@ const pitchButton = pitch.find(md => md.unique_id === 'pitch-button');
     <section id="methodiek">
         <div class="img-laptop"></div>
         <div class="content">
-            <h2>{methodiekSection.heading}</h2>
+            <h2 set:html={methodiekSection.heading} />
             <SplitNewlines content={methodiekSection.description}></SplitNewlines>
             <LinkButton href={methodiekSection.button_navigation} label={methodiekSection.button_text} class={"cta-btn"}></LinkButton>
         </div>
